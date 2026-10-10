@@ -94,7 +94,7 @@ Resources:
           Properties:
             Name: wlew-core-hourly-score
             Description: Score every Delhi hotspot once an hour
-            ScheduleExpression: rate(1 hour)
+            ScheduleExpression: cron(2 * * * ? *)  # 2 min past each hour, so as_of (floored to the hour) is never more than ~1 h old
             RetryPolicy:
               MaximumRetryAttempts: 2
 
