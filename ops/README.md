@@ -22,7 +22,7 @@ Secrets stay in SSM, never in git: `/wlew/telegram/bot_token` (SecureString) and
     python ops/stage.py
     cd ops && sam build && sam deploy        # outputs OpsApiUrl, UserPoolId, UserPoolClientId, AlertsTableName
 
-Allow the Amplify domain by CORS: `sam deploy --parameter-overrides CoreApiUrl=<url> AllowedOrigin=https://<amplify-domain>` (repeat `CoreApiUrl`, overrides replace the samconfig list).
+`samconfig.toml` already sets `AllowedOrigin` to the Amplify URL (`https://main.d3so27hxydwx7o.amplifyapp.com`), so a plain `sam deploy` keeps CORS for the hosted dashboard. If the Amplify app is ever recreated, update it there. Preview with `sam deploy --no-execute-changeset`; on Windows, run `sam` from PowerShell (see `handoff/b.md`).
 
 ## Test
 
