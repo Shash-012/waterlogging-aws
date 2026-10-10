@@ -1,5 +1,5 @@
 import L from 'leaflet'
-import { CircleMarker, MapContainer, Marker, TileLayer, Tooltip } from 'react-leaflet'
+import { MapContainer, Marker, TileLayer, Tooltip } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
 import type { Hotspot, SnapshotHotspot } from '../types/contract'
 import { markerSvg, type Level } from './levels'
@@ -25,6 +25,15 @@ function iconFor(level: Level, selected: boolean, pumped: boolean): L.DivIcon {
   }
   return icon
 }
+
+// Ground-truth flood report: a dashed blue ring drawn around the hotspot marker.
+const REPORT_SIZE = 40
+const reportIcon = L.divIcon({
+  html: `<svg xmlns="http://www.w3.org/2000/svg" width="${REPORT_SIZE}" height="${REPORT_SIZE}" aria-hidden="true"><circle cx="${REPORT_SIZE / 2}" cy="${REPORT_SIZE / 2}" r="${REPORT_SIZE / 2 - 3}" fill="none" stroke="#1f5fbf" stroke-width="3" stroke-dasharray="5 4"/></svg>`,
+  className: 'wl-report-ring',
+  iconSize: [REPORT_SIZE, REPORT_SIZE],
+  iconAnchor: [REPORT_SIZE / 2, REPORT_SIZE / 2],
+})
 
 export interface ReportPin {
   hotspot_id: string
@@ -52,14 +61,16 @@ export function HotspotMap({ hotspots, scores, selectedId, onSelect, pumpsById, 
         const h = byId.get(r.hotspot_id)
         if (!h) return null
         return (
-          <CircleMarker
+          <Marker
             key={`report-${r.hotspot_id}`}
-            center={[h.lat, h.lon]}
-            radius={18}
-            pathOptions={{ className: 'wl-report-ring', color: '#1f5fbf', weight: 3, dashArray: '4 4', fill: false }}
+            position={[h.lat, h.lon]}
+            icon={reportIcon}
+            title={`${h.name_en}: ${r.label}`}
+            keyboard={false}
+            zIndexOffset={-500}
           >
             <Tooltip>{r.label}</Tooltip>
-          </CircleMarker>
+          </Marker>
         )
       })}
       {hotspots.map((h) => {

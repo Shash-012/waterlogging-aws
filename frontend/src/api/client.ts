@@ -1,6 +1,7 @@
 // Data layer. VITE_DATA_SOURCE=fixtures (default) reads contract/fixtures/;
 // VITE_DATA_SOURCE=live calls the core API at VITE_CORE_API_URL.
 import { formatIstDate, formatIstTime } from '../lib/format'
+import { planPumps } from '../lib/pumps'
 import type {
   AlertRequest,
   AlertResponse,
@@ -70,8 +71,12 @@ export function getLatestSnapshot(fixture: 'live' | 'dry' = 'live'): Promise<Sna
   return dataSource === 'live' ? getLive('/scores/latest') : getFixture(`snapshot_${fixture}`)
 }
 
-export function getPumpPlan(count: number): Promise<PumpPlan> {
-  return dataSource === 'live' ? getLive(`/pumps?count=${count}`) : getFixture('pump_plan')
+// With fixtures, the plan is computed from the chosen sample snapshot using the
+// contract's pump rule, so the count input still does something.
+export async function getPumpPlan(count: number, fixture: 'live' | 'dry' = 'live'): Promise<PumpPlan> {
+  if (dataSource === 'live') return getLive(`/pumps?count=${count}`)
+  const [snapshot, hotspots] = await Promise.all([getLatestSnapshot(fixture), getHotspots()])
+  return planPumps(snapshot, hotspots, count)
 }
 
 export function getReplays(): Promise<ReplayIndex> {

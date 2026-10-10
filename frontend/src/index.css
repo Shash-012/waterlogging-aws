@@ -317,3 +317,113 @@ input {
 .wl-sources a {
   margin-right: 0.25rem;
 }
+
+/* Cards: pump panel and replay player */
+.wl-side {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.wl-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+}
+.wl-card h2 {
+  font-size: 1rem;
+  margin: 0 0 0.4rem;
+}
+.wl-pump-input input {
+  width: 5rem;
+}
+.wl-warn {
+  border-left: 4px solid #d7263d;
+  padding: 0.25rem 0.5rem;
+  background: #fdf1f2;
+  font-size: 0.85rem;
+}
+.wl-warn ul {
+  margin: 0.25rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.wl-tabs {
+  display: inline-flex;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.wl-tabs button {
+  border: none;
+  background: #fff;
+  padding: 0.2rem 0.7rem;
+  cursor: pointer;
+}
+.wl-tabs button[aria-pressed='true'] {
+  background: var(--accent);
+  color: #fff;
+}
+
+.wl-replay-label {
+  margin: 0;
+  padding: 0.35rem 1rem;
+  background: #1d2026;
+  color: #fff;
+  font-weight: 700;
+  position: sticky;
+  top: 0;
+  z-index: 1100;
+}
+.wl-replay-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.wl-replay-controls button {
+  min-width: 3.5rem;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+}
+.wl-replay-controls button[aria-pressed='true'] {
+  border-color: var(--accent);
+  color: var(--accent);
+  font-weight: 700;
+}
+.wl-replay-controls input[type='range'] {
+  flex: 1;
+  min-width: 0;
+}
+.wl-metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.4rem;
+  margin: 0.5rem 0;
+}
+.wl-metrics div {
+  background: #f1f4f8;
+  border-radius: 6px;
+  padding: 0.3rem 0.5rem;
+}
+.wl-metrics dt {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+.wl-metrics dd {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.wl-callouts {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.85rem;
+}
+.wl-report-ring {
+  background: none;
+  border: none;
+}
