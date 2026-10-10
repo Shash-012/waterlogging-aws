@@ -108,6 +108,8 @@ Replays, from `GET /replays` (a list) and `GET /replays/{event_id}`. `kind` is `
 
 The list endpoint returns the same objects without `frames`, `ground_truth` and `metrics`.
 
+`city.spots_raining` counts spots where I > 0 (I as defined in the risk model, so it includes rain forecast for the next 6 hours). A ground-truth item may carry an optional `time_kind`: `post` (an official or social post's timestamp), `stated` (a time the source says flooding began) or `published` (the article's publication time). With `published`, lead times are upper bounds, so the UI says "before the first news report", not "before flooding began". `event_id` stays a `YYYY-MM-DD` date; a storm spanning two days uses the date of its main rain.
+
 Alert, `POST /alerts` on the ops API (Cognito JWT required):
 
 ```json
@@ -140,3 +142,7 @@ Response; `GET /alerts?limit=50` returns `{"alerts": [...]}` of these, each with
 - `wlew-ops` takes parameters `CoreApiUrl` and `AllowedOrigin`, and outputs `OpsApiUrl`, `UserPoolId` and `UserPoolClientId`.
 - The frontend reads `VITE_CORE_API_URL`, `VITE_OPS_API_URL`, `VITE_COGNITO_USER_POOL_ID`, `VITE_COGNITO_CLIENT_ID` and `VITE_DATA_SOURCE` (`fixtures` or `live`). With `fixtures`, it reads `contract/fixtures/` and fakes `POST /alerts` locally.
 - Secrets live in SSM Parameter Store, never in git: `/wlew/telegram/bot_token` (SecureString) and `/wlew/telegram/groups` (JSON of group key to chat ID).
+
+## Changelog
+
+- **v1.1 (Phase 2).** Defines `city.spots_raining` (requests-a #2). Adds optional `time_kind` to replay ground truth (requests-a #1). Keeps the `event_id` date pattern (requests-a #3, no change). Fixtures get regenerated after the merge from Agent A's live samples: the real 28 Jun 2024 headline storm, the real 25 Aug 2026 miss and the 10 Sep 2026 dry control (requests-a #4, requests-b #1). No per-frame pump route (requests-b #2, rejected for v1: the dashboard applies the pump rule to replay frames itself). requests-b #3 (core CORS for Amplify) was a deploy change, already done.

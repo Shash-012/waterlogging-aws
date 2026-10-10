@@ -44,7 +44,8 @@
         },
         "spots_raining": {
           "type": "integer",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Spots where I > 0 (I is the max hourly intensity over the current hour and the next 6)."
         }
       }
     },
