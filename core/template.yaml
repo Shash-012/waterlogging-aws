@@ -1,0 +1,65 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+Description: wlew-core - Waterlogging EWS scoring backend and public read API (Agent A)
+
+Parameters:
+  AllowedOrigin:
+    Type: String
+    Default: http://localhost:5173
+    Description: Amplify domain allowed by CORS, in addition to http://localhost:5173
+
+Conditions:
+  HasExtraOrigin: !Not [!Equals [!Ref AllowedOrigin, http://localhost:5173]]
+
+Globals:
+  Function:
+    Runtime: python3.12
+    Architectures: [arm64]
+    MemorySize: 256
+    Timeout: 15
+    Tags:
+      Project: wlew
+
+Resources:
+  HttpApi:
+    Type: AWS::Serverless::HttpApi
+    Properties:
+      Tags:
+        Project: wlew
+      CorsConfiguration:
+        AllowOrigins: !If
+          - HasExtraOrigin
+          - [http://localhost:5173, !Ref AllowedOrigin]
+          - [http://localhost:5173]
+        AllowMethods: [GET, OPTIONS]
+        AllowHeaders: ["*"]
+        MaxAge: 600
+
+  ApiFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: functions/api/
+      Handler: app.handler
+      LoggingConfig:
+        LogGroup: !Ref ApiLogGroup
+      Events:
+        Health:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Method: GET
+            Path: /health
+
+  ApiLogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: /wlew/core/api
+      RetentionInDays: 30
+      Tags:
+        - Key: Project
+          Value: wlew
+
+Outputs:
+  CoreApiUrl:
+    Description: Base URL of the public core API
+    Value: !Sub "https://${HttpApi}.execute-api.${AWS::Region}.amazonaws.com"
