@@ -1,0 +1,36 @@
+{
+ "hotspot_id": "DL-001",
+ "avoid_en": "Avoid Minto Bridge underpass (Minto Road) during heavy rain; water collects here.",
+ "importance": 0.6,
+ "lon": 77.22231,
+ "sources": [
+  "https://www.theweek.in/news/india/2020/07/19/delhi-man-drowns-under-minto-bridge-as-capital-reels-from-heavy-rains.html",
+  "https://www.indiatvnews.com/news/india/delhi-rains-delhi-traffic-alert-waterlogged-roads-areas-list-minto-road-azadpur-ndls-paharganj-full-list-635379",
+  "https://www.nationalheraldindia.com/national/heavy-rains-cause-waterlogging-in-delhi-crucial-underpasses-closed-for-traffic",
+  "https://www.india.com/news/india/delhi-rains-ncr-noida-gurgaon-ghaziabad-rains-live-updates-delhi-police-traffic-alert-waterlogging-traffic-movement-cp-minto-bridge-moolchand-underpass-ito-traffic-advisory-diversions-4902745/",
+  "https://www.tribuneindia.com/news/delhi/heavy-rainfall-leads-to-waterlogging-traffic-jams-in-delhi-300623",
+  "https://www.outlookindia.com/national/delhi-rain-waterlogging-igi-airport-roof-collapse-flights-cancelled-traffic-ito-ring-road-noida-gurgaon-advisory",
+  "https://www.tribuneindia.com/news/delhi/capital-faces-chaos-as-heavy-rains-cause-traffic-jams-waterlogging-643821",
+  "https://www.tribuneindia.com/news/delhi/heavy-rain-causes-widespread-waterlogging-traffic-disruptions-across-delhi",
+  "https://theprint.in/india/heavy-rains-trigger-traffic-chaos-waterlogging-across-delhi/2706253/",
+  "https://thepatriot.in/delhi-ncr/new-drains-sumps-automated-pump-house-delhi-pwds-plan-to-tackle-waterlogging-at-seven-hotspots-70243"
+ ],
+ "diversion_en": "Use Barakhamba Road / Janpath via CP instead.",
+ "flood_seasons": 5,
+ "catchment_km2": 0.5688,
+ "susceptibility": 0.908,
+ "factors": {
+  "catchment": 0.65,
+  "history": 1,
+  "low_lying": 0.9
+ },
+ "name_hi": "मिंटो ब्रिज अंडरपास",
+ "site_type": "underpass",
+ "diversion_hi": "इसके बजाय बाराखंभा रोड / जनपथ होते हुए सीपी का उपयोग करें।",
+ "elevation_m": 215.1,
+ "ward": null,
+ "name_en": "Minto Bridge underpass",
+ "relative_depth_m": 2.57,
+ "avoid_hi": "भारी बारिश में मिंटो ब्रिज अंडरपास (मिंटो रोड) से बचें; यहाँ पानी भर जाता है।",
+ "lat": 28.63656
+}
