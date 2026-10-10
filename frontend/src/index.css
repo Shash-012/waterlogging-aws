@@ -1,0 +1,51 @@
+:root {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color: #1d2026;
+  background: #f6f7f9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.wl-app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.wl-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  background: #fff;
+  border-bottom: 1px solid #dde1e6;
+}
+.wl-header h1 {
+  font-size: 1.1rem;
+  margin: 0;
+}
+.wl-source,
+.wl-count {
+  font-size: 0.85rem;
+  color: #5b6170;
+}
+.wl-count {
+  margin: 0.25rem 1rem;
+}
+
+.wl-map {
+  flex: 1;
+  min-height: 300px;
+}
+.wl-marker {
+  background: none;
+  border: none;
+}
