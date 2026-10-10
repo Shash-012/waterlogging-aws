@@ -12,4 +12,4 @@ s3_prefix = "wlew-ops"
 confirm_changeset = false
 fail_on_empty_changeset = false
 tags = "Project=\"wlew\""
-parameter_overrides = "CoreApiUrl=\"https://x6klvfqev1.execute-api.ap-south-1.amazonaws.com\" AllowedOrigin=\"http://localhost:5173\""
+parameter_overrides = "CoreApiUrl=\"https://x6klvfqev1.execute-api.ap-south-1.amazonaws.com\" AllowedOrigin=\"https://main.d3so27hxydwx7o.amplifyapp.com\""

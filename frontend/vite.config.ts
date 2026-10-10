@@ -10,5 +10,14 @@ export default defineConfig({
   test: {
     environment: 'jsdom',
     setupFiles: ['./src/test/setup.ts'],
+    // Tests always run on fixtures and the demo login, whatever .env.local says,
+    // so they never call the live APIs or Cognito.
+    env: {
+      VITE_DATA_SOURCE: 'fixtures',
+      VITE_CORE_API_URL: '',
+      VITE_OPS_API_URL: '',
+      VITE_COGNITO_USER_POOL_ID: '',
+      VITE_COGNITO_CLIENT_ID: '',
+    },
   },
 })
