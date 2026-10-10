@@ -1,0 +1,173 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+Description: wlew-ops - Waterlogging EWS official login, Telegram alerts and alert log (Agent B)
+
+Parameters:
+  CoreApiUrl:
+    Type: String
+    Default: fixtures
+    AllowedPattern: ^(fixtures|https://.+)$
+    Description: wlew-core's CoreApiUrl, or "fixtures" to read hotspot names from the contract fixture packed at build time
+  AllowedOrigin:
+    Type: String
+    Default: http://localhost:5173
+    Description: Amplify domain allowed by CORS, in addition to http://localhost:5173
+
+Conditions:
+  HasExtraOrigin: !Not [!Equals [!Ref AllowedOrigin, http://localhost:5173]]
+
+Globals:
+  Function:
+    Runtime: python3.12
+    Architectures: [arm64]
+    MemorySize: 256
+    Timeout: 15
+    Environment:
+      Variables:
+        ALERTS_TABLE: !Ref AlertsTable
+    Tags:
+      Project: wlew
+
+Resources:
+  # Officials only: accounts are created by an admin, nobody can sign up.
+  UserPool:
+    Type: AWS::Cognito::UserPool
+    Properties:
+      UserPoolName: wlew-officials
+      AdminCreateUserConfig:
+        AllowAdminCreateUserOnly: true
+      UsernameConfiguration:
+        CaseSensitive: false
+      Policies:
+        PasswordPolicy:
+          MinimumLength: 8
+          RequireLowercase: true
+          RequireUppercase: true
+          RequireNumbers: true
+          RequireSymbols: false
+          TemporaryPasswordValidityDays: 7
+      AccountRecoverySetting:
+        RecoveryMechanisms:
+          - {Name: admin_only, Priority: 1}
+      UserPoolTags:
+        Project: wlew
+
+  # The dashboard signs in from the browser, so the client has no secret.
+  UserPoolClient:
+    Type: AWS::Cognito::UserPoolClient
+    Properties:
+      UserPoolId: !Ref UserPool
+      ClientName: wlew-dashboard
+      GenerateSecret: false
+      ExplicitAuthFlows: [ALLOW_USER_PASSWORD_AUTH, ALLOW_REFRESH_TOKEN_AUTH]
+      PreventUserExistenceErrors: ENABLED
+      IdTokenValidity: 60
+      AccessTokenValidity: 60
+      RefreshTokenValidity: 30
+      TokenValidityUnits:
+        IdToken: minutes
+        AccessToken: minutes
+        RefreshToken: days
+
+  # pk "ALERT" + sk "<sent_at>#<alert_id>" holds the log, newest last;
+  # pk "DEDUPE#<hotspot>|<run>|<mode>" holds the 30-minute send lock (expires by TTL).
+  AlertsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - {AttributeName: pk, AttributeType: S}
+        - {AttributeName: sk, AttributeType: S}
+      KeySchema:
+        - {AttributeName: pk, KeyType: HASH}
+        - {AttributeName: sk, KeyType: RANGE}
+      TimeToLiveSpecification:
+        AttributeName: expires_at
+        Enabled: true
+      Tags:
+        - {Key: Project, Value: wlew}
+
+  SendAlertFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      # Staged by `python ops/stage.py`: the function code plus templates/, config/ and the hotspot fixture.
+      CodeUri: build/send_alert/
+      Handler: app.handler
+      Timeout: 20
+      LoggingConfig:
+        LogGroup: !Ref SendAlertLogGroup
+      Environment:
+        Variables:
+          CORE_API_URL: !Ref CoreApiUrl
+          BOT_TOKEN_PARAM: /wlew/telegram/bot_token
+          GROUPS_PARAM: /wlew/telegram/groups
+      Policies:
+        - DynamoDBCrudPolicy: {TableName: !Ref AlertsTable}
+        - SSMParameterReadPolicy: {ParameterName: wlew/telegram/*}
+      Events:
+        Post: {Type: HttpApi, Properties: {ApiId: !Ref OpsApi, Method: POST, Path: /alerts}}
+
+  ListAlertsFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: functions/list_alerts/
+      Handler: app.handler
+      LoggingConfig:
+        LogGroup: !Ref ListAlertsLogGroup
+      Policies:
+        - DynamoDBReadPolicy: {TableName: !Ref AlertsTable}
+      Events:
+        Get: {Type: HttpApi, Properties: {ApiId: !Ref OpsApi, Method: GET, Path: /alerts}}
+
+  # Every route needs a Cognito id token; API Gateway answers 401 before any Lambda runs.
+  OpsApi:
+    Type: AWS::Serverless::HttpApi
+    Properties:
+      Tags:
+        Project: wlew
+      Auth:
+        DefaultAuthorizer: CognitoJwt
+        Authorizers:
+          CognitoJwt:
+            IdentitySource: $request.header.Authorization
+            JwtConfiguration:
+              issuer: !Sub https://cognito-idp.${AWS::Region}.amazonaws.com/${UserPool}
+              audience:
+                - !Ref UserPoolClient
+      CorsConfiguration:
+        AllowOrigins:
+          - http://localhost:5173
+          - !If [HasExtraOrigin, !Ref AllowedOrigin, !Ref AWS::NoValue]
+        AllowMethods: [GET, POST, OPTIONS]
+        AllowHeaders: [Authorization, Content-Type]
+        MaxAge: 600
+
+  SendAlertLogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: /wlew/ops/send_alert
+      RetentionInDays: 30
+      Tags:
+        - {Key: Project, Value: wlew}
+
+  ListAlertsLogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: /wlew/ops/list_alerts
+      RetentionInDays: 30
+      Tags:
+        - {Key: Project, Value: wlew}
+
+Outputs:
+  OpsApiUrl:
+    Description: Ops API base URL (VITE_OPS_API_URL)
+    Value: !Sub https://${OpsApi}.execute-api.${AWS::Region}.amazonaws.com
+  UserPoolId:
+    Description: Cognito user pool (VITE_COGNITO_USER_POOL_ID)
+    Value: !Ref UserPool
+  UserPoolClientId:
+    Description: Cognito app client (VITE_COGNITO_CLIENT_ID)
+    Value: !Ref UserPoolClient
+  AlertsTableName:
+    Description: DynamoDB alert log
+    Value: !Ref AlertsTable

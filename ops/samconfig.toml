@@ -1,0 +1,15 @@
+version = 0.1
+
+[default.global.parameters]
+stack_name = "wlew-ops"
+region = "ap-south-1"
+profile = "wlew"
+
+[default.deploy.parameters]
+capabilities = "CAPABILITY_IAM"
+resolve_s3 = true
+s3_prefix = "wlew-ops"
+confirm_changeset = false
+fail_on_empty_changeset = false
+tags = "Project=\"wlew\""
+parameter_overrides = "CoreApiUrl=\"https://x6klvfqev1.execute-api.ap-south-1.amazonaws.com\" AllowedOrigin=\"http://localhost:5173\""

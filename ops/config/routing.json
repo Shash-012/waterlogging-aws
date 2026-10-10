@@ -1,0 +1,5 @@
+{
+  "_note": "Which Telegram groups get an alert. Keys are group names from the SSM parameter /wlew/telegram/groups; chat IDs never go in git.",
+  "default": ["traffic-police-demo", "rwa-demo"],
+  "hotspots": {}
+}

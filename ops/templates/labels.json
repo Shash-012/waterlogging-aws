@@ -1,0 +1,14 @@
+{
+  "en": {
+    "replay_tag": "[Replay · {date}] ",
+    "peak": ", peak expected {time} IST",
+    "levels": {"LOW": "LOW", "WATCH": "WATCH", "HIGH": "HIGH", "CRITICAL": "CRITICAL"},
+    "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+  },
+  "hi": {
+    "replay_tag": "[रीप्ले · {date}] ",
+    "peak": ", चरम लगभग {time} IST",
+    "levels": {"LOW": "कम", "WATCH": "मध्यम", "HIGH": "उच्च", "CRITICAL": "गंभीर"},
+    "months": ["जनवरी", "फ़रवरी", "मार्च", "अप्रैल", "मई", "जून", "जुलाई", "अगस्त", "सितंबर", "अक्टूबर", "नवंबर", "दिसंबर"]
+  }
+}
