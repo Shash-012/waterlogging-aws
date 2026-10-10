@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" width="1200" height="760" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14">
+  <title>Waterlogging Early Warning System: architecture</title>
+  <defs>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#3f7d3f"/>
+    </marker>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#444"/>
+    </marker>
+    <style>
+      .stack { fill: #f6f8fb; stroke: #8a99ad; stroke-width: 1.5; stroke-dasharray: 6 4; }
+      .stack-title { font-weight: 700; font-size: 15px; fill: #2b3a4f; }
+      .box { fill: #ffffff; stroke: #2b3a4f; stroke-width: 1.5; }
+      .aws { fill: #fff4e5; stroke: #d97706; stroke-width: 1.5; }
+      .ext { fill: #eef6ee; stroke: #3f7d3f; stroke-width: 1.5; }
+      .user { fill: #eef1fb; stroke: #4a5ab8; stroke-width: 1.5; }
+      .name { font-weight: 600; fill: #1b2533; }
+      .sub { font-size: 12px; fill: #4a5566; }
+      .edge { stroke: #444; stroke-width: 1.5; fill: none; marker-end: url(#arrow); }
+      .label { font-size: 12px; fill: #333; }
+      .edge-ext { stroke: #3f7d3f; stroke-width: 2; fill: none; marker-end: url(#arrow-green); }
+      .edge-seed { stroke: #444; stroke-width: 1.5; stroke-dasharray: 5 4; fill: none; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect width="1200" height="760" fill="#ffffff"/>
+  <text x="24" y="36" font-size="22" font-weight="700" fill="#1b2533">Waterlogging Early Warning System (Delhi): architecture</text>
+  <text x="24" y="58" class="sub">Two SAM stacks in ap-south-1, both deployed with the SAM CLI. Orange = AWS service, green = outside data or service, blue = people.</text>
+
+  <!-- Offline data prep -->
+  <rect x="24" y="84" width="300" height="190" rx="10" class="stack"/>
+  <text x="40" y="108" class="stack-title">Offline data prep (scripts/)</text>
+  <rect x="40" y="120" width="268" height="54" rx="8" class="aws"/>
+  <text x="54" y="142" class="name">Copernicus GLO-30 DEM</text>
+  <text x="54" y="160" class="sub">AWS Open Data, s3://copernicus-dem-30m</text>
+  <rect x="40" y="194" width="268" height="62" rx="8" class="box"/>
+  <text x="54" y="216" class="name">DEM factors + hotspot list</text>
+  <text x="54" y="234" class="sub">pysheds D8 catchment, low-lying ring,</text>
+  <text x="54" y="249" class="sub">69 spots with sourced flood history</text>
+  <path d="M174,174 L174,192" class="edge"/>
+
+  <!-- wlew-core -->
+  <rect x="360" y="84" width="500" height="360" rx="10" class="stack"/>
+  <text x="376" y="108" class="stack-title">Stack wlew-core (Agent A)</text>
+
+  <rect x="376" y="122" width="200" height="54" rx="8" class="aws"/>
+  <text x="390" y="144" class="name">EventBridge Scheduler</text>
+  <text x="390" y="162" class="sub">rate(1 hour)</text>
+
+  <rect x="376" y="206" width="200" height="66" rx="8" class="aws"/>
+  <text x="390" y="228" class="name">Lambda: score</text>
+  <text x="390" y="246" class="sub">Python 3.12 + wlew_model layer</text>
+  <text x="390" y="262" class="sub">risk = rain trigger x susceptibility</text>
+
+  <rect x="376" y="302" width="200" height="54" rx="8" class="aws"/>
+  <text x="390" y="324" class="name">DynamoDB</text>
+  <text x="390" y="342" class="sub">Hotspots, Snapshots (+ LATEST)</text>
+
+  <rect x="376" y="374" width="200" height="54" rx="8" class="aws"/>
+  <text x="390" y="396" class="name">S3 (private)</text>
+  <text x="390" y="414" class="sub">replay JSON, 5 events</text>
+
+  <rect x="640" y="206" width="200" height="66" rx="8" class="aws"/>
+  <text x="654" y="228" class="name">API Gateway HTTP API</text>
+  <text x="654" y="246" class="sub">+ Lambda: api (GET only)</text>
+  <text x="654" y="262" class="sub">/hotspots /scores /pumps /replays</text>
+
+  <rect x="640" y="122" width="200" height="54" rx="8" class="aws"/>
+  <text x="654" y="144" class="name">CloudWatch Logs</text>
+  <text x="654" y="162" class="sub">one scoring_run line per hour</text>
+
+  <path d="M476,176 L476,204" class="edge"/>
+  <path d="M476,272 L476,300" class="edge"/>
+  <path d="M576,226 L638,170" class="edge"/>
+  <path d="M638,250 L578,320" class="edge"/>
+  <path d="M638,262 L578,396" class="edge"/>
+  <path d="M308,236 C345,236 345,329 374,329" class="edge-seed"/>
+  <path d="M308,250 C340,250 340,401 374,401" class="edge-seed"/>
+  <text x="200" y="290" class="label">seed.py (dashed)</text>
+
+  <!-- Open-Meteo -->
+  <rect x="24" y="300" width="300" height="70" rx="8" class="ext"/>
+  <text x="38" y="324" class="name">Open-Meteo (ECMWF IFS 9 km)</text>
+  <text x="38" y="342" class="sub">live forecast, hourly; issued runs</text>
+  <text x="38" y="358" class="sub">(Single Runs API) for honest replays</text>
+  <path d="M324,335 C352,335 352,262 374,262" class="edge-ext"/>
+  <text x="200" y="390" class="label" fill="#3f7d3f">hourly forecast call</text>
+
+  <!-- wlew-ops -->
+  <rect x="360" y="470" width="500" height="270" rx="10" class="stack"/>
+  <text x="376" y="494" class="stack-title">Stack wlew-ops (Agent B)</text>
+
+  <rect x="376" y="508" width="200" height="54" rx="8" class="aws"/>
+  <text x="390" y="530" class="name">Amazon Cognito</text>
+  <text x="390" y="548" class="sub">user pool wlew-officials</text>
+
+  <rect x="640" y="508" width="200" height="66" rx="8" class="aws"/>
+  <text x="654" y="530" class="name">API Gateway HTTP API</text>
+  <text x="654" y="548" class="sub">Cognito JWT on every route</text>
+  <text x="654" y="564" class="sub">POST /alerts, GET /alerts</text>
+
+  <rect x="640" y="600" width="200" height="54" rx="8" class="aws"/>
+  <text x="654" y="622" class="name">Lambda: send_alert</text>
+  <text x="654" y="640" class="sub">EN + HI text, 30-min dedupe</text>
+
+  <rect x="376" y="600" width="200" height="54" rx="8" class="aws"/>
+  <text x="390" y="622" class="name">SSM Parameter Store</text>
+  <text x="390" y="640" class="sub">bot token, group chat IDs</text>
+
+  <rect x="640" y="672" width="200" height="54" rx="8" class="aws"/>
+  <text x="654" y="694" class="name">DynamoDB: alert log</text>
+  <text x="654" y="712" class="sub">+ Lambda: list_alerts</text>
+
+  <path d="M740,574 L740,598" class="edge"/>
+  <path d="M638,627 L578,627" class="edge"/>
+  <path d="M740,654 L740,670" class="edge"/>
+  <path d="M578,535 L638,535" class="edge"/>
+  <text x="586" y="528" class="label">JWT</text>
+  <path d="M760,598 C800,520 800,320 760,274" class="edge"/>
+  <text x="796" y="420" class="label">hotspot names</text>
+
+  <!-- Telegram -->
+  <rect x="24" y="600" width="300" height="70" rx="8" class="ext"/>
+  <text x="38" y="624" class="name">Telegram Bot API</text>
+  <text x="38" y="642" class="sub">groups: traffic police (demo),</text>
+  <text x="38" y="658" class="sub">RWA (demo)</text>
+  <path d="M640,650 C560,700 400,700 326,650" class="edge"/>
+
+  <!-- Frontend -->
+  <rect x="900" y="84" width="276" height="200" rx="10" class="stack"/>
+  <text x="916" y="108" class="stack-title">Dashboard (Agent B)</text>
+  <rect x="916" y="122" width="244" height="86" rx="8" class="aws"/>
+  <text x="930" y="144" class="name">AWS Amplify Hosting</text>
+  <text x="930" y="162" class="sub">React + Vite + TypeScript</text>
+  <text x="930" y="178" class="sub">map, ranked list EN/HI, pumps,</text>
+  <text x="930" y="194" class="sub">replay player, alert button</text>
+  <rect x="916" y="222" width="244" height="46" rx="8" class="user"/>
+  <text x="930" y="250" class="name">City officials (browser, phone)</text>
+  <path d="M1038,220 L1038,210" class="edge"/>
+
+  <path d="M914,170 C880,190 870,230 842,238" class="edge"/>
+  <text x="866" y="188" class="label">GET</text>
+  <path d="M960,284 C960,420 900,530 842,540" class="edge"/>
+  <text x="920" y="430" class="label">POST /alerts</text>
+  <path d="M1000,284 C1000,470 700,470 578,520" class="edge"/>
+  <text x="1010" y="380" class="label">sign in</text>
+
+  <rect x="900" y="600" width="276" height="70" rx="8" class="user"/>
+  <text x="914" y="624" class="name">Traffic police, RWAs</text>
+  <text x="914" y="642" class="sub">get the alert on their phones</text>
+  <text x="914" y="658" class="sub">(replays are labelled as replays)</text>
+  <path d="M176,672 C176,740 1038,740 1038,672" class="edge"/>
+</svg>
