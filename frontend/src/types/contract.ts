@@ -260,6 +260,9 @@ export interface PumpUnassigned {
  * GET /replays/{event_id}. Every frame is a Snapshot with mode "replay".
  */
 export interface Replay {
+  /**
+   * Date of the storm's main rain (YYYY-MM-DD).
+   */
   event_id: string;
   title_en: string;
   kind: "storm" | "dry";
@@ -309,6 +312,9 @@ export interface CityState {
    * Float from 0 to 1, rounded to 3 decimals.
    */
   rain_trigger_max: number;
+  /**
+   * Spots where I > 0 (I is the max hourly intensity over the current hour and the next 6).
+   */
   spots_raining: number;
 }
 export interface SnapshotHotspot {
@@ -358,6 +364,10 @@ export interface GroundTruthReport {
   first_report_at: string;
   source_url: string;
   note: string;
+  /**
+   * Optional. What kind of time first_report_at is; with published, lead times are upper bounds.
+   */
+  time_kind?: "post" | "stated" | "published";
 }
 export interface ReplayMetrics {
   spots_reported: number;

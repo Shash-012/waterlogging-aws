@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 """Validate every contract fixture against its JSON Schema and the risk formulas.
 
-Usage: python contract/tools/validate.py [--fixtures DIR]
+Usage: python contract/tools/validate.py [--fixtures DIR] [--real]
+
+--real is for fixtures/live/ (real API responses): every check runs except the
+worked example, which only the synthetic set can contain.
 
 Exits non-zero if any fixture fails its schema, has no schema, or breaks a rule in
 contract/CONTRACT.md (risk formulas, levels, city status, ranking, pump plan,
@@ -280,6 +283,7 @@ def check_worked_example(snapshots):
 def main():
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--fixtures", type=Path, default=CONTRACT / "fixtures")
+    ap.add_argument("--real", action="store_true", help="real API data: skip the worked-example check")
     args = ap.parse_args()
 
     schemas, registry = load_registry()
@@ -342,7 +346,8 @@ def main():
 
     frames = [(f"{n}.frames[{i}]", f) for n, r in docs.items() if schema_for(n) == "replay.schema.json"
               for i, f in enumerate(r["frames"])]
-    check_worked_example([(n, s, hotspots) for n, s in snaps + frames])
+    if not args.real:
+        check_worked_example([(n, s, hotspots) for n, s in snaps + frames])
     return report()
 
 

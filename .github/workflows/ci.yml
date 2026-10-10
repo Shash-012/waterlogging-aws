@@ -37,9 +37,13 @@ jobs:
           python-version: "3.12"
       - id: has
         run: |
-          if [ -f ops/Makefile ] && make -C ops -n test >/dev/null 2>&1; then echo "test=true" >> "$GITHUB_OUTPUT"; else echo "No ops test target yet; skipping."; fi
-      - if: steps.has.outputs.test == 'true'
+          if [ -f ops/Makefile ] && make -C ops -n test >/dev/null 2>&1; then echo "test=make" >> "$GITHUB_OUTPUT"; elif [ -d ops/tests ]; then echo "test=pytest" >> "$GITHUB_OUTPUT"; else echo "No ops tests yet; skipping."; fi
+      - if: steps.has.outputs.test == 'make'
         run: make -C ops test
+      - if: steps.has.outputs.test == 'pytest'
+        run: |
+          pip install boto3 jsonschema pytest
+          python -m pytest -q ops/tests
 
   frontend:
     runs-on: ubuntu-latest

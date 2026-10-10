@@ -1,0 +1,6 @@
+{
+ "error": {
+  "code": "bad_request",
+  "message": "count must be an integer from 0 to 50"
+ }
+}
