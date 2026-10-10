@@ -7,13 +7,15 @@ interface Props {
   onCount: (n: number) => void
   plan: PumpPlan | null
   nameOf: (id: string) => string
+  note?: string
 }
 
-export function PumpPanel({ count, onCount, plan, nameOf }: Props) {
+export function PumpPanel({ count, onCount, plan, nameOf, note }: Props) {
   const assigned = plan?.assignments.reduce((n, a) => n + a.pumps, 0) ?? 0
   return (
     <section className="wl-card" aria-labelledby="wl-pumps-title">
       <h2 id="wl-pumps-title">Pumps</h2>
+      {note && <p className="wl-hint">{note}</p>}
       <label className="wl-pump-input">
         Pumps available{' '}
         <input

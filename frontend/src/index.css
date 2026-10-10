@@ -427,3 +427,39 @@ input {
   background: none;
   border: none;
 }
+
+/* ?present=1: larger type for the video, dev controls hidden in App.tsx */
+.wl-present {
+  font-size: 1.2rem;
+}
+.wl-present .wl-header h1 {
+  font-size: 1.5rem;
+}
+.wl-present .wl-banner-status strong {
+  font-size: 2rem;
+}
+.wl-present .wl-replay-label {
+  font-size: 1.3rem;
+  padding: 0.5rem 1rem;
+}
+.wl-present .wl-chip,
+.wl-present .wl-hint,
+.wl-present .wl-row-risk,
+.wl-present .wl-row-peak,
+.wl-present .wl-bar-detail,
+.wl-present .wl-metrics dt,
+.wl-present .wl-banner-facts dt {
+  font-size: 0.85em;
+}
+.wl-present .wl-metrics dd {
+  font-size: 1.5rem;
+}
+.wl-present .wl-marker svg,
+.wl-present .wl-report-ring svg {
+  transform: scale(1.35);
+}
+@media (min-width: 900px) {
+  .wl-present .wl-side {
+    width: 480px;
+  }
+}

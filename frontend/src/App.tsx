@@ -16,6 +16,8 @@ import { PumpPanel } from './components/PumpPanel'
 import { ReplayPlayer } from './components/ReplayPlayer'
 import type { Hotspot, PumpPlan, Replay, ReplaySummary, Snapshot } from './types/contract'
 import { formatIstDateTime } from './lib/format'
+import { readPresentMode } from './lib/present'
+import { planPumps } from './lib/pumps'
 import { replayLabel } from './lib/replay'
 
 const LIVE_POLL_MS = 5 * 60_000
@@ -26,6 +28,7 @@ type View = 'now' | 'replay'
 const message = (e: unknown) => (e instanceof Error ? e.message : String(e))
 
 export default function App() {
+  const [{ present, eventId: requestedEvent }] = useState(() => readPresentMode(window.location.search))
   const [hotspots, setHotspots] = useState<Hotspot[] | null>(null)
   const [latest, setLatest] = useState<Snapshot | null>(null)
   const [error, setError] = useState<string | null>(null)
@@ -34,12 +37,12 @@ export default function App() {
   const [selectedId, setSelectedId] = useState<string | null>(null)
   const [alert, setAlert] = useState<AlertState>({ kind: 'idle' })
 
-  const [view, setView] = useState<View>('now')
+  const [view, setView] = useState<View>(requestedEvent ? 'replay' : 'now')
   const [pumpCount, setPumpCount] = useState(DEFAULT_PUMPS)
   const [pumpPlan, setPumpPlan] = useState<PumpPlan | null>(null)
 
   const [replays, setReplays] = useState<ReplaySummary[]>([])
-  const [eventId, setEventId] = useState<string | null>(null)
+  const [eventId, setEventId] = useState<string | null>(requestedEvent)
   const [replay, setReplay] = useState<Replay | null>(null)
   const [frameIndex, setFrameIndex] = useState(0)
 
@@ -77,13 +80,16 @@ export default function App() {
     getReplays()
       .then((list) => {
         setReplays(list)
-        if (list.length && !eventId) setEventId(list[0].event_id)
+        // Fall back to the first storm when no event (or an unknown one) was asked for.
+        if (list.length && !list.some((r) => r.event_id === eventId)) {
+          setEventId((list.find((r) => r.kind === 'storm') ?? list[0]).event_id)
+        }
       })
       .catch((e) => setError(message(e)))
   }, [view, replays.length, eventId])
 
   useEffect(() => {
-    if (!eventId) return
+    if (!eventId || !replays.some((r) => r.event_id === eventId)) return
     let cancelled = false
     setReplay(null)
     getReplay(eventId)
@@ -96,7 +102,7 @@ export default function App() {
     return () => {
       cancelled = true
     }
-  }, [eventId])
+  }, [eventId, replays])
 
   const inReplay = view === 'replay'
   const snapshot: Snapshot | null = inReplay ? (replay?.frames[frameIndex] ?? null) : latest
@@ -125,12 +131,16 @@ export default function App() {
       })
   }, [byId, snapshot])
 
+  // GET /pumps only covers the latest run, so a replay hour uses the contract's
+  // pump rule on that frame (see handoff/requests-b.md).
+  const activePlan: PumpPlan | null = useMemo(() => {
+    if (!inReplay) return pumpPlan
+    return snapshot && hotspots ? planPumps(snapshot, hotspots, pumpCount) : null
+  }, [inReplay, pumpPlan, snapshot, hotspots, pumpCount])
+
   const pumpsById = useMemo(
-    () =>
-      !inReplay && pumpPlan
-        ? new Map(pumpPlan.assignments.map((a) => [a.hotspot_id, a.pumps]))
-        : undefined,
-    [inReplay, pumpPlan],
+    () => (activePlan ? new Map(activePlan.assignments.map((a) => [a.hotspot_id, a.pumps])) : undefined),
+    [activePlan],
   )
 
   // Ground-truth reports appear on the map once the replay reaches their time.
@@ -176,7 +186,7 @@ export default function App() {
   }, [selected, snapshot, eventId, lang])
 
   return (
-    <div className="wl-app">
+    <div className={present ? 'wl-app wl-present' : 'wl-app'}>
       <header className="wl-header">
         <h1>Delhi Waterlogging Early Warning</h1>
         <div className="wl-controls">
@@ -188,7 +198,7 @@ export default function App() {
               Replay
             </button>
           </div>
-          {dataSource === 'fixtures' && !inReplay && (
+          {dataSource === 'fixtures' && !inReplay && !present && (
             <label>
               Sample{' '}
               <select value={sample} onChange={(e) => setSample(e.target.value as 'live' | 'dry')}>
@@ -222,9 +232,11 @@ export default function App() {
           <CityBanner snapshot={snapshot} refreshes={dataSource === 'live' && !inReplay} />
           <main className="wl-main">
             <div className="wl-map-wrap">
-              <p className="wl-count">
-                {hotspots.length} hotspots · data: {dataSource}
-              </p>
+              {!present && (
+                <p className="wl-count">
+                  {hotspots.length} hotspots · data: {dataSource}
+                </p>
+              )}
               <HotspotMap
                 hotspots={hotspots}
                 scores={scores}
@@ -235,7 +247,7 @@ export default function App() {
               />
             </div>
             <aside className="wl-side">
-              {inReplay ? (
+              {inReplay && (
                 <ReplayPlayer
                   replays={replays}
                   eventId={eventId}
@@ -245,9 +257,14 @@ export default function App() {
                   onFrame={setFrameIndex}
                   nameOf={nameOf}
                 />
-              ) : (
-                <PumpPanel count={pumpCount} onCount={setPumpCount} plan={pumpPlan} nameOf={nameOf} />
               )}
+              <PumpPanel
+                count={pumpCount}
+                onCount={setPumpCount}
+                plan={activePlan}
+                nameOf={nameOf}
+                note={inReplay ? 'For the replay hour shown' : undefined}
+              />
               {selected ? (
                 <DetailPanel
                   hotspot={selected.hotspot}

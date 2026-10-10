@@ -114,6 +114,35 @@ describe('App', () => {
     fireEvent.click(screen.getByRole('button', { name: 'Pause' }))
   })
 
+  it('?present=1 preloads the headline replay with large type and no dev controls', async () => {
+    window.history.pushState({}, '', '/?present=1')
+    try {
+      const { container } = render(<App />)
+      expect(await screen.findByText('Replay of 25 Aug 2026')).toBeInTheDocument()
+      expect(await screen.findByText(/Hour 1 of 18/)).toBeInTheDocument()
+      expect(container.firstChild).toHaveClass('wl-present')
+      expect(screen.queryByLabelText(/Sample/)).not.toBeInTheDocument()
+      expect(screen.queryByText(/data: fixtures/)).not.toBeInTheDocument()
+      // Pumps follow the replay hour.
+      expect(screen.getByText('For the replay hour shown')).toBeInTheDocument()
+      fireEvent.change(screen.getByLabelText('Replay hour'), { target: { value: '10' } })
+      await waitFor(() => expect(document.querySelectorAll('.wl-marker-pumped').length).toBeGreaterThan(0))
+    } finally {
+      window.history.pushState({}, '', '/')
+    }
+  })
+
+  it('falls back to the first storm when ?event names an unknown replay', async () => {
+    window.history.pushState({}, '', '/?event=1999-01-01')
+    try {
+      render(<App />)
+      expect(await screen.findByText('Replay of 25 Aug 2026')).toBeInTheDocument()
+      expect(screen.queryByRole('alert')).not.toBeInTheDocument()
+    } finally {
+      window.history.pushState({}, '', '/')
+    }
+  })
+
   it('switches names to Hindi', async () => {
     render(<App />)
     await screen.findByText(/12 hotspots/)
