@@ -22,6 +22,10 @@ RUN_LAG_HOURS = 6  # a run is usable 4-6 h after it starts; frame t uses the lat
 USER_AGENT = "wlew-ews/0.1 (+https://github.com/Shash-012/waterlogging-aws)"
 
 
+class RunUnavailable(Exception):
+    """Open-Meteo has no archived data for the requested model run."""
+
+
 def get_json(url, params, retries=4, backoff_s=1.0, timeout_s=20):
     """GET with retries and exponential backoff on network errors, 429 and 5xx."""
     full = url + "?" + urllib.parse.urlencode(params, safe=",:")
@@ -29,11 +33,19 @@ def get_json(url, params, retries=4, backoff_s=1.0, timeout_s=20):
         try:
             req = urllib.request.Request(full, headers={"User-Agent": USER_AGENT})
             with urllib.request.urlopen(req, timeout=timeout_s) as resp:
-                return json.loads(resp.read().decode("utf-8"))
+                body = resp.read().decode("utf-8", "replace")
+            # Multi-point requests report a missing run as a 200 with a plain-text error.
+            if "modelRunUnavailable" in body:
+                raise RunUnavailable(body[:200])
+            return json.loads(body)
         except urllib.error.HTTPError as e:
+            if e.code == 400:
+                body = e.read().decode("utf-8", "replace")
+                if "not available" in body:
+                    raise RunUnavailable(body) from e
             if e.code != 429 and e.code < 500 or attempt == retries:
                 raise
-        except (urllib.error.URLError, TimeoutError):
+        except (urllib.error.URLError, TimeoutError, json.JSONDecodeError):
             if attempt == retries:
                 raise
         time.sleep(backoff_s * 2 ** attempt)

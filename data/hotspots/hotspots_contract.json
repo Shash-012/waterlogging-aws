@@ -17,7 +17,7 @@
       "low_lying": 0.9,
       "catchment": 0.65
     },
-    "susceptibility": 0.878,
+    "susceptibility": 0.908,
     "avoid_en": "Avoid Minto Bridge underpass (Minto Road) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में मिंटो ब्रिज अंडरपास (मिंटो रोड) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Barakhamba Road / Janpath via CP instead.",
@@ -53,7 +53,7 @@
       "low_lying": 0.137,
       "catchment": 0.0
     },
-    "susceptibility": 0.368,
+    "susceptibility": 0.415,
     "avoid_en": "Avoid AIIMS flyover, Aurobindo Marg (Aurobindo Marg / Ring Road) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में एम्स फ्लाईओवर, अरबिंदो मार्ग (अरबिंदो मार्ग / रिंग रोड) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Ring Road via Safdarjung / Lodhi Road instead.",
@@ -85,7 +85,7 @@
       "low_lying": 0.803,
       "catchment": 0.957
     },
-    "susceptibility": 0.68,
+    "susceptibility": 0.645,
     "avoid_en": "Avoid Ashram Chowk underpass (Mathura Road / Ring Road) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में आश्रम चौक अंडरपास (मथुरा रोड / रिंग रोड) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Ring Road via Sarai Kale Khan / Lala Lajpat Rai Marg instead.",
@@ -114,7 +114,7 @@
       "low_lying": 0.9,
       "catchment": 0.307
     },
-    "susceptibility": 0.472,
+    "susceptibility": 0.496,
     "avoid_en": "Avoid Azad Market Underpass (Rani Jhansi Road / Vir Banda Bairagi Marg) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में आज़ाद मार्केट अंडरपास (रानी झांसी रोड / वीर बंदा बैरागी मार्ग) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Roshanara Road; Pul Mithai instead.",
@@ -142,7 +142,7 @@
       "low_lying": 0.9,
       "catchment": 0.566
     },
-    "susceptibility": 0.617,
+    "susceptibility": 0.625,
     "avoid_en": "Avoid Azadpur Underpass (GT Karnal Road / Azadpur Chowk) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में आज़ादपुर अंडरपास (जीटी करनाल रोड / आज़ादपुर चौक) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Outer Ring Road; Ashok Vihar road instead.",
@@ -173,7 +173,7 @@
       "low_lying": 1.0,
       "catchment": 0.025
     },
-    "susceptibility": 0.356,
+    "susceptibility": 0.404,
     "avoid_en": "Avoid Badarpur (Mathura Road / Mehrauli-Badarpur Road) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में बदरपुर (मथुरा रोड / महरौली-बदरपुर रोड) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Faridabad-Badarpur Road / Surajkund Road instead.",
@@ -201,7 +201,7 @@
       "low_lying": 0.0,
       "catchment": 0.0
     },
-    "susceptibility": 0.16,
+    "susceptibility": 0.18,
     "avoid_en": "Avoid Baprola - Najafgarh Road (Najafgarh-Nangloi Road) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में बापरोला - नजफगढ़ रोड (नजफगढ़-नांगलोई रोड) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Najafgarh Road instead.",
@@ -229,7 +229,7 @@
       "low_lying": 1.0,
       "catchment": 0.102
     },
-    "susceptibility": 0.535,
+    "susceptibility": 0.595,
     "avoid_en": "Avoid Bhairon Marg railway underbridge (Bhairon Marg) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में भैरों मार्ग रेलवे अंडरब्रिज (भैरों मार्ग) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Mathura Road / Ring Road instead.",
@@ -258,7 +258,7 @@
       "low_lying": 0.01,
       "catchment": 0.154
     },
-    "susceptibility": 0.122,
+    "susceptibility": 0.117,
     "avoid_en": "Avoid Bijwasan (Bijwasan Road / Najafgarh Road) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में बिजवासन (बिजवासन रोड / नजफगढ़ रोड) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use a parallel arterial road and follow traffic police advisories.",
@@ -285,7 +285,7 @@
       "low_lying": 0.34,
       "catchment": 0.0
     },
-    "susceptibility": 0.199,
+    "susceptibility": 0.226,
     "avoid_en": "Avoid Burari (Burari Road / Outer Ring Road) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में बुराड़ी (बुराड़ी रोड / आउटर रिंग रोड) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use a parallel arterial road and follow traffic police advisories.",
@@ -312,7 +312,7 @@
       "low_lying": 0.0,
       "catchment": 0.13
     },
-    "susceptibility": 0.193,
+    "susceptibility": 0.2,
     "avoid_en": "Avoid Chaudhary Fateh Singh Marg (Chaudhary Fateh Singh Marg) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में चौधरी फतेह सिंह मार्ग (चौधरी फतेह सिंह मार्ग) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Mall Road via Khyber Pass, Majnu ka Tila, Wazirabad flyover instead.",
@@ -340,7 +340,7 @@
       "low_lying": 1.0,
       "catchment": 0.984
     },
-    "susceptibility": 0.836,
+    "susceptibility": 0.818,
     "avoid_en": "Avoid Connaught Place (Connaught Place Outer Circle) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में कनॉट प्लेस (कनॉट प्लेस आउटर सर्कल) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Janpath / Kasturba Gandhi Marg instead.",
@@ -370,7 +370,7 @@
       "low_lying": 0.02,
       "catchment": 0.0
     },
-    "susceptibility": 0.007,
+    "susceptibility": 0.008,
     "avoid_en": "Avoid Defence Colony (Ring Road / Defence Colony Flyover) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में डिफेंस कॉलोनी (रिंग रोड / डिफेंस कॉलोनी फ्लाईओवर) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Mathura Road instead.",
@@ -398,7 +398,7 @@
       "low_lying": 1.0,
       "catchment": 0.242
     },
-    "susceptibility": 0.81,
+    "susceptibility": 0.886,
     "avoid_en": "Avoid Dhaula Kuan (Ring Road / NH-48 (Delhi-Gurugram)) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में धौला कुआँ (रिंग रोड / एनएच-48 (दिल्ली-गुरुग्राम)) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Outer Ring Road / Mahipalpur Road instead.",
@@ -430,7 +430,7 @@
       "low_lying": 0.0,
       "catchment": 0.0
     },
-    "susceptibility": 0.08,
+    "susceptibility": 0.09,
     "avoid_en": "Avoid Dwarka Sector 20 (Road 210/224) (Dwarka Road No. 210 / Omaxe Road) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में द्वारका सेक्टर 20 (रोड 210/224) (द्वारका रोड नंबर. 210 / ओमैक्स रोड) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Dwarka Sector 20 road 226 instead.",
@@ -459,7 +459,7 @@
       "low_lying": 0.0,
       "catchment": 0.048
     },
-    "susceptibility": 0.172,
+    "susceptibility": 0.187,
     "avoid_en": "Avoid Geeta Colony / Sanjay Lake (Geeta Colony Road / Outer Ring Road) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में गीता कॉलोनी / संजय झील (गीता कॉलोनी रोड / आउटर रिंग रोड) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Pusta Road / Wazirabad Road instead.",
@@ -487,7 +487,7 @@
       "low_lying": 0.0,
       "catchment": 0.633
     },
-    "susceptibility": 0.238,
+    "susceptibility": 0.185,
     "avoid_en": "Avoid Greater Kailash (Lala Lajpat Rai Marg / Outer Ring Road (Greater Kailash)) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में ग्रेटर कैलाश (लाला लाजपत राय मार्ग / आउटर रिंग रोड (ग्रेटर कैलाश)) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Outer Ring Road instead.",
@@ -515,7 +515,7 @@
       "low_lying": 0.0,
       "catchment": 0.0
     },
-    "susceptibility": 0.16,
+    "susceptibility": 0.18,
     "avoid_en": "Avoid GTK Depot, Old GT Road (Old GT Road / Outer Ring Road) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में जीटीके डिपो, पुरानी जीटी रोड (पुरानी जीटी रोड / आउटर रिंग रोड) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use GT Karnal Road instead.",
@@ -545,7 +545,7 @@
       "low_lying": 0.0,
       "catchment": 0.025
     },
-    "susceptibility": 0.086,
+    "susceptibility": 0.094,
     "avoid_en": "Avoid Hauz Khas (Aurobindo Marg / Outer Ring Road) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में हौज़ खास (अरबिंदो मार्ग / आउटर रिंग रोड) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Outer Ring Road via IIT flyover instead.",
@@ -572,7 +572,7 @@
       "low_lying": 0.9,
       "catchment": 0.372
     },
-    "susceptibility": 0.488,
+    "susceptibility": 0.506,
     "avoid_en": "Avoid IGI Airport T3 approach and Palam tunnel (Airport Road / NH-48) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में आईजीआई एयरपोर्ट टी3 मार्ग और पालम सुरंग (एयरपोर्ट रोड / एनएच-48) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Gurugram expressway via Mahipalpur instead.",
@@ -601,7 +601,7 @@
       "low_lying": 0.883,
       "catchment": 0.404
     },
-    "susceptibility": 0.49,
+    "susceptibility": 0.504,
     "avoid_en": "Avoid IP Marg near old Police Headquarters (IP Marg) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में पुराने पुलिस मुख्यालय के पास आईपी मार्ग (आईपी मार्ग) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Vikas Marg instead.",
@@ -628,7 +628,7 @@
       "low_lying": 1.0,
       "catchment": 0.0
     },
-    "susceptibility": 0.59,
+    "susceptibility": 0.67,
     "avoid_en": "Avoid ITO crossing (Vikas Marg / IP Marg) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में आईटीओ चौराहा (विकास मार्ग / आईपी मार्ग) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Tilak Marg / Ring Road via Rajghat instead.",
@@ -661,7 +661,7 @@
       "low_lying": 0.9,
       "catchment": 0.239
     },
-    "susceptibility": 0.535,
+    "susceptibility": 0.576,
     "avoid_en": "Avoid Jahangirpuri Metro Station Road underpass (Jahangirpuri Metro Station Road / Outer Ring Road) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में जहांगीरपुरी मेट्रो स्टेशन रोड अंडरपास (जहांगीरपुरी मेट्रो स्टेशन रोड / आउटर रिंग रोड) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Old GT Road instead.",
@@ -690,7 +690,7 @@
       "low_lying": 1.0,
       "catchment": 0.251
     },
-    "susceptibility": 0.573,
+    "susceptibility": 0.618,
     "avoid_en": "Avoid Jangpura (Bhogal Road / Jangpura Road (Ring Road)) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में जंगपुरा (भोगल रोड / जंगपुरा रोड (रिंग रोड)) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Mathura Road instead.",
@@ -718,7 +718,7 @@
       "low_lying": 0.5,
       "catchment": 0.18
     },
-    "susceptibility": 0.22,
+    "susceptibility": 0.227,
     "avoid_en": "Avoid Kalkaji (Outer Ring Road / Kalkaji Main Road) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में कालकाजी (आउटर रिंग रोड / कालकाजी मेन रोड) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Outer Ring Road instead.",
@@ -745,7 +745,7 @@
       "low_lying": 0.9,
       "catchment": 0.76
     },
-    "susceptibility": 0.585,
+    "susceptibility": 0.564,
     "avoid_en": "Avoid Kapashera Underpass (Kapashera border road / NH-48) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में कापसहेड़ा अंडरपास (कापसहेड़ा बॉर्डर रोड / एनएच-48) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use NH-48 instead.",
@@ -773,7 +773,7 @@
       "low_lying": 0.0,
       "catchment": 0.068
     },
-    "susceptibility": 0.177,
+    "susceptibility": 0.19,
     "avoid_en": "Avoid Karala-Kanjhawala Road (Karala-Kanjhawala Road) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में कराला-कंझावला रोड (कराला-कंझावला रोड) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Kanjhawala-Jaunti Road / Rohini Sec-27 instead.",
@@ -829,7 +829,7 @@
       "low_lying": 0.0,
       "catchment": 0.048
     },
-    "susceptibility": 0.172,
+    "susceptibility": 0.187,
     "avoid_en": "Avoid Kashmere Gate ISBT, Ring Road (Ring Road (Shantivan-ISBT) / Kashmere Gate) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में कश्मीरी गेट आईएसबीटी, रिंग रोड (रिंग रोड (शांतिवन-आईएसबीटी) / कश्मीरी गेट) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Lothian Road; Mall Road via Majnu ka Tila instead.",
@@ -859,7 +859,7 @@
       "low_lying": 0.0,
       "catchment": 0.0
     },
-    "susceptibility": 0.16,
+    "susceptibility": 0.18,
     "avoid_en": "Avoid Kirari Suleman Nagar (Kirari main road / Nangloi-Najafgarh Road) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में किराड़ी सुलेमान नगर (किराड़ी मुख्य रोड / नांगलोई-नजफगढ़ रोड) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Sultanpuri Road; Mangolpuri-Nangloi road instead.",
@@ -918,7 +918,7 @@
       "low_lying": 0.0,
       "catchment": 0.0
     },
-    "susceptibility": 0.16,
+    "susceptibility": 0.18,
     "avoid_en": "Avoid Ring Road at Lajpat Nagar (Ring Road / Lala Lajpat Rai Marg) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में लाजपत नगर पर रिंग रोड (रिंग रोड / लाला लाजपत राय मार्ग) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Mathura Road instead.",
@@ -947,7 +947,7 @@
       "low_lying": 0.0,
       "catchment": 0.0
     },
-    "susceptibility": 0.08,
+    "susceptibility": 0.09,
     "avoid_en": "Avoid Lodhi Road (Lodhi Road) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में लोधी रोड (लोधी रोड) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Aurobindo Marg / Ring Road instead.",
@@ -974,7 +974,7 @@
       "low_lying": 1.0,
       "catchment": 0.287
     },
-    "susceptibility": 0.582,
+    "susceptibility": 0.623,
     "avoid_en": "Avoid Mahipalpur Chowk - NH-48 (NH-48 (Delhi-Gurugram) / Mahipalpur Chowk) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में महिपालपुर चौक - एनएच-48 (एनएच-48 (दिल्ली-गुरुग्राम) / महिपालपुर चौक) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Aerocity / Vasant Kunj road instead.",
@@ -1005,7 +1005,7 @@
       "low_lying": 0.0,
       "catchment": 0.198
     },
-    "susceptibility": 0.289,
+    "susceptibility": 0.3,
     "avoid_en": "Avoid MB Road, Khanpur to Okhla Mor (Mehrauli-Badarpur Road (MB Road)) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में एमबी रोड, खानपुर से ओखला मोड़ (महरौली-बदरपुर रोड (एमबी रोड)) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Mathura Road / Outer Ring Road instead.",
@@ -1036,7 +1036,7 @@
       "low_lying": 0.9,
       "catchment": 0.0
     },
-    "susceptibility": 0.635,
+    "susceptibility": 0.72,
     "avoid_en": "Avoid Moolchand underpass (Ring Road (Moolchand)) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में मूलचंद अंडरपास (रिंग रोड (मूलचंद)) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Lala Lajpat Rai Marg / Mathura Road instead.",
@@ -1067,7 +1067,7 @@
       "low_lying": 0.213,
       "catchment": 0.697
     },
-    "susceptibility": 0.489,
+    "susceptibility": 0.46,
     "avoid_en": "Avoid Ring Road at Moti Bagh (Ring Road) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में मोती बाग पर रिंग रोड (रिंग रोड) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Africa Avenue / Aurobindo Marg instead.",
@@ -1097,7 +1097,7 @@
       "low_lying": 0.0,
       "catchment": 0.037
     },
-    "susceptibility": 0.089,
+    "susceptibility": 0.096,
     "avoid_en": "Avoid Munirka (Outer Ring Road / Munirka Marg) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में मुनिरका (आउटर रिंग रोड / मुनिरका मार्ग) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Ring Road via RK Puram instead.",
@@ -1124,7 +1124,7 @@
       "low_lying": 0.0,
       "catchment": 0.271
     },
-    "susceptibility": 0.148,
+    "susceptibility": 0.131,
     "avoid_en": "Avoid Najafgarh Road near Tooda Mandi (Najafgarh Road) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में तूड़ा मंडी के पास नजफगढ़ रोड (नजफगढ़ रोड) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Nangloi-Najafgarh Road instead.",
@@ -1151,7 +1151,7 @@
       "low_lying": 0.0,
       "catchment": 0.277
     },
-    "susceptibility": 0.309,
+    "susceptibility": 0.312,
     "avoid_en": "Avoid Najafgarh town / main market (Najafgarh Road) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में नजफगढ़ कस्बा / मुख्य बाज़ार (नजफगढ़ रोड) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Nangloi-Najafgarh Road instead.",
@@ -1181,7 +1181,7 @@
       "low_lying": 0.53,
       "catchment": 0.239
     },
-    "susceptibility": 0.325,
+    "susceptibility": 0.338,
     "avoid_en": "Avoid Nehru Place (Outer Ring Road / Nehru Place) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में नेहरू प्लेस (आउटर रिंग रोड / नेहरू प्लेस) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Mathura Road instead.",
@@ -1208,7 +1208,7 @@
       "low_lying": 0.043,
       "catchment": 0.143
     },
-    "susceptibility": 0.291,
+    "susceptibility": 0.309,
     "avoid_en": "Avoid New Rohtak Road at Anand Parbat (New Rohtak Road / Anand Parbat Gali No. 10) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में आनंद पर्वत पर नई रोहतक रोड (न्यू रोहतक रोड / आनंद पर्वत गली नंबर. 10) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Zakhira; Ranjit Singh Flyover route; Old Rohtak Road instead.",
@@ -1240,7 +1240,7 @@
       "low_lying": 0.547,
       "catchment": 0.225
     },
-    "susceptibility": 0.328,
+    "susceptibility": 0.343,
     "avoid_en": "Avoid Outer Ring Road, Bhera Enclave to Peeragarhi (Outer Ring Road) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में आउटर रिंग रोड, भेरा एन्क्लेव से पीरागढ़ी (आउटर रिंग रोड) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Rohtak Road; Najafgarh Road instead.",
@@ -1269,7 +1269,7 @@
       "low_lying": 0.997,
       "catchment": 0.444
     },
-    "susceptibility": 0.7,
+    "susceptibility": 0.735,
     "avoid_en": "Avoid Patparganj Road underpass (Mother Dairy) (Patparganj Road / NH-24) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में पटपड़गंज रोड अंडरपास (मदर डेयरी) (पटपड़गंज रोड / एनएच-24) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Vikas Marg / NH-9 instead.",
@@ -1298,7 +1298,7 @@
       "low_lying": 1.0,
       "catchment": 1.0
     },
-    "susceptibility": 0.84,
+    "susceptibility": 0.82,
     "avoid_en": "Avoid Pragati Maidan tunnel (Pragati Maidan Integrated Transit Corridor (Ring Road - India Gate)) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में प्रगति मैदान सुरंग (प्रगति मैदान इंटीग्रेटेड ट्रांजिट कॉरिडोर (रिंग रोड - इंडिया गेट)) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Mathura Road / Bhairon Marg instead.",
@@ -1328,7 +1328,7 @@
       "low_lying": 0.9,
       "catchment": 0.324
     },
-    "susceptibility": 0.716,
+    "susceptibility": 0.769,
     "avoid_en": "Avoid Pul Prahladpur underpass (Mehrauli-Badarpur Road (MB Road)) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में पुल प्रह्लादपुर अंडरपास (महरौली-बदरपुर रोड (एमबी रोड)) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Mathura Road (via Badarpur border / Okhla) instead.",
@@ -1359,7 +1359,7 @@
       "low_lying": 0.527,
       "catchment": 0.42
     },
-    "susceptibility": 0.369,
+    "susceptibility": 0.364,
     "avoid_en": "Avoid Ramdev Chowk, Narela (Narela Road near DSIIDC) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में रामदेव चौक, नरेला (नरेला रोड के पास डीएसआईआईडीसी) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Narela-Bawana road instead.",
@@ -1387,7 +1387,7 @@
       "low_lying": 0.0,
       "catchment": 0.13
     },
-    "susceptibility": 0.113,
+    "susceptibility": 0.11,
     "avoid_en": "Avoid Rangpuri Chowk (Mahipalpur-Rangpuri road / NH-48) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में रंगपुरी चौक (महिपालपुर-रंगपुरी रोड / एनएच-48) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Najafgarh Phirni Road instead.",
@@ -1414,7 +1414,7 @@
       "low_lying": 0.0,
       "catchment": 0.0
     },
-    "susceptibility": 0.24,
+    "susceptibility": 0.27,
     "avoid_en": "Avoid Ring Road at Rajghat / Shantivan (Ring Road (Rajghat - Shantivan)) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में राजघाट / शांतिवन पर रिंग रोड (रिंग रोड (राजघाट - शांतिवन)) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Vikas Marg / Mahatma Gandhi Marg instead.",
@@ -1444,7 +1444,7 @@
       "low_lying": 0.463,
       "catchment": 1.0
     },
-    "susceptibility": 0.652,
+    "susceptibility": 0.605,
     "avoid_en": "Avoid Ring Road opposite WHO building (Ring Road (Bhairon Marg connector)) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में डब्ल्यूएचओ भवन के सामने रिंग रोड (रिंग रोड (भैरों मार्ग कनेक्टर)) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Mathura Road instead.",
@@ -1473,7 +1473,7 @@
       "low_lying": 0.0,
       "catchment": 0.0
     },
-    "susceptibility": 0.08,
+    "susceptibility": 0.09,
     "avoid_en": "Avoid Outer Ring Road at Rithala and Pitampura (Outer Ring Road / Rohini roads) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में रिठाला और पीतमपुरा पर आउटर रिंग रोड (आउटर रिंग रोड / रोहिणी सड़कें) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use a parallel arterial road and follow traffic police advisories.",
@@ -1500,7 +1500,7 @@
       "low_lying": 0.0,
       "catchment": 0.984
     },
-    "susceptibility": 0.406,
+    "susceptibility": 0.328,
     "avoid_en": "Avoid RK Puram (Ring Road / Africa Avenue) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में आर के पुरम (रिंग रोड / अफ्रीका एवेन्यू) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Outer Ring Road instead.",
@@ -1528,7 +1528,7 @@
       "low_lying": 0.0,
       "catchment": 0.048
     },
-    "susceptibility": 0.012,
+    "susceptibility": 0.007,
     "avoid_en": "Avoid Rohini Sector 22, Shahbad Dairy (Rohini internal roads) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में रोहिणी सेक्टर 22, शाहबाद डेयरी (रोहिणी अंदरूनी सड़कें) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use a parallel arterial road and follow traffic police advisories.",
@@ -1556,7 +1556,7 @@
       "low_lying": 0.0,
       "catchment": 0.0
     },
-    "susceptibility": 0.24,
+    "susceptibility": 0.27,
     "avoid_en": "Avoid Rohtak Road at Mundka (Rohtak Road (NH-9)) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में मुंडका पर रोहतक रोड (रोहतक रोड (एनएच-9)) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Mundka-Bakkarwala road; Nangloi-Najafgarh Road instead.",
@@ -1587,7 +1587,7 @@
       "low_lying": 0.0,
       "catchment": 0.442
     },
-    "susceptibility": 0.35,
+    "susceptibility": 0.336,
     "avoid_en": "Avoid Rohtak Road, Nangloi to Tikri Border (Rohtak Road (NH-9)) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में रोहतक रोड, नांगलोई से टिकरी बॉर्डर (रोहतक रोड (एनएच-9)) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Najafgarh Road; Nangloi-Najafgarh Road instead.",
@@ -1646,7 +1646,7 @@
       "low_lying": 0.183,
       "catchment": 0.379
     },
-    "susceptibility": 0.319,
+    "susceptibility": 0.31,
     "avoid_en": "Avoid Saket (Press Enclave Road / Mehrauli-Badarpur Road) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में साकेत (प्रेस एन्क्लेव रोड / महरौली-बदरपुर रोड) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Aurobindo Marg / MB Road instead.",
@@ -1674,7 +1674,7 @@
       "low_lying": 0.0,
       "catchment": 0.0
     },
-    "susceptibility": 0.24,
+    "susceptibility": 0.27,
     "avoid_en": "Avoid Sangam Vihar (Sangam Vihar Main Road / Tughlakabad Extension) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में संगम विहार (संगम विहार मेन रोड / तुगलकाबाद एक्सटेंशन) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Mehrauli-Badarpur Road instead.",
@@ -1706,7 +1706,7 @@
       "low_lying": 0.153,
       "catchment": 0.137
     },
-    "susceptibility": 0.168,
+    "susceptibility": 0.172,
     "avoid_en": "Avoid Ring Road at Sarai Kale Khan (Ring Road (Ashram - Sarai Kale Khan - Barapullah)) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में सराय काले खां पर रिंग रोड (रिंग रोड (आश्रम - सराय काले खां - बारापुला)) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Mathura Road / Barapullah Elevated Road instead.",
@@ -1734,7 +1734,7 @@
       "low_lying": 0.007,
       "catchment": 0.059
     },
-    "susceptibility": 0.177,
+    "susceptibility": 0.192,
     "avoid_en": "Avoid Sarita Vihar, Mathura Road (Mathura Road) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में सरिता विहार, मथुरा रोड (मथुरा रोड) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Ring Road / Kalindi Kunj Road instead.",
@@ -1762,7 +1762,7 @@
       "low_lying": 0.9,
       "catchment": 0.059
     },
-    "susceptibility": 0.41,
+    "susceptibility": 0.459,
     "avoid_en": "Avoid Shakti Nagar Underpass (Shakti Nagar underpass (Subzi Mandi / Ring Road link)) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में शक्ति नगर अंडरपास (शक्ति नगर अंडरपास (सब्ज़ी मंडी / रिंग रोड लिंक)) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Ring Road via Azadpur instead.",
@@ -1789,7 +1789,7 @@
       "low_lying": 0.0,
       "catchment": 0.0
     },
-    "susceptibility": 0.08,
+    "susceptibility": 0.09,
     "avoid_en": "Avoid Shastri Park (Shastri Park Road / Outer Ring Road) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में शास्त्री पार्क (शास्त्री पार्क रोड / आउटर रिंग रोड) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Wazirabad Road / Vikas Marg instead.",
@@ -1817,7 +1817,7 @@
       "low_lying": 0.723,
       "catchment": 0.65
     },
-    "susceptibility": 0.496,
+    "susceptibility": 0.477,
     "avoid_en": "Avoid South Avenue Road (South Avenue Road) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में साउथ एवेन्यू रोड (साउथ एवेन्यू रोड) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Rajpath / Tughlak Road instead.",
@@ -1845,7 +1845,7 @@
       "low_lying": 0.163,
       "catchment": 0.218
     },
-    "susceptibility": 0.192,
+    "susceptibility": 0.188,
     "avoid_en": "Avoid Tikri Border (Rohtak Road) (Rohtak Road (NH-9)) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में टिकरी बॉर्डर (रोहतक रोड) (रोहतक रोड (एनएच-9)) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use a parallel arterial road and follow traffic police advisories.",
@@ -1900,7 +1900,7 @@
       "low_lying": 0.0,
       "catchment": 0.329
     },
-    "susceptibility": 0.162,
+    "susceptibility": 0.139,
     "avoid_en": "Avoid Timarpur (Ring Road / GT Road near Timarpur police station) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में तिमारपुर (रिंग रोड / जीटी रोड के पास तिमारपुर पुलिस स्टेशन) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use a parallel arterial road and follow traffic police advisories.",
@@ -1927,7 +1927,7 @@
       "low_lying": 0.923,
       "catchment": 0.794
     },
-    "susceptibility": 0.762,
+    "susceptibility": 0.758,
     "avoid_en": "Avoid Vikas Marg (near Laxmi Nagar Metro) (Vikas Marg) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में विकास मार्ग (लक्ष्मी नगर मेट्रो के पास) (विकास मार्ग) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Patparganj Road / NH-24 instead.",
@@ -1957,7 +1957,7 @@
       "low_lying": 0.78,
       "catchment": 0.175
     },
-    "susceptibility": 0.477,
+    "susceptibility": 0.518,
     "avoid_en": "Avoid Yamuna Bazar (Yamuna Bazar Road (Ring Road)) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में यमुना बाज़ार (यमुना बाज़ार रोड (रिंग रोड)) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Ring Road via Rajghat instead.",
@@ -1985,7 +1985,7 @@
       "low_lying": 0.9,
       "catchment": 0.0
     },
-    "susceptibility": 0.635,
+    "susceptibility": 0.72,
     "avoid_en": "Avoid Zakhira Underpass (Road No. 40 (Zakhira rail underpass) / Rohtak Road) during heavy rain; water collects here.",
     "avoid_hi": "भारी बारिश में ज़खीरा अंडरपास (रोड नंबर. 40 (ज़खीरा रेल अंडरपास) / रोहतक रोड) से बचें; यहाँ पानी भर जाता है।",
     "diversion_en": "Use Anand Parbat / Roshanara Road; Shalimar Bagh-Pitampura traffic via Chaudhary Nahar Singh Marg instead.",

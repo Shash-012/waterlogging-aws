@@ -18,7 +18,8 @@ from wlew_model import (  # noqa: E402
     score_snapshot, susceptibility,
 )
 
-P = load_params()
+P = load_params()  # tuned model/params.json (A5)
+P_CONTRACT = load_params(ROOT / "contract" / "fixtures" / "params.json")  # contract defaults
 T0 = datetime(2026, 10, 9, 14, tzinfo=timezone.utc)
 FIXTURES = ROOT / "contract" / "fixtures"
 HOTSPOTS = json.loads((ROOT / "data" / "hotspots" / "hotspots_contract.json").read_text(encoding="utf-8"))
@@ -36,15 +37,17 @@ def contract_errors(fn, *args):
 
 
 def test_worked_example():
-    assert effective_intensity(14.0, 30.0, P) == pytest.approx(21.0)
-    rt = rain_trigger(14.0, 30.0, P)
+    """The contract's worked example, with the contract's default parameters."""
+    p = P_CONTRACT
+    assert effective_intensity(14.0, 30.0, p) == pytest.approx(21.0)
+    rt = rain_trigger(14.0, 30.0, p)
     assert rt == 0.64
-    sus = susceptibility(0.8, 0.9, 0.72, P)
+    sus = susceptibility(0.8, 0.9, 0.72, p)
     assert sus == 0.815
     rk = risk(rt, sus)
     assert rk == 0.522
-    assert level(rk, P) == "HIGH"
-    assert city_status(rt, P) == "ALERT"
+    assert level(rk, p) == "HIGH"
+    assert city_status(rt, p) == "ALERT"
 
 
 def test_levels_and_city_thresholds():
@@ -147,3 +150,17 @@ def test_model_has_no_aws_imports():
     for path in (ROOT / "model" / "wlew_model").rglob("*.py"):
         text = path.read_text(encoding="utf-8")
         assert "boto3" not in text and "botocore" not in text, path
+
+
+def test_replays_validate_against_contract():
+    replay_dir = ROOT / "data" / "replay"
+    index = json.loads((replay_dir / "index.json").read_text(encoding="utf-8"))
+    assert schema_errors(index, "replay_index.schema.json") == []
+    by_id = {h["hotspot_id"]: h for h in HOTSPOTS}
+    kinds = set()
+    for entry in index:
+        rep = json.loads((replay_dir / f"{entry['event_id']}.json").read_text(encoding="utf-8"))
+        kinds.add(rep["kind"])
+        assert schema_errors(rep, "replay.schema.json") == [], entry["event_id"]
+        assert contract_errors(contract.check_replay, entry["event_id"], rep, P, by_id, index) == []
+    assert kinds == {"storm", "dry"}

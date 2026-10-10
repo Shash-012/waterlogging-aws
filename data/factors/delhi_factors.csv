@@ -1,70 +1,70 @@
 hotspot_id,name_en,site_type,elevation_m,relative_depth_m,catchment_km2,flood_seasons,history,low_lying,catchment,susceptibility
-DL-001,Minto Bridge underpass,underpass,215.1,2.57,0.5688,5,1.0,0.9,0.65,0.878
-DL-002,"AIIMS flyover, Aurobindo Marg",road,218.5,0.41,0.0045,4,0.8,0.137,0.0,0.368
-DL-003,Ashram Chowk underpass,junction,211.1,2.41,3.8277,2,0.4,0.803,0.957,0.68
-DL-004,Azad Market Underpass,underpass,231.2,0.64,0.0675,1,0.2,0.9,0.307,0.472
-DL-005,Azadpur Underpass,underpass,219.7,-4.68,0.3366,2,0.4,0.9,0.566,0.617
-DL-006,Badarpur,junction,210.8,3.75,0.0117,0,0.0,1.0,0.025,0.356
-DL-007,Baprola - Najafgarh Road,road,215.0,-1.74,0.0045,2,0.4,0.0,0.0,0.16
-DL-008,Bhairon Marg railway underbridge,underpass,207.8,4.79,0.0189,2,0.4,1.0,0.102,0.535
-DL-009,Bijwasan,road,220.9,0.03,0.0261,1,0.2,0.01,0.154,0.122
-DL-010,Burari,road,210.6,1.02,0.0054,1,0.2,0.34,0.0,0.199
-DL-011,Chaudhary Fateh Singh Marg,road,222.1,-1.73,0.0225,2,0.4,0.0,0.13,0.193
-DL-012,Connaught Place,junction,215.3,3.18,4.5306,3,0.6,1.0,0.984,0.836
-DL-013,Defence Colony,colony,216.4,0.06,0.0099,0,0.0,0.02,0.0,0.007
-DL-014,Dhaula Kuan,junction,245.6,3.1,0.045,5,1.0,1.0,0.242,0.81
-DL-015,Dwarka Sector 20 (Road 210/224),colony,212.9,-0.14,0.0063,1,0.2,0.0,0.0,0.08
-DL-016,Geeta Colony / Sanjay Lake,colony,210.9,-0.82,0.0135,2,0.4,0.0,0.048,0.172
-DL-017,Greater Kailash,colony,226.7,-0.57,0.5121,1,0.2,0.0,0.633,0.238
-DL-018,"GTK Depot, Old GT Road",road,214.1,-0.25,0.0099,2,0.4,0.0,0.0,0.16
-DL-019,Hauz Khas,colony,229.9,-0.7,0.0117,1,0.2,0.0,0.025,0.086
-DL-020,IGI Airport T3 approach and Palam tunnel,underpass,231.5,-1.97,0.1008,1,0.2,0.9,0.372,0.488
-DL-021,IP Marg near old Police Headquarters,road,208.3,2.65,0.1233,1,0.2,0.883,0.404,0.49
-DL-022,ITO crossing,junction,208.9,3.53,0.0081,3,0.6,1.0,0.0,0.59
-DL-023,Jahangirpuri Metro Station Road underpass,underpass,213.2,0.86,0.0441,2,0.4,0.9,0.239,0.535
-DL-024,Jangpura,colony,210.0,3.05,0.0477,2,0.4,1.0,0.251,0.573
-DL-025,Kalkaji,colony,229.8,1.5,0.0306,0,0.0,0.5,0.18,0.22
-DL-026,Kapashera Underpass,underpass,230.1,1.78,1.1268,1,0.2,0.9,0.76,0.585
-DL-027,Karala-Kanjhawala Road,road,218.5,-0.23,0.0153,2,0.4,0.0,0.068,0.177
+DL-001,Minto Bridge underpass,underpass,215.1,2.57,0.5688,5,1.0,0.9,0.65,0.908
+DL-002,"AIIMS flyover, Aurobindo Marg",road,218.5,0.41,0.0045,4,0.8,0.137,0.0,0.415
+DL-003,Ashram Chowk underpass,junction,211.1,2.41,3.8277,2,0.4,0.803,0.957,0.645
+DL-004,Azad Market Underpass,underpass,231.2,0.64,0.0675,1,0.2,0.9,0.307,0.496
+DL-005,Azadpur Underpass,underpass,219.7,-4.68,0.3366,2,0.4,0.9,0.566,0.625
+DL-006,Badarpur,junction,210.8,3.75,0.0117,0,0.0,1.0,0.025,0.404
+DL-007,Baprola - Najafgarh Road,road,215.0,-1.74,0.0045,2,0.4,0.0,0.0,0.18
+DL-008,Bhairon Marg railway underbridge,underpass,207.8,4.79,0.0189,2,0.4,1.0,0.102,0.595
+DL-009,Bijwasan,road,220.9,0.03,0.0261,1,0.2,0.01,0.154,0.117
+DL-010,Burari,road,210.6,1.02,0.0054,1,0.2,0.34,0.0,0.226
+DL-011,Chaudhary Fateh Singh Marg,road,222.1,-1.73,0.0225,2,0.4,0.0,0.13,0.2
+DL-012,Connaught Place,junction,215.3,3.18,4.5306,3,0.6,1.0,0.984,0.818
+DL-013,Defence Colony,colony,216.4,0.06,0.0099,0,0.0,0.02,0.0,0.008
+DL-014,Dhaula Kuan,junction,245.6,3.1,0.045,5,1.0,1.0,0.242,0.886
+DL-015,Dwarka Sector 20 (Road 210/224),colony,212.9,-0.14,0.0063,1,0.2,0.0,0.0,0.09
+DL-016,Geeta Colony / Sanjay Lake,colony,210.9,-0.82,0.0135,2,0.4,0.0,0.048,0.187
+DL-017,Greater Kailash,colony,226.7,-0.57,0.5121,1,0.2,0.0,0.633,0.185
+DL-018,"GTK Depot, Old GT Road",road,214.1,-0.25,0.0099,2,0.4,0.0,0.0,0.18
+DL-019,Hauz Khas,colony,229.9,-0.7,0.0117,1,0.2,0.0,0.025,0.094
+DL-020,IGI Airport T3 approach and Palam tunnel,underpass,231.5,-1.97,0.1008,1,0.2,0.9,0.372,0.506
+DL-021,IP Marg near old Police Headquarters,road,208.3,2.65,0.1233,1,0.2,0.883,0.404,0.504
+DL-022,ITO crossing,junction,208.9,3.53,0.0081,3,0.6,1.0,0.0,0.67
+DL-023,Jahangirpuri Metro Station Road underpass,underpass,213.2,0.86,0.0441,2,0.4,0.9,0.239,0.576
+DL-024,Jangpura,colony,210.0,3.05,0.0477,2,0.4,1.0,0.251,0.618
+DL-025,Kalkaji,colony,229.8,1.5,0.0306,0,0.0,0.5,0.18,0.227
+DL-026,Kapashera Underpass,underpass,230.1,1.78,1.1268,1,0.2,0.9,0.76,0.564
+DL-027,Karala-Kanjhawala Road,road,218.5,-0.23,0.0153,2,0.4,0.0,0.068,0.19
 DL-028,Karol Bagh market,colony,237.6,-5.7,0.0018,0,0.0,0.0,0.0,0.0
-DL-029,"Kashmere Gate ISBT, Ring Road",road,214.9,-1.54,0.0135,2,0.4,0.0,0.048,0.172
-DL-030,Kirari Suleman Nagar,colony,217.9,-0.42,0.0081,2,0.4,0.0,0.0,0.16
+DL-029,"Kashmere Gate ISBT, Ring Road",road,214.9,-1.54,0.0135,2,0.4,0.0,0.048,0.187
+DL-030,Kirari Suleman Nagar,colony,217.9,-0.42,0.0081,2,0.4,0.0,0.0,0.18
 DL-031,Kishanganj underpass (Kodia Bridge),underpass,221.4,1.78,0.5445,2,0.4,0.9,0.643,0.636
-DL-032,Ring Road at Lajpat Nagar,road,219.6,-1.77,0.0063,2,0.4,0.0,0.0,0.16
-DL-033,Lodhi Road,road,219.0,-1.63,0.0045,1,0.2,0.0,0.0,0.08
-DL-034,Mahipalpur Chowk - NH-48,junction,244.9,4.13,0.0594,2,0.4,1.0,0.287,0.582
-DL-035,"MB Road, Khanpur to Okhla Mor",road,239.7,-0.54,0.0342,3,0.6,0.0,0.198,0.289
-DL-036,Moolchand underpass,underpass,219.2,-0.71,0.0063,4,0.8,0.9,0.0,0.635
-DL-037,Ring Road at Moti Bagh,road,235.7,0.64,0.7596,3,0.6,0.213,0.697,0.489
-DL-038,Munirka,colony,258.0,-10.26,0.0126,1,0.2,0.0,0.037,0.089
-DL-039,Najafgarh Road near Tooda Mandi,road,216.3,-0.15,0.054,1,0.2,0.0,0.271,0.148
-DL-040,Najafgarh town / main market,road,219.9,-1.5,0.0558,3,0.6,0.0,0.277,0.309
-DL-041,Nehru Place,junction,232.3,1.59,0.0441,1,0.2,0.53,0.239,0.325
-DL-042,New Rohtak Road at Anand Parbat,road,224.1,0.13,0.0243,3,0.6,0.043,0.143,0.291
-DL-043,"Outer Ring Road, Bhera Enclave to Peeragarhi",road,217.7,1.64,0.0405,1,0.2,0.547,0.225,0.328
-DL-044,Patparganj Road underpass (Mother Dairy),underpass,204.8,2.99,0.1575,3,0.6,0.997,0.444,0.7
-DL-045,Pragati Maidan tunnel,underpass,207.6,4.43,11.1942,3,0.6,1.0,1.0,0.84
-DL-046,Pul Prahladpur underpass,underpass,219.8,1.36,0.0747,4,0.8,0.9,0.324,0.716
-DL-047,"Ramdev Chowk, Narela",junction,221.6,1.58,0.1359,1,0.2,0.527,0.42,0.369
-DL-048,Rangpuri Chowk,junction,244.3,-0.53,0.0225,1,0.2,0.0,0.13,0.113
-DL-049,Ring Road at Rajghat / Shantivan,road,209.9,-3.25,0.0045,3,0.6,0.0,0.0,0.24
-DL-050,Ring Road opposite WHO building,road,208.7,1.39,14.9967,3,0.6,0.463,1.0,0.652
-DL-051,Outer Ring Road at Rithala and Pitampura,road,222.1,-3.16,0.0045,1,0.2,0.0,0.0,0.08
-DL-052,RK Puram,colony,235.5,-0.03,4.5234,2,0.4,0.0,0.984,0.406
-DL-053,"Rohini Sector 22, Shahbad Dairy",colony,219.7,-0.32,0.0135,0,0.0,0.0,0.048,0.012
-DL-054,Rohtak Road at Mundka,road,225.2,-7.99,0.0036,3,0.6,0.0,0.0,0.24
-DL-055,"Rohtak Road, Nangloi to Tikri Border",road,225.5,-4.86,0.1557,3,0.6,0.0,0.442,0.35
+DL-032,Ring Road at Lajpat Nagar,road,219.6,-1.77,0.0063,2,0.4,0.0,0.0,0.18
+DL-033,Lodhi Road,road,219.0,-1.63,0.0045,1,0.2,0.0,0.0,0.09
+DL-034,Mahipalpur Chowk - NH-48,junction,244.9,4.13,0.0594,2,0.4,1.0,0.287,0.623
+DL-035,"MB Road, Khanpur to Okhla Mor",road,239.7,-0.54,0.0342,3,0.6,0.0,0.198,0.3
+DL-036,Moolchand underpass,underpass,219.2,-0.71,0.0063,4,0.8,0.9,0.0,0.72
+DL-037,Ring Road at Moti Bagh,road,235.7,0.64,0.7596,3,0.6,0.213,0.697,0.46
+DL-038,Munirka,colony,258.0,-10.26,0.0126,1,0.2,0.0,0.037,0.096
+DL-039,Najafgarh Road near Tooda Mandi,road,216.3,-0.15,0.054,1,0.2,0.0,0.271,0.131
+DL-040,Najafgarh town / main market,road,219.9,-1.5,0.0558,3,0.6,0.0,0.277,0.312
+DL-041,Nehru Place,junction,232.3,1.59,0.0441,1,0.2,0.53,0.239,0.338
+DL-042,New Rohtak Road at Anand Parbat,road,224.1,0.13,0.0243,3,0.6,0.043,0.143,0.309
+DL-043,"Outer Ring Road, Bhera Enclave to Peeragarhi",road,217.7,1.64,0.0405,1,0.2,0.547,0.225,0.343
+DL-044,Patparganj Road underpass (Mother Dairy),underpass,204.8,2.99,0.1575,3,0.6,0.997,0.444,0.735
+DL-045,Pragati Maidan tunnel,underpass,207.6,4.43,11.1942,3,0.6,1.0,1.0,0.82
+DL-046,Pul Prahladpur underpass,underpass,219.8,1.36,0.0747,4,0.8,0.9,0.324,0.769
+DL-047,"Ramdev Chowk, Narela",junction,221.6,1.58,0.1359,1,0.2,0.527,0.42,0.364
+DL-048,Rangpuri Chowk,junction,244.3,-0.53,0.0225,1,0.2,0.0,0.13,0.11
+DL-049,Ring Road at Rajghat / Shantivan,road,209.9,-3.25,0.0045,3,0.6,0.0,0.0,0.27
+DL-050,Ring Road opposite WHO building,road,208.7,1.39,14.9967,3,0.6,0.463,1.0,0.605
+DL-051,Outer Ring Road at Rithala and Pitampura,road,222.1,-3.16,0.0045,1,0.2,0.0,0.0,0.09
+DL-052,RK Puram,colony,235.5,-0.03,4.5234,2,0.4,0.0,0.984,0.328
+DL-053,"Rohini Sector 22, Shahbad Dairy",colony,219.7,-0.32,0.0135,0,0.0,0.0,0.048,0.007
+DL-054,Rohtak Road at Mundka,road,225.2,-7.99,0.0036,3,0.6,0.0,0.0,0.27
+DL-055,"Rohtak Road, Nangloi to Tikri Border",road,225.5,-4.86,0.1557,3,0.6,0.0,0.442,0.336
 DL-056,"Rohtak Road, Punjabi Bagh to Shadipur",road,224.7,-6.15,0.0036,0,0.0,0.0,0.0,0.0
-DL-057,Saket,colony,232.6,0.55,0.1053,2,0.4,0.183,0.379,0.319
-DL-058,Sangam Vihar,colony,242.3,-0.33,0.009,3,0.6,0.0,0.0,0.24
-DL-059,Ring Road at Sarai Kale Khan,road,209.2,0.46,0.0234,1,0.2,0.153,0.137,0.168
-DL-060,"Sarita Vihar, Mathura Road",junction,211.5,0.02,0.0144,2,0.4,0.007,0.059,0.177
-DL-061,Shakti Nagar Underpass,underpass,217.7,1.91,0.0144,1,0.2,0.9,0.059,0.41
-DL-062,Shastri Park,colony,214.4,-4.8,0.0099,1,0.2,0.0,0.0,0.08
-DL-063,South Avenue Road,road,220.3,2.17,0.5697,1,0.2,0.723,0.65,0.496
-DL-064,Tikri Border (Rohtak Road),road,214.5,0.49,0.0387,1,0.2,0.163,0.218,0.192
+DL-057,Saket,colony,232.6,0.55,0.1053,2,0.4,0.183,0.379,0.31
+DL-058,Sangam Vihar,colony,242.3,-0.33,0.009,3,0.6,0.0,0.0,0.27
+DL-059,Ring Road at Sarai Kale Khan,road,209.2,0.46,0.0234,1,0.2,0.153,0.137,0.172
+DL-060,"Sarita Vihar, Mathura Road",junction,211.5,0.02,0.0144,2,0.4,0.007,0.059,0.192
+DL-061,Shakti Nagar Underpass,underpass,217.7,1.91,0.0144,1,0.2,0.9,0.059,0.459
+DL-062,Shastri Park,colony,214.4,-4.8,0.0099,1,0.2,0.0,0.0,0.09
+DL-063,South Avenue Road,road,220.3,2.17,0.5697,1,0.2,0.723,0.65,0.477
+DL-064,Tikri Border (Rohtak Road),road,214.5,0.49,0.0387,1,0.2,0.163,0.218,0.188
 DL-065,Tilak Bridge (W-Point) underpass,underpass,213.5,2.31,0.5688,2,0.4,0.9,0.65,0.638
-DL-066,Timarpur,road,216.5,-1.05,0.0774,1,0.2,0.0,0.329,0.162
-DL-067,Vikas Marg (near Laxmi Nagar Metro),road,200.5,2.77,1.386,3,0.6,0.923,0.794,0.762
-DL-068,Yamuna Bazar,road,209.5,2.34,0.0297,2,0.4,0.78,0.175,0.477
-DL-069,Zakhira Underpass,underpass,218.9,1.31,0.0081,4,0.8,0.9,0.0,0.635
+DL-066,Timarpur,road,216.5,-1.05,0.0774,1,0.2,0.0,0.329,0.139
+DL-067,Vikas Marg (near Laxmi Nagar Metro),road,200.5,2.77,1.386,3,0.6,0.923,0.794,0.758
+DL-068,Yamuna Bazar,road,209.5,2.34,0.0297,2,0.4,0.78,0.175,0.518
+DL-069,Zakhira Underpass,underpass,218.9,1.31,0.0081,4,0.8,0.9,0.0,0.72

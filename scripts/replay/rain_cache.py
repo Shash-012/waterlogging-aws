@@ -5,7 +5,7 @@ Each ECMWF run (Single Runs API) and each historical date range is fetched once 
 """
 import json
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -35,10 +35,30 @@ def _save(path, series_list):
 
 
 def run(run_start, hours=48):
+    """One issued run, or None if Open-Meteo has not archived it (remembered on disk)."""
     path = CACHE / f"run_{run_start:%Y%m%dT%H}.json"
+    missing = CACHE / f"run_{run_start:%Y%m%dT%H}.missing"
+    if missing.exists():
+        return None
     if not path.exists():
-        _save(path, rain.run_forecast(POINTS, run_start, hours))
+        try:
+            _save(path, rain.run_forecast(POINTS, run_start, hours))
+        except rain.RunUnavailable:
+            CACHE.mkdir(parents=True, exist_ok=True)
+            missing.write_text("not archived by Open-Meteo\n", encoding="utf-8")
+            return None
     return _load(path)
+
+
+def usable_run(frame_time, max_back=4):
+    """Latest archived run usable at frame_time: the scheduled one, else older runs (never newer)."""
+    start = rain.run_start_for(frame_time)
+    for k in range(max_back + 1):
+        candidate = start - timedelta(hours=6 * k)
+        r = run(candidate)
+        if r is not None:
+            return candidate, r
+    return None, None
 
 
 def historical(start_date, end_date):

@@ -1,0 +1,368 @@
+[
+ {
+  "event_id": "2024-06-28",
+  "kind": "storm",
+  "metrics": {
+   "spots_reported": 14,
+   "flagged_before_report": 3,
+   "median_lead_hours": 10.6,
+   "unconfirmed_flags": 7
+  },
+  "per_spot": [
+   {
+    "hotspot_id": "DL-037",
+    "first_flag": null,
+    "first_report_at": "2024-06-28T02:19:00Z",
+    "lead_hours": null
+   },
+   {
+    "hotspot_id": "DL-004",
+    "first_flag": null,
+    "first_report_at": "2024-06-28T02:19:00Z",
+    "lead_hours": null
+   },
+   {
+    "hotspot_id": "DL-002",
+    "first_flag": null,
+    "first_report_at": "2024-06-28T02:19:00Z",
+    "lead_hours": null
+   },
+   {
+    "hotspot_id": "DL-065",
+    "first_flag": "2024-06-27T18:00:00Z",
+    "first_report_at": "2024-06-28T02:19:00Z",
+    "lead_hours": 8.3
+   },
+   {
+    "hotspot_id": "DL-001",
+    "first_flag": null,
+    "first_report_at": "2024-06-28T04:35:00Z",
+    "lead_hours": null
+   },
+   {
+    "hotspot_id": "DL-036",
+    "first_flag": null,
+    "first_report_at": "2024-06-28T04:35:00Z",
+    "lead_hours": null
+   },
+   {
+    "hotspot_id": "DL-022",
+    "first_flag": "2024-06-27T18:00:00Z",
+    "first_report_at": "2024-06-28T04:35:00Z",
+    "lead_hours": 10.6
+   },
+   {
+    "hotspot_id": "DL-045",
+    "first_flag": "2024-06-27T18:00:00Z",
+    "first_report_at": "2024-06-28T04:35:00Z",
+    "lead_hours": 10.6
+   },
+   {
+    "hotspot_id": "DL-043",
+    "first_flag": null,
+    "first_report_at": "2024-06-28T04:35:00Z",
+    "lead_hours": null
+   },
+   {
+    "hotspot_id": "DL-054",
+    "first_flag": null,
+    "first_report_at": "2024-06-28T04:35:00Z",
+    "lead_hours": null
+   },
+   {
+    "hotspot_id": "DL-014",
+    "first_flag": null,
+    "first_report_at": "2024-06-28T04:35:00Z",
+    "lead_hours": null
+   },
+   {
+    "hotspot_id": "DL-057",
+    "first_flag": null,
+    "first_report_at": "2024-06-28T04:35:00Z",
+    "lead_hours": null
+   },
+   {
+    "hotspot_id": "DL-060",
+    "first_flag": null,
+    "first_report_at": "2024-06-28T04:35:00Z",
+    "lead_hours": null
+   },
+   {
+    "hotspot_id": "DL-012",
+    "first_flag": null,
+    "first_report_at": "2024-06-28T04:35:00Z",
+    "lead_hours": null
+   }
+  ],
+  "max_rain_trigger": 0.63,
+  "max_risk": 0.491,
+  "city_left_standby": "2024-06-27T16:00:00Z",
+  "first_high": "2024-06-27T18:00:00Z",
+  "all_low": false,
+  "statuses": [
+   "ALERT",
+   "RAIN_WATCH",
+   "STANDBY"
+  ],
+  "runs_used": [
+   "2024-06-27T00:00:00Z",
+   "2024-06-27T12:00:00Z",
+   "2024-06-28T00:00:00Z"
+  ],
+  "frames_without_run": 0
+ },
+ {
+  "event_id": "2024-07-31",
+  "kind": "storm",
+  "metrics": {
+   "spots_reported": 8,
+   "flagged_before_report": 3,
+   "median_lead_hours": 23.1,
+   "unconfirmed_flags": 24
+  },
+  "per_spot": [
+   {
+    "hotspot_id": "DL-022",
+    "first_flag": "2024-07-31T14:00:00Z",
+    "first_report_at": "2024-07-31T13:43:00Z",
+    "lead_hours": null
+   },
+   {
+    "hotspot_id": "DL-029",
+    "first_flag": null,
+    "first_report_at": "2024-07-31T13:43:00Z",
+    "lead_hours": null
+   },
+   {
+    "hotspot_id": "DL-028",
+    "first_flag": null,
+    "first_report_at": "2024-07-31T13:43:00Z",
+    "lead_hours": null
+   },
+   {
+    "hotspot_id": "DL-012",
+    "first_flag": "2024-07-31T14:00:00Z",
+    "first_report_at": "2024-07-31T13:43:00Z",
+    "lead_hours": null
+   },
+   {
+    "hotspot_id": "DL-045",
+    "first_flag": "2024-07-31T14:00:00Z",
+    "first_report_at": "2024-08-01T01:08:00Z",
+    "lead_hours": 11.1
+   },
+   {
+    "hotspot_id": "DL-044",
+    "first_flag": "2024-07-31T14:00:00Z",
+    "first_report_at": "2024-08-01T13:08:00Z",
+    "lead_hours": 23.1
+   },
+   {
+    "hotspot_id": "DL-049",
+    "first_flag": null,
+    "first_report_at": "2024-08-01T13:08:00Z",
+    "lead_hours": null
+   },
+   {
+    "hotspot_id": "DL-024",
+    "first_flag": "2024-07-31T14:00:00Z",
+    "first_report_at": "2024-08-01T13:08:00Z",
+    "lead_hours": 23.1
+   }
+  ],
+  "max_rain_trigger": 1.0,
+  "max_risk": 0.908,
+  "city_left_standby": "2024-07-31T06:00:00Z",
+  "first_high": "2024-07-31T06:00:00Z",
+  "all_low": false,
+  "statuses": [
+   "ALERT",
+   "SEVERE",
+   "STANDBY"
+  ],
+  "runs_used": [
+   "2024-07-30T12:00:00Z",
+   "2024-07-31T00:00:00Z",
+   "2024-07-31T12:00:00Z"
+  ],
+  "frames_without_run": 0
+ },
+ {
+  "event_id": "2026-08-07",
+  "kind": "storm",
+  "metrics": {
+   "spots_reported": 8,
+   "flagged_before_report": 2,
+   "median_lead_hours": 27.5,
+   "unconfirmed_flags": 27
+  },
+  "per_spot": [
+   {
+    "hotspot_id": "DL-035",
+    "first_flag": null,
+    "first_report_at": "2026-08-07T16:06:00Z",
+    "lead_hours": null
+   },
+   {
+    "hotspot_id": "DL-058",
+    "first_flag": null,
+    "first_report_at": "2026-08-07T16:06:00Z",
+    "lead_hours": null
+   },
+   {
+    "hotspot_id": "DL-017",
+    "first_flag": null,
+    "first_report_at": "2026-08-08T04:56:00Z",
+    "lead_hours": null
+   },
+   {
+    "hotspot_id": "DL-057",
+    "first_flag": null,
+    "first_report_at": "2026-08-08T04:56:00Z",
+    "lead_hours": null
+   },
+   {
+    "hotspot_id": "DL-022",
+    "first_flag": "2026-08-07T00:00:00Z",
+    "first_report_at": "2026-08-08T04:56:00Z",
+    "lead_hours": 28.9
+   },
+   {
+    "hotspot_id": "DL-006",
+    "first_flag": "2026-08-07T03:00:00Z",
+    "first_report_at": "2026-08-08T05:01:00Z",
+    "lead_hours": 26.0
+   },
+   {
+    "hotspot_id": "DL-028",
+    "first_flag": null,
+    "first_report_at": "2026-08-08T05:01:00Z",
+    "lead_hours": null
+   },
+   {
+    "hotspot_id": "DL-049",
+    "first_flag": null,
+    "first_report_at": "2026-08-08T05:01:00Z",
+    "lead_hours": null
+   }
+  ],
+  "max_rain_trigger": 1.0,
+  "max_risk": 0.908,
+  "city_left_standby": "2026-08-06T22:00:00Z",
+  "first_high": "2026-08-07T00:00:00Z",
+  "all_low": false,
+  "statuses": [
+   "ALERT",
+   "RAIN_WATCH",
+   "SEVERE",
+   "STANDBY"
+  ],
+  "runs_used": [
+   "2026-08-06T12:00:00Z",
+   "2026-08-06T18:00:00Z",
+   "2026-08-07T00:00:00Z",
+   "2026-08-07T06:00:00Z",
+   "2026-08-07T12:00:00Z"
+  ],
+  "frames_without_run": 0
+ },
+ {
+  "event_id": "2026-08-25",
+  "kind": "storm",
+  "metrics": {
+   "spots_reported": 7,
+   "flagged_before_report": 0,
+   "median_lead_hours": null,
+   "unconfirmed_flags": 0
+  },
+  "per_spot": [
+   {
+    "hotspot_id": "DL-012",
+    "first_flag": null,
+    "first_report_at": "2026-08-24T12:24:00Z",
+    "lead_hours": null
+   },
+   {
+    "hotspot_id": "DL-022",
+    "first_flag": null,
+    "first_report_at": "2026-08-24T12:24:00Z",
+    "lead_hours": null
+   },
+   {
+    "hotspot_id": "DL-035",
+    "first_flag": null,
+    "first_report_at": "2026-08-25T00:22:00Z",
+    "lead_hours": null
+   },
+   {
+    "hotspot_id": "DL-058",
+    "first_flag": null,
+    "first_report_at": "2026-08-25T00:22:00Z",
+    "lead_hours": null
+   },
+   {
+    "hotspot_id": "DL-069",
+    "first_flag": null,
+    "first_report_at": "2026-08-25T00:22:00Z",
+    "lead_hours": null
+   },
+   {
+    "hotspot_id": "DL-037",
+    "first_flag": null,
+    "first_report_at": "2026-08-25T06:28:00Z",
+    "lead_hours": null
+   },
+   {
+    "hotspot_id": "DL-002",
+    "first_flag": null,
+    "first_report_at": "2026-08-25T03:01:00Z",
+    "lead_hours": null
+   }
+  ],
+  "max_rain_trigger": 0.447,
+  "max_risk": 0.163,
+  "city_left_standby": "2026-08-23T18:00:00Z",
+  "first_high": null,
+  "all_low": false,
+  "statuses": [
+   "ALERT",
+   "RAIN_WATCH",
+   "STANDBY"
+  ],
+  "runs_used": [
+   "2026-08-23T12:00:00Z",
+   "2026-08-23T18:00:00Z",
+   "2026-08-24T00:00:00Z",
+   "2026-08-24T06:00:00Z",
+   "2026-08-24T12:00:00Z"
+  ],
+  "frames_without_run": 0
+ },
+ {
+  "event_id": "2026-09-10",
+  "kind": "dry",
+  "metrics": {
+   "spots_reported": 0,
+   "flagged_before_report": 0,
+   "median_lead_hours": null,
+   "unconfirmed_flags": 0
+  },
+  "per_spot": [],
+  "max_rain_trigger": 0.0,
+  "max_risk": 0.0,
+  "city_left_standby": null,
+  "first_high": null,
+  "all_low": true,
+  "statuses": [
+   "STANDBY"
+  ],
+  "runs_used": [
+   "2026-09-09T12:00:00Z",
+   "2026-09-09T18:00:00Z",
+   "2026-09-10T00:00:00Z",
+   "2026-09-10T06:00:00Z",
+   "2026-09-10T12:00:00Z"
+  ],
+  "frames_without_run": 0
+ }
+]
