@@ -1,0 +1,14 @@
+version = 0.1
+
+[default.global.parameters]
+stack_name = "wlew-core"
+region = "ap-south-1"
+profile = "wlew"
+
+[default.deploy.parameters]
+capabilities = "CAPABILITY_IAM"
+resolve_s3 = true
+s3_prefix = "wlew-core"
+confirm_changeset = false
+fail_on_empty_changeset = false
+tags = "Project=\"wlew\""

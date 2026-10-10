@@ -1,0 +1,4 @@
+# Raw and derived rasters are never committed (DEM tiles, mosaics, flow grids)
+dem/
+*.tif
+*.npy

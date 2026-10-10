@@ -1,0 +1,1534 @@
+{
+ "spots": [
+  {
+   "name_en": "Minto Bridge underpass",
+   "locality": "Connaught Place / New Delhi Station",
+   "road": "Minto Road",
+   "diversion_road": "Barakhamba Road / Janpath via CP",
+   "query": "Minto Road, New Delhi",
+   "lat": 28.6327,
+   "lon": 77.2193,
+   "site_type": "underpass",
+   "importance": 0.6,
+   "reports": [
+    {
+     "year": 2020,
+     "url": "https://www.theweek.in/news/india/2020/07/19/delhi-man-drowns-under-minto-bridge-as-capital-reels-from-heavy-rains.html",
+     "title": "The Week 19 Jul 2020: Man drowns under Minto bridge",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2020,
+     "url": "https://www.indiatvnews.com/news/india/delhi-rains-delhi-traffic-alert-waterlogged-roads-areas-list-minto-road-azadpur-ndls-paharganj-full-list-635379",
+     "title": "India TV 19 Jul 2020: Delhi Traffic Alert waterlogged areas full list",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2021,
+     "url": "https://www.nationalheraldindia.com/national/heavy-rains-cause-waterlogging-in-delhi-crucial-underpasses-closed-for-traffic",
+     "title": "National Herald 21 Aug 2021: Heavy rains cause waterlogging, crucial underpasses closed",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2021,
+     "url": "https://www.india.com/news/india/delhi-rains-ncr-noida-gurgaon-ghaziabad-rains-live-updates-delhi-police-traffic-alert-waterlogging-traffic-movement-cp-minto-bridge-moolchand-underpass-ito-traffic-advisory-diversions-4902745/",
+     "title": "India.com 21 Aug 2021: Waterlogging in CP, Minto Bridge & ITO live",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2021,
+     "url": "https://www.tribuneindia.com/news/delhi/heavy-rainfall-leads-to-waterlogging-traffic-jams-in-delhi-300623",
+     "title": "Tribune 22 Aug 2021: Heavy rainfall leads to waterlogging",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2024,
+     "url": "https://www.outlookindia.com/national/delhi-rain-waterlogging-igi-airport-roof-collapse-flights-cancelled-traffic-ito-ring-road-noida-gurgaon-advisory",
+     "title": "Outlook 28 Jun 2024: Delhi Rain - waterlogging, IGI roof collapse",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2024,
+     "url": "https://www.tribuneindia.com/news/delhi/capital-faces-chaos-as-heavy-rains-cause-traffic-jams-waterlogging-643821",
+     "title": "Tribune 26 Jul 2024: Capital faces chaos as heavy rains cause traffic jams, waterlogging",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2024,
+     "url": "https://www.tribuneindia.com/news/delhi/heavy-rain-causes-widespread-waterlogging-traffic-disruptions-across-delhi",
+     "title": "Tribune 20 Aug 2024: Heavy rain causes widespread waterlogging",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2025,
+     "url": "https://theprint.in/india/heavy-rains-trigger-traffic-chaos-waterlogging-across-delhi/2706253/",
+     "title": "ThePrint 29 Jul 2025: Heavy rains trigger traffic chaos, waterlogging across Delhi",
+     "verified_by": "fetch"
+    }
+   ],
+   "official_list": {
+    "url": "https://thepatriot.in/delhi-ncr/new-drains-sumps-automated-pump-house-delhi-pwds-plan-to-tackle-waterlogging-at-seven-hotspots-70243",
+    "title": "The Patriot 19 May 2025: Delhi PWD plan to tackle waterlogging at seven hotspots",
+    "verified_by": "fetch"
+   },
+   "storm_reports": [
+    {
+     "date": "2024-06-28",
+     "time_ist": "10:05",
+     "url": "https://www.outlookindia.com/national/delhi-rain-waterlogging-igi-airport-roof-collapse-flights-cancelled-traffic-ito-ring-road-noida-gurgaon-advisory",
+     "quote": "Minto Bridge (underpass) listed among waterlogged locations (article published 10:05 am IST, 28 Jun 2024)"
+    },
+    {
+     "date": "2024-06-28",
+     "time_ist": "07:49",
+     "url": "https://www.outlookindia.com/national/delhi-rain-noida-ghaziabad-gurgaon-waterlogging-airport-traffic-jam-imd-weather-forecast",
+     "quote": "Waterlogging reported on Ring Road Naraina-Moti Bagh, Aurobindo Marg towards AIIMS, W-Point Tilak Bridge road; article published 7:49 am (rain began ~3 am)"
+    }
+   ]
+  },
+  {
+   "name_en": "Pul Prahladpur underpass",
+   "locality": "Badarpur / Tughlakabad",
+   "road": "Mehrauli-Badarpur Road (MB Road)",
+   "diversion_road": "Mathura Road (via Badarpur border / Okhla)",
+   "query": "Pul Prahladpur, Delhi",
+   "lat": 28.503,
+   "lon": 77.2975,
+   "site_type": "underpass",
+   "importance": 1.0,
+   "reports": [
+    {
+     "year": 2020,
+     "url": "https://www.indiatvnews.com/news/india/delhi-rains-delhi-traffic-alert-waterlogged-roads-areas-list-minto-road-azadpur-ndls-paharganj-full-list-635379",
+     "title": "India TV 19 Jul 2020: Delhi Traffic Alert waterlogged areas full list",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2021,
+     "url": "https://www.outlookindia.com/national/india-news-delhi-rains-waterlogging-reported-on-several-road-stretches-man-drowns-in-flooded-underpass-news-388727",
+     "title": "Outlook 19 Jul 2021: Waterlogging reported on several road stretches",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2021,
+     "url": "https://www.nationalheraldindia.com/national/heavy-rains-cause-waterlogging-in-delhi-crucial-underpasses-closed-for-traffic",
+     "title": "National Herald 21 Aug 2021: Heavy rains cause waterlogging, crucial underpasses closed",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2022,
+     "url": "https://www.nationalheraldindia.com/india/delhi-traffic-jams-waterlogging-return-with-monsoon-waterlogging-in-pragati-maidan-tunnel-belies-pwd-claims",
+     "title": "National Herald 30 Jun 2022: Traffic jams, waterlogging return with monsoon",
+     "verified_by": "fetch"
+    }
+   ],
+   "official_list": {
+    "url": "https://thepatriot.in/delhi-ncr/new-drains-sumps-automated-pump-house-delhi-pwds-plan-to-tackle-waterlogging-at-seven-hotspots-70243",
+    "title": "The Patriot 19 May 2025: Delhi PWD plan to tackle waterlogging at seven hotspots",
+    "verified_by": "fetch"
+   },
+   "storm_reports": []
+  },
+  {
+   "name_en": "Moolchand underpass",
+   "locality": "Lajpat Nagar / Defence Colony",
+   "road": "Ring Road (Moolchand)",
+   "diversion_road": "Lala Lajpat Rai Marg / Mathura Road",
+   "query": "Moolchand Underpass, New Delhi",
+   "lat": 28.5686,
+   "lon": 77.2347,
+   "site_type": "underpass",
+   "importance": 1.0,
+   "reports": [
+    {
+     "year": 2020,
+     "url": "https://www.indiatvnews.com/news/india/delhi-rains-delhi-traffic-alert-waterlogged-roads-areas-list-minto-road-azadpur-ndls-paharganj-full-list-635379",
+     "title": "India TV 19 Jul 2020: Delhi Traffic Alert waterlogged areas full list",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2021,
+     "url": "https://www.nationalheraldindia.com/national/heavy-rains-cause-waterlogging-in-delhi-crucial-underpasses-closed-for-traffic",
+     "title": "National Herald 21 Aug 2021: Heavy rains cause waterlogging, crucial underpasses closed",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2021,
+     "url": "https://www.indiatvnews.com/news/india/heavy-rain-causes-waterlogging-in-several-areas-across-delhi-ncr-imd-warns-of-more-downpour-730649",
+     "title": "India TV 1 Sep 2021: Heavy rain causes waterlogging in several areas across Delhi-NCR",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2022,
+     "url": "https://www.tribuneindia.com/news/delhi/rain-wreaks-havoc-in-delhi-traffic-choked-on-major-routes-414152",
+     "title": "Tribune 20 Jul 2022: Rain wreaks havoc in Delhi",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2024,
+     "url": "https://www.outlookindia.com/national/delhi-rain-waterlogging-igi-airport-roof-collapse-flights-cancelled-traffic-ito-ring-road-noida-gurgaon-advisory",
+     "title": "Outlook 28 Jun 2024: Delhi Rain - waterlogging, IGI roof collapse",
+     "verified_by": "fetch"
+    }
+   ],
+   "official_list": null,
+   "storm_reports": [
+    {
+     "date": "2024-06-28",
+     "time_ist": "10:05",
+     "url": "https://www.outlookindia.com/national/delhi-rain-waterlogging-igi-airport-roof-collapse-flights-cancelled-traffic-ito-ring-road-noida-gurgaon-advisory",
+     "quote": "Moolchand listed among waterlogged roads (article published 10:05 am IST, 28 Jun 2024)"
+    }
+   ]
+  },
+  {
+   "name_en": "Pragati Maidan tunnel",
+   "locality": "Pragati Maidan / India Gate",
+   "road": "Pragati Maidan Integrated Transit Corridor (Ring Road - India Gate)",
+   "diversion_road": "Mathura Road / Bhairon Marg",
+   "query": "Pragati Maidan Tunnel, New Delhi",
+   "lat": 28.6188,
+   "lon": 77.2465,
+   "site_type": "underpass",
+   "importance": 1.0,
+   "reports": [
+    {
+     "year": 2021,
+     "url": "https://www.tribuneindia.com/news/delhi/heavy-rainfall-leads-to-waterlogging-traffic-jams-in-delhi-300623",
+     "title": "Tribune 22 Aug 2021: Heavy rainfall leads to waterlogging",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2022,
+     "url": "https://www.tribuneindia.com/news/delhi/waterlogging-in-newly-inaugurated-pragati-maidan-tunnel-in-delhi-belies-pwds-claims-408326",
+     "title": "Tribune 30 Jun 2022: Waterlogging in newly inaugurated Pragati Maidan tunnel",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2022,
+     "url": "https://www.nationalheraldindia.com/india/delhi-traffic-jams-waterlogging-return-with-monsoon-waterlogging-in-pragati-maidan-tunnel-belies-pwd-claims",
+     "title": "National Herald 30 Jun 2022: Traffic jams, waterlogging return with monsoon",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2024,
+     "url": "https://www.outlookindia.com/national/delhi-rain-waterlogging-igi-airport-roof-collapse-flights-cancelled-traffic-ito-ring-road-noida-gurgaon-advisory",
+     "title": "Outlook 28 Jun 2024: Delhi Rain - waterlogging, IGI roof collapse",
+     "verified_by": "fetch"
+    }
+   ],
+   "official_list": null,
+   "storm_reports": [
+    {
+     "date": "2024-06-28",
+     "time_ist": "10:05",
+     "url": "https://www.outlookindia.com/national/delhi-rain-waterlogging-igi-airport-roof-collapse-flights-cancelled-traffic-ito-ring-road-noida-gurgaon-advisory",
+     "quote": "Delhi's Pragati Maidan Tunnel was also closed due to rain-triggered waterlogging (article published 10:05 am IST, 28 Jun 2024)"
+    }
+   ]
+  },
+  {
+   "name_en": "Bhairon Marg (railway underbridge)",
+   "locality": "Pragati Maidan / ITO",
+   "road": "Bhairon Marg",
+   "diversion_road": "Mathura Road / Ring Road",
+   "query": "Bhairon Marg, New Delhi",
+   "lat": 28.62,
+   "lon": 77.242,
+   "site_type": "road",
+   "importance": 0.6,
+   "reports": [
+    {
+     "year": 2020,
+     "url": "https://www.theweek.in/news/india/2020/07/19/delhi-man-drowns-under-minto-bridge-as-capital-reels-from-heavy-rains.html",
+     "title": "The Week 19 Jul 2020: Man drowns under Minto bridge",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2023,
+     "url": "https://gulfnews.com/amp/world/asia/india/india-waterlogging-traffic-congestion-in-delhi-after-heavy-downpour-1.96853127",
+     "title": "Gulf News 8 Jul 2023: Waterlogging, traffic congestion in Delhi after heavy downpour",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2026,
+     "url": "https://dailypioneer.com/news/delhi-drowns-as-rains-lash-north-india",
+     "title": "Daily Pioneer 25 Aug 2026: Heavy rains paralyse Delhi-NCR",
+     "verified_by": "fetch"
+    }
+   ],
+   "official_list": null,
+   "storm_reports": [
+    {
+     "date": "2026-08-25",
+     "time_ist": null,
+     "url": "https://dailypioneer.com/news/delhi-drowns-as-rains-lash-north-india",
+     "quote": "Waterlogging on several key stretches including Lutyens' Delhi, Mathura Road, Connaught Place, Bhairon Marg, ITO"
+    }
+   ]
+  },
+  {
+   "name_en": "ITO intersection (Vikas Marg / Bahadur Shah Zafar Marg)",
+   "locality": "ITO",
+   "road": "Vikas Marg / IP Marg",
+   "diversion_road": "Tilak Marg / Ring Road via Rajghat",
+   "query": "ITO, New Delhi",
+   "lat": 28.629,
+   "lon": 77.241,
+   "site_type": "junction",
+   "importance": 1.0,
+   "reports": [
+    {
+     "year": 2021,
+     "url": "https://www.india.com/news/india/delhi-rains-ncr-noida-gurgaon-ghaziabad-rains-live-updates-delhi-police-traffic-alert-waterlogging-traffic-movement-cp-minto-bridge-moolchand-underpass-ito-traffic-advisory-diversions-4902745/",
+     "title": "India.com 21 Aug 2021: Waterlogging in CP, Minto Bridge & ITO live",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2024,
+     "url": "https://www.tribuneindia.com/news/delhi/rainfall-brings-down-temperature-but-causes-widespread-waterlogging-in-delhi-642336/amp",
+     "title": "Tribune 22 Jul 2024: Rainfall brings down temperature but causes widespread waterlogging",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2024,
+     "url": "https://www.tribuneindia.com/news/delhi/capital-faces-chaos-as-heavy-rains-cause-traffic-jams-waterlogging-643821",
+     "title": "Tribune 26 Jul 2024: Capital faces chaos as heavy rains cause traffic jams, waterlogging",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2024,
+     "url": "https://www.outlookindia.com/national/delhi-rain-waterlogging-igi-airport-roof-collapse-flights-cancelled-traffic-ito-ring-road-noida-gurgaon-advisory",
+     "title": "Outlook 28 Jun 2024: Delhi Rain - waterlogging, IGI roof collapse",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2024,
+     "url": "https://www.outlookindia.com/national/delhi-rain-chaos-over-5-dead-2727-traffic-jam-calls-119-for-waterlogging-26-for-building-collapses",
+     "title": "Outlook 1 Aug 2024: Delhi Rain Chaos - 2,727 traffic jam calls, 119 for waterlogging",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2026,
+     "url": "https://thefederal.com/category/states/north/delhi/heavy-rain-delhi-waterlogging-major-roads-252757",
+     "title": "The Federal 6 Aug 2026: Heavy rain batters Delhi, waterlogging on major roads",
+     "verified_by": "fetch"
+    }
+   ],
+   "official_list": {
+    "url": "https://www.tribuneindia.com/news/delhi/cm-parvesh-inspect-flood-prone-areas",
+    "title": "Tribune 19 Apr 2025: CM, Parvesh inspect flood-prone areas",
+    "verified_by": "fetch"
+   },
+   "storm_reports": [
+    {
+     "date": "2024-06-28",
+     "time_ist": "10:05",
+     "url": "https://www.outlookindia.com/national/delhi-rain-waterlogging-igi-airport-roof-collapse-flights-cancelled-traffic-ito-ring-road-noida-gurgaon-advisory",
+     "quote": "ITO area listed among waterlogged locations (article published 10:05 am IST, 28 Jun 2024)"
+    },
+    {
+     "date": "2024-08-01",
+     "time_ist": null,
+     "url": "https://www.outlookindia.com/national/delhi-rain-chaos-over-5-dead-2727-traffic-jam-calls-119-for-waterlogging-26-for-building-collapses",
+     "quote": "ITO ... still waterlogged on Thursday morning, August 1 (article published 6:38 pm IST 1 Aug; police logs 'until 7 am Thursday' show 8 further waterlogging calls)"
+    }
+   ]
+  },
+  {
+   "name_en": "Ring Road opposite WHO building (IP Estate)",
+   "locality": "IP Estate / ITO",
+   "road": "Ring Road (Bhairon Marg connector)",
+   "diversion_road": "Mathura Road",
+   "query": "World Health Organization, Indraprastha Estate, New Delhi",
+   "lat": 28.6288,
+   "lon": 77.2437,
+   "site_type": "road",
+   "importance": 1.0,
+   "reports": [
+    {
+     "year": 2020,
+     "url": "https://www.tribuneindia.com/news/delhi/heavy-rains-lead-to-water-logging-traffic-snarls-at-several-places-in-delhi-116399",
+     "title": "Tribune 22 Jul 2020: Heavy rains lead to water-logging, traffic snarls",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2022,
+     "url": "https://www.nationalheraldindia.com/india/delhi-traffic-jams-waterlogging-return-with-monsoon-waterlogging-in-pragati-maidan-tunnel-belies-pwd-claims",
+     "title": "National Herald 30 Jun 2022: Traffic jams, waterlogging return with monsoon",
+     "verified_by": "fetch"
+    }
+   ],
+   "official_list": {
+    "url": "https://thepatriot.in/delhi-ncr/new-drains-sumps-automated-pump-house-delhi-pwds-plan-to-tackle-waterlogging-at-seven-hotspots-70243",
+    "title": "The Patriot 19 May 2025: Delhi PWD plan to tackle waterlogging at seven hotspots",
+    "verified_by": "fetch"
+   },
+   "storm_reports": []
+  },
+  {
+   "name_en": "IP Marg (Old Police Headquarters to IP flyover)",
+   "locality": "ITO",
+   "road": "IP Marg",
+   "diversion_road": "Vikas Marg",
+   "query": "IP Marg, New Delhi",
+   "lat": 28.6295,
+   "lon": 77.2395,
+   "site_type": "road",
+   "importance": 0.6,
+   "reports": [
+    {
+     "year": 2024,
+     "url": "https://www.tribuneindia.com/news/delhi/heavy-rain-causes-widespread-waterlogging-traffic-disruptions-across-delhi",
+     "title": "Tribune 20 Aug 2024: Heavy rain causes widespread waterlogging",
+     "verified_by": "fetch"
+    }
+   ],
+   "official_list": null,
+   "storm_reports": []
+  },
+  {
+   "name_en": "Tilak Bridge / W-Point underpass",
+   "locality": "Tilak Marg / Pragati Maidan",
+   "road": "Tilak Marg / Vikas Marg",
+   "diversion_road": "Bhairon Marg / ITO",
+   "query": "Tilak Bridge, New Delhi",
+   "lat": 28.6269,
+   "lon": 77.2334,
+   "site_type": "underpass",
+   "importance": 0.6,
+   "reports": [
+    {
+     "year": 2023,
+     "url": "https://gulfnews.com/amp/world/asia/india/india-waterlogging-traffic-congestion-in-delhi-after-heavy-downpour-1.96853127",
+     "title": "Gulf News 8 Jul 2023: Waterlogging, traffic congestion in Delhi after heavy downpour",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2024,
+     "url": "https://www.outlookindia.com/national/delhi-rain-waterlogging-igi-airport-roof-collapse-flights-cancelled-traffic-ito-ring-road-noida-gurgaon-advisory",
+     "title": "Outlook 28 Jun 2024: Delhi Rain - waterlogging, IGI roof collapse",
+     "verified_by": "fetch"
+    }
+   ],
+   "official_list": null,
+   "storm_reports": [
+    {
+     "date": "2024-06-28",
+     "time_ist": "10:05",
+     "url": "https://www.outlookindia.com/national/delhi-rain-waterlogging-igi-airport-roof-collapse-flights-cancelled-traffic-ito-ring-road-noida-gurgaon-advisory",
+     "quote": "W-Point Tilak Bridge road listed as waterlogged (article published 10:05 am IST, 28 Jun 2024)"
+    },
+    {
+     "date": "2024-06-28",
+     "time_ist": "07:49",
+     "url": "https://www.outlookindia.com/national/delhi-rain-noida-ghaziabad-gurgaon-waterlogging-airport-traffic-jam-imd-weather-forecast",
+     "quote": "W-Point Tilak Bridge road (Delhi Traffic Police)"
+    }
+   ]
+  },
+  {
+   "name_en": "Connaught Place",
+   "locality": "Connaught Place",
+   "road": "Connaught Place Outer Circle",
+   "diversion_road": "Janpath / Kasturba Gandhi Marg",
+   "query": "Connaught Place, New Delhi",
+   "lat": 28.6315,
+   "lon": 77.2167,
+   "site_type": "junction",
+   "importance": 0.6,
+   "reports": [
+    {
+     "year": 2021,
+     "url": "https://www.india.com/news/india/delhi-rains-ncr-noida-gurgaon-ghaziabad-rains-live-updates-delhi-police-traffic-alert-waterlogging-traffic-movement-cp-minto-bridge-moolchand-underpass-ito-traffic-advisory-diversions-4902745/",
+     "title": "India.com 21 Aug 2021: Waterlogging in CP, Minto Bridge & ITO live",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2023,
+     "url": "https://gulfnews.com/amp/world/asia/india/india-waterlogging-traffic-congestion-in-delhi-after-heavy-downpour-1.96853127",
+     "title": "Gulf News 8 Jul 2023: Waterlogging, traffic congestion in Delhi after heavy downpour",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2024,
+     "url": "https://www.tribuneindia.com/news/delhi/capital-faces-chaos-as-heavy-rains-cause-traffic-jams-waterlogging-643821",
+     "title": "Tribune 26 Jul 2024: Capital faces chaos as heavy rains cause traffic jams, waterlogging",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2026,
+     "url": "https://www.india.com/news/india/delhi-rain-rain-lashes-national-capital-waterlogging-traffic-jams-hit-noida-ghaziabad-gurugram-faridabad-check-imd-forecast-minto-road-ring-road-dnd-8509767/",
+     "title": "India.com 25 Aug 2026: Delhi rain, waterlogging, traffic jams",
+     "verified_by": "fetch"
+    }
+   ],
+   "official_list": null,
+   "storm_reports": [
+    {
+     "date": "2024-06-28",
+     "time_ist": "10:05",
+     "url": "https://www.outlookindia.com/national/delhi-rain-waterlogging-igi-airport-roof-collapse-flights-cancelled-traffic-ito-ring-road-noida-gurgaon-advisory",
+     "quote": "Parts of Connaught Place waterlogged (article published 10:05 am IST, 28 Jun 2024)"
+    },
+    {
+     "date": "2026-08-25",
+     "time_ist": "17:41",
+     "url": "https://www.india.com/news/india/delhi-rain-rain-lashes-national-capital-waterlogging-traffic-jams-hit-noida-ghaziabad-gurugram-faridabad-check-imd-forecast-minto-road-ring-road-dnd-8509767/",
+     "quote": "Connaught Place, ITO, South Avenue, Panchkuian Road, Jantar Mantar with submerged streets (India.com 5:41 PM)"
+    }
+   ]
+  },
+  {
+   "name_en": "Ring Road at Rajghat / Shantivan",
+   "locality": "Rajghat",
+   "road": "Ring Road (Rajghat - Shantivan)",
+   "diversion_road": "Vikas Marg / Mahatma Gandhi Marg",
+   "query": "Rajghat, Delhi",
+   "lat": 28.641,
+   "lon": 77.249,
+   "site_type": "road",
+   "importance": 1.0,
+   "reports": [
+    {
+     "year": 2021,
+     "url": "https://www.india.com/news/india/delhi-rains-ncr-noida-gurgaon-ghaziabad-rains-live-updates-delhi-police-traffic-alert-waterlogging-traffic-movement-cp-minto-bridge-moolchand-underpass-ito-traffic-advisory-diversions-4902745/",
+     "title": "India.com 21 Aug 2021: Waterlogging in CP, Minto Bridge & ITO live",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2023,
+     "url": "https://www.businesstoday.in/latest/trends/story/delhi-floods-rajghat-road-sarai-kale-khan-route-towards-yamuna-bank-metro-station-among-areas-affected-by-flooding-waterlogging-389523-2023-07-13",
+     "title": "BusinessToday 13 Jul 2023: Delhi floods - Rajghat road, Sarai Kale Khan among areas affected",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2024,
+     "url": "https://www.outlookindia.com/national/delhi-rain-chaos-over-5-dead-2727-traffic-jam-calls-119-for-waterlogging-26-for-building-collapses",
+     "title": "Outlook 1 Aug 2024: Delhi Rain Chaos - 2,727 traffic jam calls, 119 for waterlogging",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2026,
+     "url": "https://www.theweek.in/news/india/2026/08/08/delhi-heavy-rain-disruptions-monsoon-weather-waterlogging-traffic-imd-rain-alert-north-india-imd-forecast.html",
+     "title": "The Week 8 Aug 2026: Heavy rainfall triggers waterlogging in Delhi-NCR",
+     "verified_by": "fetch"
+    }
+   ],
+   "official_list": null,
+   "storm_reports": [
+    {
+     "date": "2024-08-01",
+     "time_ist": null,
+     "url": "https://www.outlookindia.com/national/delhi-rain-chaos-over-5-dead-2727-traffic-jam-calls-119-for-waterlogging-26-for-building-collapses",
+     "quote": "Rajghat ... still waterlogged on Thursday morning, August 1 (article published 6:38 pm IST 1 Aug; police logs 'until 7 am Thursday' show 8 further waterlogging calls)"
+    },
+    {
+     "date": "2026-08-08",
+     "time_ist": "10:31",
+     "url": "https://www.theweek.in/news/india/2026/08/08/delhi-heavy-rain-disruptions-monsoon-weather-waterlogging-traffic-imd-rain-alert-north-india-imd-forecast.html",
+     "quote": "A waterlogged road, near Rajghat, in New Delhi (photo caption, rain of Fri 7 Aug; article published 10:31 am IST 8 Aug)"
+    }
+   ]
+  },
+  {
+   "name_en": "Shastri Park",
+   "locality": "Shastri Park / Yamuna Pushta",
+   "road": "Shastri Park Road / Outer Ring Road",
+   "diversion_road": "Wazirabad Road / Vikas Marg",
+   "query": "Shastri Park, Delhi",
+   "lat": 28.669,
+   "lon": 77.254,
+   "site_type": "colony",
+   "importance": 0.6,
+   "reports": [
+    {
+     "year": 2023,
+     "url": "https://www.businesstoday.in/latest/trends/story/delhi-floods-rajghat-road-sarai-kale-khan-route-towards-yamuna-bank-metro-station-among-areas-affected-by-flooding-waterlogging-389523-2023-07-13",
+     "title": "BusinessToday 13 Jul 2023: Delhi floods - Rajghat road, Sarai Kale Khan among areas affected",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2026,
+     "url": "https://thefederal.com/category/states/north/delhi/heavy-rain-delhi-waterlogging-major-roads-252757",
+     "title": "The Federal 6 Aug 2026: Heavy rain batters Delhi, waterlogging on major roads",
+     "verified_by": "fetch"
+    }
+   ],
+   "official_list": null,
+   "storm_reports": []
+  },
+  {
+   "name_en": "Yamuna Bazar",
+   "locality": "Yamuna Bazar / Old Delhi",
+   "road": "Yamuna Bazar Road (Ring Road)",
+   "diversion_road": "Ring Road via Rajghat",
+   "query": "Yamuna Bazar, Delhi",
+   "lat": 28.662,
+   "lon": 77.244,
+   "site_type": "road",
+   "importance": 0.3,
+   "reports": [
+    {
+     "year": 2021,
+     "url": "https://www.tribuneindia.com/news/delhi/heavy-rain-leads-to-waterlogging-traffic-snarls-at-several-places-in-delhi-291387",
+     "title": "Tribune 1 Aug 2021: Heavy rain leads to waterlogging, traffic snarls",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2025,
+     "url": "https://www.tribuneindia.com/news/delhi/delhi-deluged-as-heavy-rains-lash-city-for-2nd-day",
+     "title": "Tribune 2 Sep 2025: Delhi deluged as heavy rains lash city for 2nd day",
+     "verified_by": "fetch"
+    }
+   ],
+   "official_list": null,
+   "storm_reports": [],
+   "note": "2025 report concerns Yamuna floodwater entering low-lying Yamuna Bazar, not rain alone"
+  },
+  {
+   "name_en": "Ashram Chowk / Mathura Road (Ashram - Moolchand)",
+   "locality": "Ashram / Maharani Bagh",
+   "road": "Mathura Road / Ring Road",
+   "diversion_road": "Ring Road via Sarai Kale Khan / Lala Lajpat Rai Marg",
+   "query": "Ashram Chowk, New Delhi",
+   "lat": 28.5721,
+   "lon": 77.2584,
+   "site_type": "junction",
+   "importance": 1.0,
+   "reports": [
+    {
+     "year": 2023,
+     "url": "https://gulfnews.com/amp/world/asia/india/india-waterlogging-traffic-congestion-in-delhi-after-heavy-downpour-1.96853127",
+     "title": "Gulf News 8 Jul 2023: Waterlogging, traffic congestion in Delhi after heavy downpour",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2025,
+     "url": "https://kashmirobserver.net/2025/08/14/heavy-rain-in-delhi-waterlogging-brings-traffic-to-halt/",
+     "title": "Kashmir Observer 14 Aug 2025: Heavy rain in Delhi, waterlogging brings traffic to halt",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2025,
+     "url": "https://www.tribuneindia.com/news/delhi/downpour-brings-delhi-to-a-crawl",
+     "title": "Tribune 14 Aug 2025: Downpour brings Delhi to a crawl",
+     "verified_by": "fetch"
+    }
+   ],
+   "official_list": null,
+   "storm_reports": []
+  },
+  {
+   "name_en": "Sarai Kale Khan (Ring Road, Nizamuddin)",
+   "locality": "Sarai Kale Khan / Nizamuddin",
+   "road": "Ring Road (Ashram - Sarai Kale Khan - Barapullah)",
+   "diversion_road": "Mathura Road / Barapullah Elevated Road",
+   "query": "Sarai Kale Khan, New Delhi",
+   "lat": 28.5883,
+   "lon": 77.2565,
+   "site_type": "road",
+   "importance": 1.0,
+   "reports": [
+    {
+     "year": 2023,
+     "url": "https://gulfnews.com/amp/world/asia/india/india-waterlogging-traffic-congestion-in-delhi-after-heavy-downpour-1.96853127",
+     "title": "Gulf News 8 Jul 2023: Waterlogging, traffic congestion in Delhi after heavy downpour",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2023,
+     "url": "https://www.businesstoday.in/latest/trends/story/delhi-floods-rajghat-road-sarai-kale-khan-route-towards-yamuna-bank-metro-station-among-areas-affected-by-flooding-waterlogging-389523-2023-07-13",
+     "title": "BusinessToday 13 Jul 2023: Delhi floods - Rajghat road, Sarai Kale Khan among areas affected",
+     "verified_by": "fetch"
+    }
+   ],
+   "official_list": null,
+   "storm_reports": []
+  },
+  {
+   "name_en": "Sarita Vihar (Mathura Road / Sarita Vihar Chowk)",
+   "locality": "Sarita Vihar",
+   "road": "Mathura Road",
+   "diversion_road": "Ring Road / Kalindi Kunj Road",
+   "query": "Sarita Vihar, New Delhi",
+   "lat": 28.529,
+   "lon": 77.29,
+   "site_type": "junction",
+   "importance": 1.0,
+   "reports": [
+    {
+     "year": 2023,
+     "url": "https://gulfnews.com/amp/world/asia/india/india-waterlogging-traffic-congestion-in-delhi-after-heavy-downpour-1.96853127",
+     "title": "Gulf News 8 Jul 2023: Waterlogging, traffic congestion in Delhi after heavy downpour",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2024,
+     "url": "https://www.outlookindia.com/national/delhi-rain-waterlogging-igi-airport-roof-collapse-flights-cancelled-traffic-ito-ring-road-noida-gurgaon-advisory",
+     "title": "Outlook 28 Jun 2024: Delhi Rain - waterlogging, IGI roof collapse",
+     "verified_by": "fetch"
+    }
+   ],
+   "official_list": null,
+   "storm_reports": [
+    {
+     "date": "2024-06-28",
+     "time_ist": "10:05",
+     "url": "https://www.outlookindia.com/national/delhi-rain-waterlogging-igi-airport-roof-collapse-flights-cancelled-traffic-ito-ring-road-noida-gurgaon-advisory",
+     "quote": "Sarita Vihar listed as waterlogged (article published 10:05 am IST, 28 Jun 2024)"
+    }
+   ]
+  },
+  {
+   "name_en": "Okhla underpass (Road No. 13)",
+   "locality": "Okhla",
+   "road": "Road No. 13 / Mathura Road / Okhla Road",
+   "diversion_road": "Mathura Road via Ashram",
+   "query": "Okhla Underpass, New Delhi",
+   "lat": 28.553,
+   "lon": 77.27,
+   "site_type": "underpass",
+   "importance": 0.6,
+   "reports": [
+    {
+     "year": 2023,
+     "url": "https://gulfnews.com/amp/world/asia/india/india-waterlogging-traffic-congestion-in-delhi-after-heavy-downpour-1.96853127",
+     "title": "Gulf News 8 Jul 2023: Waterlogging, traffic congestion in Delhi after heavy downpour",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2024,
+     "url": "https://www.outlookindia.com/national/delhi-rain-waterlogging-igi-airport-roof-collapse-flights-cancelled-traffic-ito-ring-road-noida-gurgaon-advisory",
+     "title": "Outlook 28 Jun 2024: Delhi Rain - waterlogging, IGI roof collapse",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2024,
+     "url": "https://www.india.com/new-delhi/delhi-traffic-police-issues-advisory-severe-waterlogging-at-okhla-underpass-check-details-here-7198684/",
+     "title": "India.com 27 Aug 2024: Delhi Traffic Police advisory, severe waterlogging at Okhla underpass",
+     "verified_by": "fetch"
+    }
+   ],
+   "official_list": null,
+   "storm_reports": [
+    {
+     "date": "2024-06-28",
+     "time_ist": "10:05",
+     "url": "https://www.outlookindia.com/national/delhi-rain-waterlogging-igi-airport-roof-collapse-flights-cancelled-traffic-ito-ring-road-noida-gurgaon-advisory",
+     "quote": "Road No. 13, Okhla underpass listed as waterlogged (article published 10:05 am IST, 28 Jun 2024)"
+    }
+   ]
+  },
+  {
+   "name_en": "Lajpat Nagar / Ring Road near Lajpat Nagar Metro",
+   "locality": "Lajpat Nagar",
+   "road": "Ring Road / Lala Lajpat Rai Marg",
+   "diversion_road": "Mathura Road",
+   "query": "Lajpat Nagar, New Delhi",
+   "lat": 28.57,
+   "lon": 77.243,
+   "site_type": "colony",
+   "importance": 0.6,
+   "reports": [
+    {
+     "year": 2021,
+     "url": "https://www.nationalheraldindia.com/national/heavy-rains-cause-waterlogging-in-delhi-crucial-underpasses-closed-for-traffic",
+     "title": "National Herald 21 Aug 2021: Heavy rains cause waterlogging, crucial underpasses closed",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2021,
+     "url": "https://www.indiatvnews.com/news/india/heavy-rain-causes-waterlogging-in-several-areas-across-delhi-ncr-imd-warns-of-more-downpour-730649",
+     "title": "India TV 1 Sep 2021: Heavy rain causes waterlogging in several areas across Delhi-NCR",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2025,
+     "url": "https://kashmirobserver.net/2025/08/14/heavy-rain-in-delhi-waterlogging-brings-traffic-to-halt/",
+     "title": "Kashmir Observer 14 Aug 2025: Heavy rain in Delhi, waterlogging brings traffic to halt",
+     "verified_by": "fetch"
+    }
+   ],
+   "official_list": null,
+   "storm_reports": []
+  },
+  {
+   "name_en": "Jangpura",
+   "locality": "Jangpura",
+   "road": "Bhogal Road / Jangpura Road (Ring Road)",
+   "diversion_road": "Mathura Road",
+   "query": "Jangpura, New Delhi",
+   "lat": 28.5835,
+   "lon": 77.24,
+   "site_type": "colony",
+   "importance": 0.6,
+   "reports": [
+    {
+     "year": 2021,
+     "url": "https://www.nationalheraldindia.com/national/heavy-rains-cause-waterlogging-in-delhi-crucial-underpasses-closed-for-traffic",
+     "title": "National Herald 21 Aug 2021: Heavy rains cause waterlogging, crucial underpasses closed",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2024,
+     "url": "https://www.outlookindia.com/national/delhi-rain-chaos-over-5-dead-2727-traffic-jam-calls-119-for-waterlogging-26-for-building-collapses",
+     "title": "Outlook 1 Aug 2024: Delhi Rain Chaos - 2,727 traffic jam calls, 119 for waterlogging",
+     "verified_by": "fetch"
+    }
+   ],
+   "official_list": null,
+   "storm_reports": [
+    {
+     "date": "2024-08-01",
+     "time_ist": null,
+     "url": "https://www.outlookindia.com/national/delhi-rain-chaos-over-5-dead-2727-traffic-jam-calls-119-for-waterlogging-26-for-building-collapses",
+     "quote": "Jangpura roads waterlogged on July 31 (night before) (article published 6:38 pm IST 1 Aug; police logs 'until 7 am Thursday' show 8 further waterlogging calls)"
+    }
+   ]
+  },
+  {
+   "name_en": "AIIMS flyover / Aurobindo Marg (AIIMS - Adhchini)",
+   "locality": "AIIMS / Safdarjung",
+   "road": "Aurobindo Marg / Ring Road",
+   "diversion_road": "Ring Road via Safdarjung / Lodhi Road",
+   "query": "AIIMS Flyover, New Delhi",
+   "lat": 28.5672,
+   "lon": 77.21,
+   "site_type": "road",
+   "importance": 1.0,
+   "reports": [
+    {
+     "year": 2021,
+     "url": "https://www.tribuneindia.com/news/delhi/rains-cause-waterlogging-in-delhi-traffic-movement-affected-304588",
+     "title": "Tribune 31 Aug 2021: Rains cause waterlogging in Delhi",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2021,
+     "url": "https://www.indiatvnews.com/news/india/heavy-rain-causes-waterlogging-in-several-areas-across-delhi-ncr-imd-warns-of-more-downpour-730649",
+     "title": "India TV 1 Sep 2021: Heavy rain causes waterlogging in several areas across Delhi-NCR",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2022,
+     "url": "https://www.tribuneindia.com/news/delhi/rain-wreaks-havoc-in-delhi-traffic-choked-on-major-routes-414152",
+     "title": "Tribune 20 Jul 2022: Rain wreaks havoc in Delhi",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2024,
+     "url": "https://www.outlookindia.com/national/delhi-rain-waterlogging-igi-airport-roof-collapse-flights-cancelled-traffic-ito-ring-road-noida-gurgaon-advisory",
+     "title": "Outlook 28 Jun 2024: Delhi Rain - waterlogging, IGI roof collapse",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2025,
+     "url": "https://www.tribuneindia.com/news/delhi/rain-brings-traffic-to-a-grinding-halt-leaves-several-city-areas-waterlogged",
+     "title": "Tribune 29 Aug 2025: Rain brings traffic to a grinding halt, leaves several city areas waterlogged",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2026,
+     "url": "https://thepatriot.in/delhi-ncr/heavy-rains-lash-delhi-waterlogging-in-many-areas-88716",
+     "title": "The Patriot 25 Aug 2026: Heavy rains lash Delhi, waterlogging in many areas",
+     "verified_by": "fetch"
+    }
+   ],
+   "official_list": null,
+   "storm_reports": [
+    {
+     "date": "2024-06-28",
+     "time_ist": "10:05",
+     "url": "https://www.outlookindia.com/national/delhi-rain-waterlogging-igi-airport-roof-collapse-flights-cancelled-traffic-ito-ring-road-noida-gurgaon-advisory",
+     "quote": "Aurobindo Marg, AIIMS Flyover listed as waterlogged (article published 10:05 am IST, 28 Jun 2024)"
+    },
+    {
+     "date": "2024-06-28",
+     "time_ist": "07:49",
+     "url": "https://www.outlookindia.com/national/delhi-rain-noida-ghaziabad-gurgaon-waterlogging-airport-traffic-jam-imd-weather-forecast",
+     "quote": "Aurobindo Marg towards AIIMS (Delhi Traffic Police)"
+    },
+    {
+     "date": "2026-08-25",
+     "time_ist": null,
+     "url": "https://thepatriot.in/delhi-ncr/heavy-rains-lash-delhi-waterlogging-in-many-areas-88716",
+     "quote": "Waterlogging was also reported around the Supreme Court and AIIMS (early hours of Tuesday 25 Aug)"
+    }
+   ]
+  },
+  {
+   "name_en": "Saket",
+   "locality": "Saket",
+   "road": "Press Enclave Road / Mehrauli-Badarpur Road",
+   "diversion_road": "Aurobindo Marg / MB Road",
+   "query": "Saket, New Delhi",
+   "lat": 28.5245,
+   "lon": 77.2066,
+   "site_type": "colony",
+   "importance": 0.6,
+   "reports": [
+    {
+     "year": 2021,
+     "url": "https://www.outlookindia.com/national/india-news-delhi-rains-waterlogging-reported-on-several-road-stretches-man-drowns-in-flooded-underpass-news-388727",
+     "title": "Outlook 19 Jul 2021: Waterlogging reported on several road stretches",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2024,
+     "url": "https://www.outlookindia.com/national/delhi-rain-waterlogging-igi-airport-roof-collapse-flights-cancelled-traffic-ito-ring-road-noida-gurgaon-advisory",
+     "title": "Outlook 28 Jun 2024: Delhi Rain - waterlogging, IGI roof collapse",
+     "verified_by": "fetch"
+    }
+   ],
+   "official_list": null,
+   "storm_reports": [
+    {
+     "date": "2024-06-28",
+     "time_ist": "10:05",
+     "url": "https://www.outlookindia.com/national/delhi-rain-waterlogging-igi-airport-roof-collapse-flights-cancelled-traffic-ito-ring-road-noida-gurgaon-advisory",
+     "quote": "Saket Metro Station listed as waterlogged (article published 10:05 am IST, 28 Jun 2024)"
+    }
+   ]
+  },
+  {
+   "name_en": "Hauz Khas",
+   "locality": "Hauz Khas",
+   "road": "Aurobindo Marg / Outer Ring Road",
+   "diversion_road": "Outer Ring Road via IIT flyover",
+   "query": "Hauz Khas, New Delhi",
+   "lat": 28.5494,
+   "lon": 77.2001,
+   "site_type": "colony",
+   "importance": 0.6,
+   "reports": [
+    {
+     "year": 2021,
+     "url": "https://www.outlookindia.com/national/india-news-delhi-rains-waterlogging-reported-on-several-road-stretches-man-drowns-in-flooded-underpass-news-388727",
+     "title": "Outlook 19 Jul 2021: Waterlogging reported on several road stretches",
+     "verified_by": "fetch"
+    }
+   ],
+   "official_list": null,
+   "storm_reports": []
+  },
+  {
+   "name_en": "RK Puram",
+   "locality": "RK Puram",
+   "road": "Ring Road / Africa Avenue",
+   "diversion_road": "Outer Ring Road",
+   "query": "RK Puram, New Delhi",
+   "lat": 28.566,
+   "lon": 77.183,
+   "site_type": "colony",
+   "importance": 0.6,
+   "reports": [
+    {
+     "year": 2021,
+     "url": "https://www.outlookindia.com/national/india-news-delhi-rains-waterlogging-reported-on-several-road-stretches-man-drowns-in-flooded-underpass-news-388727",
+     "title": "Outlook 19 Jul 2021: Waterlogging reported on several road stretches",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2025,
+     "url": "https://www.tribuneindia.com/news/delhi/rain-brings-traffic-to-a-grinding-halt-leaves-several-city-areas-waterlogged",
+     "title": "Tribune 29 Aug 2025: Rain brings traffic to a grinding halt, leaves several city areas waterlogged",
+     "verified_by": "fetch"
+    }
+   ],
+   "official_list": null,
+   "storm_reports": []
+  },
+  {
+   "name_en": "Munirka",
+   "locality": "Munirka",
+   "road": "Outer Ring Road / Munirka Marg",
+   "diversion_road": "Ring Road via RK Puram",
+   "query": "Munirka, New Delhi",
+   "lat": 28.557,
+   "lon": 77.173,
+   "site_type": "colony",
+   "importance": 0.6,
+   "reports": [
+    {
+     "year": 2021,
+     "url": "https://www.tribuneindia.com/news/delhi/heavy-rain-leads-to-waterlogging-traffic-snarls-at-several-places-in-delhi-291387",
+     "title": "Tribune 1 Aug 2021: Heavy rain leads to waterlogging, traffic snarls",
+     "verified_by": "fetch"
+    }
+   ],
+   "official_list": null,
+   "storm_reports": []
+  },
+  {
+   "name_en": "Moti Bagh (Ring Road, Naraina - Moti Bagh)",
+   "locality": "Moti Bagh",
+   "road": "Ring Road",
+   "diversion_road": "Africa Avenue / Aurobindo Marg",
+   "query": "Moti Bagh, New Delhi",
+   "lat": 28.575,
+   "lon": 77.175,
+   "site_type": "road",
+   "importance": 1.0,
+   "reports": [
+    {
+     "year": 2022,
+     "url": "https://www.tribuneindia.com/news/delhi/rain-wreaks-havoc-in-delhi-traffic-choked-on-major-routes-414152",
+     "title": "Tribune 20 Jul 2022: Rain wreaks havoc in Delhi",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2024,
+     "url": "https://www.tribuneindia.com/news/delhi/heavy-rain-causes-traffic-jams-in-delhi-key-routes-affected",
+     "title": "Tribune 2 Sep 2024: Heavy rain causes traffic jams in Delhi",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2025,
+     "url": "https://www.tribuneindia.com/news/delhi/rain-brings-traffic-to-a-grinding-halt-leaves-several-city-areas-waterlogged",
+     "title": "Tribune 29 Aug 2025: Rain brings traffic to a grinding halt, leaves several city areas waterlogged",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2026,
+     "url": "https://thepatriot.in/delhi-ncr/heavy-rains-lash-delhi-waterlogging-in-many-areas-88716",
+     "title": "The Patriot 25 Aug 2026: Heavy rains lash Delhi, waterlogging in many areas",
+     "verified_by": "fetch"
+    }
+   ],
+   "official_list": null,
+   "storm_reports": [
+    {
+     "date": "2024-06-28",
+     "time_ist": "07:49",
+     "url": "https://www.outlookindia.com/national/delhi-rain-noida-ghaziabad-gurgaon-waterlogging-airport-traffic-jam-imd-weather-forecast",
+     "quote": "Ring Road in both the carriageways from Naraina towards Moti Bagh (Delhi Traffic Police)"
+    },
+    {
+     "date": "2026-08-25",
+     "time_ist": null,
+     "url": "https://thepatriot.in/delhi-ncr/heavy-rains-lash-delhi-waterlogging-in-many-areas-88716",
+     "quote": "Several other areas, including ITO, Moti Bagh, Kamla Nagar and Karol Bagh, also witnessed waterlogging"
+    }
+   ]
+  },
+  {
+   "name_en": "Dhaula Kuan (Ring Road / NH-48 junction)",
+   "locality": "Dhaula Kuan",
+   "road": "Ring Road / NH-48 (Delhi-Gurugram)",
+   "diversion_road": "Outer Ring Road / Mahipalpur Road",
+   "query": "Dhaula Kuan, New Delhi",
+   "lat": 28.5918,
+   "lon": 77.1618,
+   "site_type": "junction",
+   "importance": 1.0,
+   "reports": [
+    {
+     "year": 2020,
+     "url": "https://www.tribuneindia.com/news/delhi/heavy-rains-lead-to-water-logging-traffic-snarls-at-several-places-in-delhi-116399",
+     "title": "Tribune 22 Jul 2020: Heavy rains lead to water-logging, traffic snarls",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2021,
+     "url": "https://www.tribuneindia.com/news/delhi/rains-cause-waterlogging-in-delhi-traffic-movement-affected-304588",
+     "title": "Tribune 31 Aug 2021: Rains cause waterlogging in Delhi",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2022,
+     "url": "https://www.tribuneindia.com/news/delhi/rain-wreaks-havoc-in-delhi-traffic-choked-on-major-routes-414152",
+     "title": "Tribune 20 Jul 2022: Rain wreaks havoc in Delhi",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2024,
+     "url": "https://www.outlookindia.com/national/delhi-rain-waterlogging-igi-airport-roof-collapse-flights-cancelled-traffic-ito-ring-road-noida-gurgaon-advisory",
+     "title": "Outlook 28 Jun 2024: Delhi Rain - waterlogging, IGI roof collapse",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2025,
+     "url": "https://kashmirobserver.net/2025/08/14/heavy-rain-in-delhi-waterlogging-brings-traffic-to-halt/",
+     "title": "Kashmir Observer 14 Aug 2025: Heavy rain in Delhi, waterlogging brings traffic to halt",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2025,
+     "url": "https://www.tribuneindia.com/news/delhi/overnight-rain-brings-delhi-to-standstill/amp",
+     "title": "Tribune 10 Jul 2025: Overnight rain brings Delhi to standstill",
+     "verified_by": "fetch"
+    }
+   ],
+   "official_list": null,
+   "storm_reports": [
+    {
+     "date": "2024-06-28",
+     "time_ist": "10:05",
+     "url": "https://www.outlookindia.com/national/delhi-rain-waterlogging-igi-airport-roof-collapse-flights-cancelled-traffic-ito-ring-road-noida-gurgaon-advisory",
+     "quote": "Ring Road, Dhaula Kuan Flyover listed as waterlogged (article published 10:05 am IST, 28 Jun 2024)"
+    }
+   ]
+  },
+  {
+   "name_en": "Sangam Vihar",
+   "locality": "Sangam Vihar",
+   "road": "Sangam Vihar Main Road / Tughlakabad Extension",
+   "diversion_road": "Mehrauli-Badarpur Road",
+   "query": "Sangam Vihar, New Delhi",
+   "lat": 28.5,
+   "lon": 77.24,
+   "site_type": "colony",
+   "importance": 0.3,
+   "reports": [
+    {
+     "year": 2021,
+     "url": "https://www.nationalheraldindia.com/national/heavy-rains-cause-waterlogging-in-delhi-crucial-underpasses-closed-for-traffic",
+     "title": "National Herald 21 Aug 2021: Heavy rains cause waterlogging, crucial underpasses closed",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2024,
+     "url": "https://www.tribuneindia.com/news/delhi/commuters-face-traffic-snarls-as-brief-rain-spell-causes-waterlogging-638422",
+     "title": "Tribune 9 Jul 2024: Commuters face traffic snarls as brief rain spell causes waterlogging",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2025,
+     "url": "https://www.tribuneindia.com/news/delhi/rain-brings-traffic-to-a-grinding-halt-leaves-several-city-areas-waterlogged",
+     "title": "Tribune 29 Aug 2025: Rain brings traffic to a grinding halt, leaves several city areas waterlogged",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2026,
+     "url": "https://thefederal.com/category/states/north/delhi/heavy-rain-delhi-waterlogging-major-roads-252757",
+     "title": "The Federal 6 Aug 2026: Heavy rain batters Delhi, waterlogging on major roads",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2026,
+     "url": "https://www.thehansindia.com/news/cities/new-delhi/heavy-rain-triggers-waterlogging-in-city-traffic-crippled-1113715",
+     "title": "Hans India 25 Aug 2026: Heavy rain triggers waterlogging in city, traffic crippled",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2026,
+     "url": "https://theprint.in/feature/delhi-passed-first-monsoon-test-fewer-waterlogged-roads/2983394/",
+     "title": "ThePrint 10 Jul 2026: How Delhi passed its first monsoon test with fewer waterlogged roads",
+     "verified_by": "fetch"
+    }
+   ],
+   "official_list": null,
+   "storm_reports": [
+    {
+     "date": "2026-08-25",
+     "time_ist": "05:52",
+     "url": "https://www.thehansindia.com/news/cities/new-delhi/heavy-rain-triggers-waterlogging-in-city-traffic-crippled-1113715",
+     "quote": "Sangam Vihar and Durga Vihar streets flooded"
+    }
+   ]
+  },
+  {
+   "name_en": "Mehrauli-Badarpur Road (Khanpur - Okhla Mor)",
+   "locality": "Khanpur / Badarpur",
+   "road": "Mehrauli-Badarpur Road (MB Road)",
+   "diversion_road": "Mathura Road / Outer Ring Road",
+   "query": "Mehrauli-Badarpur Road, Khanpur, New Delhi",
+   "lat": 28.505,
+   "lon": 77.24,
+   "site_type": "road",
+   "importance": 1.0,
+   "reports": [
+    {
+     "year": 2021,
+     "url": "https://www.nationalheraldindia.com/national/heavy-rains-cause-waterlogging-in-delhi-crucial-underpasses-closed-for-traffic",
+     "title": "National Herald 21 Aug 2021: Heavy rains cause waterlogging, crucial underpasses closed",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2021,
+     "url": "https://www.india.com/news/india/delhi-rains-ncr-noida-gurgaon-ghaziabad-rains-live-updates-delhi-police-traffic-alert-waterlogging-traffic-movement-cp-minto-bridge-moolchand-underpass-ito-traffic-advisory-diversions-4902745/",
+     "title": "India.com 21 Aug 2021: Waterlogging in CP, Minto Bridge & ITO live",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2022,
+     "url": "https://www.tribuneindia.com/news/delhi/rain-wreaks-havoc-in-delhi-traffic-choked-on-major-routes-414152",
+     "title": "Tribune 20 Jul 2022: Rain wreaks havoc in Delhi",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2025,
+     "url": "https://www.tribuneindia.com/news/delhi/rain-brings-traffic-to-a-grinding-halt-leaves-several-city-areas-waterlogged",
+     "title": "Tribune 29 Aug 2025: Rain brings traffic to a grinding halt, leaves several city areas waterlogged",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2026,
+     "url": "https://www.thehansindia.com/news/cities/new-delhi/heavy-rain-triggers-waterlogging-in-city-traffic-crippled-1113715",
+     "title": "Hans India 25 Aug 2026: Heavy rain triggers waterlogging in city, traffic crippled",
+     "verified_by": "fetch"
+    }
+   ],
+   "official_list": null,
+   "storm_reports": [
+    {
+     "date": "2026-08-25",
+     "time_ist": "05:52",
+     "url": "https://www.thehansindia.com/news/cities/new-delhi/heavy-rain-triggers-waterlogging-in-city-traffic-crippled-1113715",
+     "quote": "Mehrauli-Badarpur Road near Okhla Mor waterlogged, water nearly three feet, 5 km jam Khanpur to Okhla Mor (Hans India created 5:52 AM IST; storm hit Monday 24 Aug)"
+    }
+   ]
+  },
+  {
+   "name_en": "Badarpur",
+   "locality": "Badarpur",
+   "road": "Mathura Road / Mehrauli-Badarpur Road",
+   "diversion_road": "Faridabad-Badarpur Road / Surajkund Road",
+   "query": "Badarpur, New Delhi",
+   "lat": 28.493,
+   "lon": 77.304,
+   "site_type": "junction",
+   "importance": 1.0,
+   "reports": [
+    {
+     "year": 2026,
+     "url": "https://thepatriot.in/delhi-ncr/rain-triggers-waterlogging-in-delhi-disrupts-traffic-87446",
+     "title": "The Patriot 8 Jul 2026: Rain triggers waterlogging in Delhi, disrupts traffic",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2026,
+     "url": "https://www.theweek.in/news/india/2026/08/08/delhi-heavy-rain-disruptions-monsoon-weather-waterlogging-traffic-imd-rain-alert-north-india-imd-forecast.html",
+     "title": "The Week 8 Aug 2026: Heavy rainfall triggers waterlogging in Delhi-NCR",
+     "verified_by": "fetch"
+    }
+   ],
+   "official_list": null,
+   "storm_reports": [
+    {
+     "date": "2026-08-08",
+     "time_ist": "10:31",
+     "url": "https://www.theweek.in/news/india/2026/08/08/delhi-heavy-rain-disruptions-monsoon-weather-waterlogging-traffic-imd-rain-alert-north-india-imd-forecast.html",
+     "quote": "Heavy rains have submerged key roads in Delhi, causing massive traffic jams in areas like Kapashera and Badarpur"
+    }
+   ]
+  },
+  {
+   "name_en": "Greater Kailash",
+   "locality": "Greater Kailash",
+   "road": "Lala Lajpat Rai Marg / Outer Ring Road (Greater Kailash)",
+   "diversion_road": "Outer Ring Road",
+   "query": "Greater Kailash, New Delhi",
+   "lat": 28.548,
+   "lon": 77.238,
+   "site_type": "colony",
+   "importance": 0.6,
+   "reports": [
+    {
+     "year": 2024,
+     "url": "https://www.tribuneindia.com/news/delhi/commuters-face-traffic-snarls-as-brief-rain-spell-causes-waterlogging-638422",
+     "title": "Tribune 9 Jul 2024: Commuters face traffic snarls as brief rain spell causes waterlogging",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2026,
+     "url": "https://thepatriot.in/delhi-ncr/rain-triggers-waterlogging-in-delhi-disrupts-traffic-87446",
+     "title": "The Patriot 8 Jul 2026: Rain triggers waterlogging in Delhi, disrupts traffic",
+     "verified_by": "fetch"
+    }
+   ],
+   "official_list": null,
+   "storm_reports": []
+  },
+  {
+   "name_en": "Nehru Place",
+   "locality": "Nehru Place",
+   "road": "Outer Ring Road / Nehru Place",
+   "diversion_road": "Mathura Road",
+   "query": "Nehru Place, New Delhi",
+   "lat": 28.5491,
+   "lon": 77.253,
+   "site_type": "junction",
+   "importance": 0.6,
+   "reports": [
+    {
+     "year": 2025,
+     "url": "https://www.tribuneindia.com/news/delhi/rain-brings-traffic-to-a-grinding-halt-leaves-several-city-areas-waterlogged",
+     "title": "Tribune 29 Aug 2025: Rain brings traffic to a grinding halt, leaves several city areas waterlogged",
+     "verified_by": "fetch"
+    }
+   ],
+   "official_list": null,
+   "storm_reports": []
+  },
+  {
+   "name_en": "Defence Colony",
+   "locality": "Defence Colony",
+   "road": "Ring Road / Defence Colony Flyover",
+   "diversion_road": "Mathura Road",
+   "query": "Defence Colony, New Delhi",
+   "lat": 28.575,
+   "lon": 77.233,
+   "site_type": "colony",
+   "importance": 0.6,
+   "reports": [
+    {
+     "year": 2026,
+     "url": "https://thefederal.com/category/states/north/delhi/heavy-rain-delhi-waterlogging-major-roads-252757",
+     "title": "The Federal 6 Aug 2026: Heavy rain batters Delhi, waterlogging on major roads",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2026,
+     "url": "https://dailypioneer.com/news/monsoon-mayhem-delhi-battles-waterlogging-traffic-chaos",
+     "title": "Daily Pioneer 7 Aug 2026: Monsoon mayhem, Delhi battles waterlogging",
+     "verified_by": "fetch"
+    }
+   ],
+   "official_list": null,
+   "storm_reports": []
+  },
+  {
+   "name_en": "Kalkaji",
+   "locality": "Kalkaji",
+   "road": "Outer Ring Road / Kalkaji Main Road",
+   "diversion_road": "Outer Ring Road",
+   "query": "Kalkaji, New Delhi",
+   "lat": 28.54,
+   "lon": 77.26,
+   "site_type": "colony",
+   "importance": 0.6,
+   "reports": [
+    {
+     "year": 2026,
+     "url": "https://thefederal.com/category/states/north/delhi/heavy-rain-delhi-waterlogging-major-roads-252757",
+     "title": "The Federal 6 Aug 2026: Heavy rain batters Delhi, waterlogging on major roads",
+     "verified_by": "fetch"
+    }
+   ],
+   "official_list": null,
+   "storm_reports": []
+  },
+  {
+   "name_en": "South Avenue Road",
+   "locality": "Lutyens' Delhi / Panchkuian",
+   "road": "South Avenue Road",
+   "diversion_road": "Rajpath / Tughlak Road",
+   "query": "South Avenue, New Delhi",
+   "lat": 28.605,
+   "lon": 77.208,
+   "site_type": "road",
+   "importance": 0.6,
+   "reports": [
+    {
+     "year": 2020,
+     "url": "https://www.indiatvnews.com/news/india/delhi-rains-delhi-traffic-alert-waterlogged-roads-areas-list-minto-road-azadpur-ndls-paharganj-full-list-635379",
+     "title": "India TV 19 Jul 2020: Delhi Traffic Alert waterlogged areas full list",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2026,
+     "url": "https://www.india.com/news/india/delhi-rain-rain-lashes-national-capital-waterlogging-traffic-jams-hit-noida-ghaziabad-gurugram-faridabad-check-imd-forecast-minto-road-ring-road-dnd-8509767/",
+     "title": "India.com 25 Aug 2026: Delhi rain, waterlogging, traffic jams",
+     "verified_by": "fetch"
+    }
+   ],
+   "official_list": null,
+   "storm_reports": [
+    {
+     "date": "2026-08-25",
+     "time_ist": "17:41",
+     "url": "https://www.india.com/news/india/delhi-rain-rain-lashes-national-capital-waterlogging-traffic-jams-hit-noida-ghaziabad-gurugram-faridabad-check-imd-forecast-minto-road-ring-road-dnd-8509767/",
+     "quote": "South Avenue ... submerged streets"
+    }
+   ]
+  },
+  {
+   "name_en": "Lodhi Road",
+   "locality": "Lodhi Road / Jor Bagh",
+   "road": "Lodhi Road",
+   "diversion_road": "Aurobindo Marg / Ring Road",
+   "query": "Lodhi Road, New Delhi",
+   "lat": 28.59,
+   "lon": 77.227,
+   "site_type": "road",
+   "importance": 0.6,
+   "reports": [
+    {
+     "year": 2021,
+     "url": "https://www.tribuneindia.com/news/delhi/heavy-rain-leads-to-waterlogging-traffic-snarls-at-several-places-in-delhi-291387",
+     "title": "Tribune 1 Aug 2021: Heavy rain leads to waterlogging, traffic snarls",
+     "verified_by": "fetch"
+    }
+   ],
+   "official_list": null,
+   "storm_reports": []
+  },
+  {
+   "name_en": "Laxmi Nagar / Preet Vihar",
+   "locality": "Laxmi Nagar (East Delhi)",
+   "road": "Vikas Marg / Laxmi Nagar Main Road",
+   "diversion_road": "NH-24 / Patparganj Road",
+   "query": "Laxmi Nagar, Delhi",
+   "lat": 28.635,
+   "lon": 77.277,
+   "site_type": "colony",
+   "importance": 0.6,
+   "reports": [
+    {
+     "year": 2024,
+     "url": "https://www.tribuneindia.com/news/delhi/commuters-face-traffic-snarls-as-brief-rain-spell-causes-waterlogging-638422",
+     "title": "Tribune 9 Jul 2024: Commuters face traffic snarls as brief rain spell causes waterlogging",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2025,
+     "url": "https://www.tribuneindia.com/news/delhi/rain-brings-traffic-to-a-grinding-halt-leaves-several-city-areas-waterlogged",
+     "title": "Tribune 29 Aug 2025: Rain brings traffic to a grinding halt, leaves several city areas waterlogged",
+     "verified_by": "fetch"
+    }
+   ],
+   "official_list": null,
+   "storm_reports": []
+  },
+  {
+   "name_en": "Vikas Marg (near Laxmi Nagar Metro)",
+   "locality": "Laxmi Nagar / Shakarpur (East Delhi)",
+   "road": "Vikas Marg",
+   "diversion_road": "Patparganj Road / NH-24",
+   "query": "Vikas Marg, Laxmi Nagar, Delhi",
+   "lat": 28.636,
+   "lon": 77.276,
+   "site_type": "road",
+   "importance": 1.0,
+   "reports": [
+    {
+     "year": 2021,
+     "url": "https://www.outlookindia.com/national/india-news-delhi-rains-waterlogging-reported-on-several-road-stretches-man-drowns-in-flooded-underpass-news-388727",
+     "title": "Outlook 19 Jul 2021: Waterlogging reported on several road stretches",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2024,
+     "url": "https://www.outlookindia.com/national/delhi-rain-waterlogging-igi-airport-roof-collapse-flights-cancelled-traffic-ito-ring-road-noida-gurgaon-advisory",
+     "title": "Outlook 28 Jun 2024: Delhi Rain - waterlogging, IGI roof collapse",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2025,
+     "url": "https://www.tribuneindia.com/news/delhi/no-waterlogging-at-minto-bridge-as-rain-lashes-capital/amp",
+     "title": "Tribune 23 Jul 2025: No waterlogging at Minto Bridge as rain lashes capital",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2025,
+     "url": "https://www.tribuneindia.com/news/delhi/rain-brings-traffic-to-a-grinding-halt-leaves-several-city-areas-waterlogged",
+     "title": "Tribune 29 Aug 2025: Rain brings traffic to a grinding halt, leaves several city areas waterlogged",
+     "verified_by": "fetch"
+    }
+   ],
+   "official_list": null,
+   "storm_reports": []
+  },
+  {
+   "name_en": "Patparganj Road underpass (Mother Dairy)",
+   "locality": "Patparganj / Mayur Vihar",
+   "road": "Patparganj Road / NH-24",
+   "diversion_road": "Vikas Marg / NH-9",
+   "query": "Patparganj Road, Delhi",
+   "lat": 28.624,
+   "lon": 77.303,
+   "site_type": "underpass",
+   "importance": 0.6,
+   "reports": [
+    {
+     "year": 2021,
+     "url": "https://www.tribuneindia.com/news/delhi/heavy-rain-leads-to-waterlogging-traffic-snarls-at-several-places-in-delhi-291387",
+     "title": "Tribune 1 Aug 2021: Heavy rain leads to waterlogging, traffic snarls",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2024,
+     "url": "https://www.outlookindia.com/national/delhi-rain-chaos-over-5-dead-2727-traffic-jam-calls-119-for-waterlogging-26-for-building-collapses",
+     "title": "Outlook 1 Aug 2024: Delhi Rain Chaos - 2,727 traffic jam calls, 119 for waterlogging",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2025,
+     "url": "https://www.tribuneindia.com/news/delhi/rain-brings-traffic-to-a-grinding-halt-leaves-several-city-areas-waterlogged",
+     "title": "Tribune 29 Aug 2025: Rain brings traffic to a grinding halt, leaves several city areas waterlogged",
+     "verified_by": "fetch"
+    }
+   ],
+   "official_list": null,
+   "storm_reports": [
+    {
+     "date": "2024-08-01",
+     "time_ist": null,
+     "url": "https://www.outlookindia.com/national/delhi-rain-chaos-over-5-dead-2727-traffic-jam-calls-119-for-waterlogging-26-for-building-collapses",
+     "quote": "Mother Dairy, Ganesh Nagar and Patparganj Road still waterlogged on Thursday morning (article published 6:38 pm IST 1 Aug; police logs 'until 7 am Thursday' show 8 further waterlogging calls)"
+    }
+   ]
+  },
+  {
+   "name_en": "Geeta Colony / Sanjay Lake",
+   "locality": "Geeta Colony (East Delhi)",
+   "road": "Geeta Colony Road / Outer Ring Road",
+   "diversion_road": "Pusta Road / Wazirabad Road",
+   "query": "Geeta Colony, Delhi",
+   "lat": 28.656,
+   "lon": 77.274,
+   "site_type": "colony",
+   "importance": 0.3,
+   "reports": [
+    {
+     "year": 2021,
+     "url": "https://www.outlookindia.com/national/india-news-delhi-rains-waterlogging-reported-on-several-road-stretches-man-drowns-in-flooded-underpass-news-388727",
+     "title": "Outlook 19 Jul 2021: Waterlogging reported on several road stretches",
+     "verified_by": "fetch"
+    },
+    {
+     "year": 2025,
+     "url": "https://www.tribuneindia.com/news/delhi/rain-brings-traffic-to-a-grinding-halt-leaves-several-city-areas-waterlogged",
+     "title": "Tribune 29 Aug 2025: Rain brings traffic to a grinding halt, leaves several city areas waterlogged",
+     "verified_by": "fetch"
+    }
+   ],
+   "official_list": null,
+   "storm_reports": []
+  }
+ ],
+ "storm_reports": [
+  {
+   "date": "2024-06-28",
+   "time_ist": "07:49",
+   "url": "https://www.outlookindia.com/national/delhi-rain-noida-ghaziabad-gurgaon-waterlogging-airport-traffic-jam-imd-weather-forecast",
+   "quote": "Outlook article published 7:49 am IST; rain began ~3 am; Delhi Traffic Police: waterlogging on Ring Road Naraina-Moti Bagh, Azad Market underpass, Aurobindo Marg towards AIIMS, W-Point Tilak Bridge road"
+  },
+  {
+   "date": "2024-06-28",
+   "time_ist": "10:05",
+   "url": "https://www.outlookindia.com/national/delhi-rain-waterlogging-igi-airport-roof-collapse-flights-cancelled-traffic-ito-ring-road-noida-gurgaon-advisory",
+   "quote": "Delhi recorded 228 mm in 24 hours to 8:30 am Friday (highest June 24-hr since 1936); waterlogging at ITO, Moolchand, Minto Bridge, Saket, Sarita Vihar; Pragati Maidan tunnel closed"
+  },
+  {
+   "date": "2024-08-01",
+   "time_ist": null,
+   "url": "https://www.outlookindia.com/national/delhi-rain-chaos-over-5-dead-2727-traffic-jam-calls-119-for-waterlogging-26-for-building-collapses",
+   "quote": "Several parts of Delhi remained waterlogged on Thursday, August 1 (ITO, Rajghat, Mother Dairy, Ganesh Nagar, Patparganj Road); 107 mm at Safdarjung in prior 24 hrs; 119 waterlogging calls till midnight Wed 31 Jul, 8 more till 7 am (published 6:38 pm)"
+  },
+  {
+   "date": "2026-08-08",
+   "time_ist": "10:31",
+   "url": "https://www.theweek.in/news/india/2026/08/08/delhi-heavy-rain-disruptions-monsoon-weather-waterlogging-traffic-imd-rain-alert-north-india-imd-forecast.html",
+   "quote": "The Week 8 Aug 2026: heavy rains submerged key roads - Kapashera, Badarpur jams; waterlogging Gadaipur, Karmapura, Karol Bagh (rain of Fri 7 Aug); also PTI 6 Aug 19:26 IST for Sangam Vihar, Defence Colony etc. at https://thefederal.com/category/states/north/delhi/heavy-rain-delhi-waterlogging-major-roads-252757"
+  },
+  {
+   "date": "2026-08-25",
+   "time_ist": "05:52",
+   "url": "https://www.thehansindia.com/news/cities/new-delhi/heavy-rain-triggers-waterlogging-in-city-traffic-crippled-1113715",
+   "quote": "Hans India created 5:52 AM IST: Mehrauli-Badarpur Rd near Okhla Mor ~3 ft water, Zakira underpass flooded (storm of Mon 24 Aug); Patriot/Pioneer 25 Aug: Ashoka Road, Raisina Rd, RML, around Supreme Court and AIIMS waterlogged in early hours of Tue 25 Aug"
+  }
+ ]
+}

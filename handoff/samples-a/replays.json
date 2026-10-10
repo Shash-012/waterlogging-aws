@@ -1,0 +1,42 @@
+[
+ {
+  "event_id": "2024-06-28",
+  "title_en": "Delhi record downpour, 28 Jun 2024 (228 mm at Safdarjung)",
+  "kind": "storm",
+  "start": "2024-06-27T08:00:00Z",
+  "end": "2024-06-28T08:00:00Z",
+  "frame_count": 25
+ },
+ {
+  "event_id": "2024-07-31",
+  "title_en": "Delhi evening cloudburst, 31 Jul - 1 Aug 2024 (107.6 mm at Safdarjung)",
+  "kind": "storm",
+  "start": "2024-07-30T19:00:00Z",
+  "end": "2024-07-31T19:00:00Z",
+  "frame_count": 25
+ },
+ {
+  "event_id": "2026-08-07",
+  "title_en": "Delhi heavy rain, 7-8 Aug 2026 (98.7 mm Safdarjung, 104.6 mm Palam)",
+  "kind": "storm",
+  "start": "2026-08-06T22:00:00Z",
+  "end": "2026-08-07T22:00:00Z",
+  "frame_count": 25
+ },
+ {
+  "event_id": "2026-08-25",
+  "title_en": "Delhi storm, 24-25 Aug 2026 (99.1 mm at Safdarjung)",
+  "kind": "storm",
+  "start": "2026-08-23T18:00:00Z",
+  "end": "2026-08-24T18:00:00Z",
+  "frame_count": 25
+ },
+ {
+  "event_id": "2026-09-10",
+  "title_en": "Dry monsoon-break day, 10 Sep 2026 (control)",
+  "kind": "dry",
+  "start": "2026-09-09T18:00:00Z",
+  "end": "2026-09-10T18:00:00Z",
+  "frame_count": 25
+ }
+]

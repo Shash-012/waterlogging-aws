@@ -1,0 +1,328 @@
+{
+ "events": [
+  {
+   "event": "2024-06-28",
+   "rain_start_ist": "2024-06-28T03:00",
+   "rain_start_source": "https://www.tribuneindia.com/news/delhi/heavy-rain-leaves-delhi-waterlogged-traffic-crawls-634883",
+   "reports": [
+    {
+     "hotspot_id": "DL-037",
+     "first_report_ist": "2024-06-28T07:49",
+     "time_kind": "published",
+     "source_url": "https://www.outlookindia.com/national/delhi-rain-noida-ghaziabad-gurgaon-waterlogging-airport-traffic-jam-imd-weather-forecast",
+     "quote": "Ring Road, both carriageways, from Naraina towards Moti Bagh (Delhi Traffic Police alert)",
+     "verified_by": "fetch"
+    },
+    {
+     "hotspot_id": "DL-004",
+     "first_report_ist": "2024-06-28T07:49",
+     "time_kind": "published",
+     "source_url": "https://www.outlookindia.com/national/delhi-rain-noida-ghaziabad-gurgaon-waterlogging-airport-traffic-jam-imd-weather-forecast",
+     "quote": "Traffic is affected in both the carriageways on Vir Banda Bairagi Marg due to waterlogging at Azad Market underpass",
+     "verified_by": "fetch"
+    },
+    {
+     "hotspot_id": "DL-002",
+     "first_report_ist": "2024-06-28T07:49",
+     "time_kind": "published",
+     "source_url": "https://www.outlookindia.com/national/delhi-rain-noida-ghaziabad-gurgaon-waterlogging-airport-traffic-jam-imd-weather-forecast",
+     "quote": "Aurobindo Marg towards AIIMS",
+     "verified_by": "fetch"
+    },
+    {
+     "hotspot_id": "DL-065",
+     "first_report_ist": "2024-06-28T07:49",
+     "time_kind": "published",
+     "source_url": "https://www.outlookindia.com/national/delhi-rain-noida-ghaziabad-gurgaon-waterlogging-airport-traffic-jam-imd-weather-forecast",
+     "quote": "W-Point Tilak Bridge road",
+     "verified_by": "fetch"
+    },
+    {
+     "hotspot_id": "DL-001",
+     "first_report_ist": "2024-06-28T10:05",
+     "time_kind": "published",
+     "source_url": "https://www.outlookindia.com/national/delhi-rain-waterlogging-igi-airport-roof-collapse-flights-cancelled-traffic-ito-ring-road-noida-gurgaon-advisory",
+     "quote": "waterlogging at Minto Bridge underpass",
+     "verified_by": "fetch"
+    },
+    {
+     "hotspot_id": "DL-036",
+     "first_report_ist": "2024-06-28T10:05",
+     "time_kind": "published",
+     "source_url": "https://www.outlookindia.com/national/delhi-rain-waterlogging-igi-airport-roof-collapse-flights-cancelled-traffic-ito-ring-road-noida-gurgaon-advisory",
+     "quote": "wading through water at ... Moolchand",
+     "verified_by": "fetch"
+    },
+    {
+     "hotspot_id": "DL-022",
+     "first_report_ist": "2024-06-28T10:05",
+     "time_kind": "published",
+     "source_url": "https://www.outlookindia.com/national/delhi-rain-waterlogging-igi-airport-roof-collapse-flights-cancelled-traffic-ito-ring-road-noida-gurgaon-advisory",
+     "quote": "wading through water at: the ITO area",
+     "verified_by": "fetch"
+    },
+    {
+     "hotspot_id": "DL-045",
+     "first_report_ist": "2024-06-28T10:05",
+     "time_kind": "published",
+     "source_url": "https://www.outlookindia.com/national/delhi-rain-waterlogging-igi-airport-roof-collapse-flights-cancelled-traffic-ito-ring-road-noida-gurgaon-advisory",
+     "quote": "Pragati Maidan Tunnel was also closed due to rain-triggered waterlogging",
+     "verified_by": "fetch"
+    },
+    {
+     "hotspot_id": "DL-043",
+     "first_report_ist": "2024-06-28T10:05",
+     "time_kind": "published",
+     "source_url": "https://www.outlookindia.com/national/delhi-rain-waterlogging-igi-airport-roof-collapse-flights-cancelled-traffic-ito-ring-road-noida-gurgaon-advisory",
+     "quote": "Outer Ring Road ... waterlogging near Peeragarhi Village road",
+     "verified_by": "fetch"
+    },
+    {
+     "hotspot_id": "DL-054",
+     "first_report_ist": "2024-06-28T10:05",
+     "time_kind": "published",
+     "source_url": "https://www.outlookindia.com/national/delhi-rain-waterlogging-igi-airport-roof-collapse-flights-cancelled-traffic-ito-ring-road-noida-gurgaon-advisory",
+     "quote": "Traffic affected on Rohtak road (Rajdhani Park to Mundka) due to waterlogging",
+     "verified_by": "fetch"
+    },
+    {
+     "hotspot_id": "DL-014",
+     "first_report_ist": "2024-06-28T10:05",
+     "time_kind": "published",
+     "source_url": "https://www.outlookindia.com/national/delhi-rain-waterlogging-igi-airport-roof-collapse-flights-cancelled-traffic-ito-ring-road-noida-gurgaon-advisory",
+     "quote": "waterlogging under Dhaula Kuan Flyover",
+     "verified_by": "fetch"
+    },
+    {
+     "hotspot_id": "DL-057",
+     "first_report_ist": "2024-06-28T10:05",
+     "time_kind": "published",
+     "source_url": "https://www.outlookindia.com/national/delhi-rain-waterlogging-igi-airport-roof-collapse-flights-cancelled-traffic-ito-ring-road-noida-gurgaon-advisory",
+     "quote": "Saket Metro Station ... waterlogged",
+     "verified_by": "fetch"
+    },
+    {
+     "hotspot_id": "DL-060",
+     "first_report_ist": "2024-06-28T10:05",
+     "time_kind": "published",
+     "source_url": "https://www.outlookindia.com/national/delhi-rain-waterlogging-igi-airport-roof-collapse-flights-cancelled-traffic-ito-ring-road-noida-gurgaon-advisory",
+     "quote": "wading through water at ... Sarita Vihar",
+     "verified_by": "fetch"
+    },
+    {
+     "hotspot_id": "DL-012",
+     "first_report_ist": "2024-06-28T10:05",
+     "time_kind": "published",
+     "source_url": "https://www.outlookindia.com/national/delhi-rain-waterlogging-igi-airport-roof-collapse-flights-cancelled-traffic-ito-ring-road-noida-gurgaon-advisory",
+     "quote": "parts of Connaught Place",
+     "verified_by": "fetch"
+    }
+   ]
+  },
+  {
+   "event": "2024-07-31",
+   "rain_start_ist": null,
+   "rain_start_source": null,
+   "reports": [
+    {
+     "hotspot_id": "DL-022",
+     "first_report_ist": "2024-07-31T19:13",
+     "time_kind": "published",
+     "source_url": "https://www.outlookindia.com/national/delhi-ncr-receive-heavy-rain-rainy-weather-expected-till-aug-5",
+     "quote": "ITO, a traffic jam and affected traffic flow (Outlook, published 31 Jul 7:13 pm)",
+     "verified_by": "fetch"
+    },
+    {
+     "hotspot_id": "DL-029",
+     "first_report_ist": "2024-07-31T19:13",
+     "time_kind": "published",
+     "source_url": "https://www.outlookindia.com/national/delhi-ncr-receive-heavy-rain-rainy-weather-expected-till-aug-5",
+     "quote": "Lutyens' Delhi and Kashmere Gate inundated following the heavy rain",
+     "verified_by": "fetch"
+    },
+    {
+     "hotspot_id": "DL-028",
+     "first_report_ist": "2024-07-31T19:13",
+     "time_kind": "published",
+     "source_url": "https://www.outlookindia.com/national/delhi-ncr-receive-heavy-rain-rainy-weather-expected-till-aug-5",
+     "quote": "Karol Bagh metro station",
+     "verified_by": "fetch"
+    },
+    {
+     "hotspot_id": "DL-012",
+     "first_report_ist": "2024-07-31T19:13",
+     "time_kind": "published",
+     "source_url": "https://www.outlookindia.com/national/delhi-ncr-receive-heavy-rain-rainy-weather-expected-till-aug-5",
+     "quote": "Connaught Place ... waterlogging",
+     "verified_by": "fetch"
+    },
+    {
+     "hotspot_id": "DL-045",
+     "first_report_ist": "2024-08-01T06:38",
+     "time_kind": "published",
+     "source_url": "https://www.etvbharat.com/en/!bharat/delhi-ncr-rain-thursday-updates-enn24080100241",
+     "quote": "Pragati Maidan tunnel: traffic chaos from waterlogging",
+     "verified_by": "fetch"
+    },
+    {
+     "hotspot_id": "DL-044",
+     "first_report_ist": "2024-08-01T18:38",
+     "time_kind": "published",
+     "source_url": "https://www.outlookindia.com/national/delhi-rain-chaos-over-5-dead-2727-traffic-jam-calls-119-for-waterlogging-26-for-building-collapses",
+     "quote": "ITO, Rajghat, Mother Dairy, Ganesh Nagar and Patparganj Road waterlogged Thursday morning",
+     "verified_by": "fetch"
+    },
+    {
+     "hotspot_id": "DL-049",
+     "first_report_ist": "2024-08-01T18:38",
+     "time_kind": "published",
+     "source_url": "https://www.outlookindia.com/national/delhi-rain-chaos-over-5-dead-2727-traffic-jam-calls-119-for-waterlogging-26-for-building-collapses",
+     "quote": "Rajghat waterlogged on Thursday morning (stated morning of 1 Aug; article time used)",
+     "verified_by": "fetch"
+    },
+    {
+     "hotspot_id": "DL-024",
+     "first_report_ist": "2024-08-01T18:38",
+     "time_kind": "published",
+     "source_url": "https://www.outlookindia.com/national/delhi-rain-chaos-over-5-dead-2727-traffic-jam-calls-119-for-waterlogging-26-for-building-collapses",
+     "quote": "PTI photo caption: Jangpura people wading through flooded road on Wednesday 31 July (no clock time)",
+     "verified_by": "fetch"
+    }
+   ]
+  },
+  {
+   "event": "2026-08-07",
+   "rain_start_ist": null,
+   "rain_start_source": null,
+   "reports": [
+    {
+     "hotspot_id": "DL-035",
+     "first_report_ist": "2026-08-07T21:36",
+     "time_kind": "published",
+     "source_url": "https://www.newkerala.com/news/a/rain-havoc-across-delhi-ncr-waterlogging-chokes-key-roads-682.htm",
+     "quote": "MB Road, near the Air Force Station ... water about four feet; Okhla Mor, Khanpur (article last updated 21:36 on 7 Aug)",
+     "verified_by": "fetch"
+    },
+    {
+     "hotspot_id": "DL-058",
+     "first_report_ist": "2026-08-07T21:36",
+     "time_kind": "published",
+     "source_url": "https://www.newkerala.com/news/a/rain-havoc-across-delhi-ncr-waterlogging-chokes-key-roads-682.htm",
+     "quote": "Okhla Mor, Khanpur, Deoli, Ambedkar Nagar, and Sangam Vihar",
+     "verified_by": "fetch"
+    },
+    {
+     "hotspot_id": "DL-017",
+     "first_report_ist": "2026-08-08T10:26",
+     "time_kind": "published",
+     "source_url": "https://www.businesstoday.in/india/story/delhi-ncr-rains-roads-turn-into-rivers-traffic-collapses-after-12-hour-downpour-548101-2026-08-08",
+     "quote": "entrance to the Greater Kailash metro station was flooded",
+     "verified_by": "fetch"
+    },
+    {
+     "hotspot_id": "DL-057",
+     "first_report_ist": "2026-08-08T10:26",
+     "time_kind": "published",
+     "source_url": "https://www.businesstoday.in/india/story/delhi-ncr-rains-roads-turn-into-rivers-traffic-collapses-after-12-hour-downpour-548101-2026-08-08",
+     "quote": "Saket (waterlogged)",
+     "verified_by": "fetch"
+    },
+    {
+     "hotspot_id": "DL-022",
+     "first_report_ist": "2026-08-08T10:26",
+     "time_kind": "published",
+     "source_url": "https://www.businesstoday.in/india/story/delhi-ncr-rains-roads-turn-into-rivers-traffic-collapses-after-12-hour-downpour-548101-2026-08-08",
+     "quote": "Shakarpur, ITO (traffic disruption)",
+     "verified_by": "fetch"
+    },
+    {
+     "hotspot_id": "DL-006",
+     "first_report_ist": "2026-08-08T10:31",
+     "time_kind": "published",
+     "source_url": "https://www.theweek.in/news/india/2026/08/08/delhi-heavy-rain-disruptions-monsoon-weather-waterlogging-traffic-imd-rain-alert-north-india-imd-forecast.html",
+     "quote": "traffic jams in Kapashera and Badarpur after heavy rain submerged key stretches",
+     "verified_by": "fetch"
+    },
+    {
+     "hotspot_id": "DL-028",
+     "first_report_ist": "2026-08-08T10:31",
+     "time_kind": "published",
+     "source_url": "https://www.theweek.in/news/india/2026/08/08/delhi-heavy-rain-disruptions-monsoon-weather-waterlogging-traffic-imd-rain-alert-north-india-imd-forecast.html",
+     "quote": "Waterlogging were received in Gadaipur, Karmapura, and near Axis Bank in Karol Bagh",
+     "verified_by": "fetch"
+    },
+    {
+     "hotspot_id": "DL-049",
+     "first_report_ist": "2026-08-08T10:31",
+     "time_kind": "published",
+     "source_url": "https://www.theweek.in/news/india/2026/08/08/delhi-heavy-rain-disruptions-monsoon-weather-waterlogging-traffic-imd-rain-alert-north-india-imd-forecast.html",
+     "quote": "a road near Rajghat (photo caption)",
+     "verified_by": "fetch"
+    }
+   ]
+  },
+  {
+   "event": "2026-08-24",
+   "rain_start_ist": null,
+   "rain_start_source": null,
+   "reports": [
+    {
+     "hotspot_id": "DL-012",
+     "first_report_ist": "2026-08-24T17:54",
+     "time_kind": "published",
+     "source_url": "https://curlytales.com/india/trending/torrential-rain-in-delhi-waterlogging-in-connaught-place-flights-diverted-airlines-issue-advisories/",
+     "quote": "Connaught Place, Baba Kharak Singh Marg, and ITO ... severe waterlogging (Monday 24 Aug, citing India Today)",
+     "verified_by": "fetch"
+    },
+    {
+     "hotspot_id": "DL-022",
+     "first_report_ist": "2026-08-24T17:54",
+     "time_kind": "published",
+     "source_url": "https://curlytales.com/india/trending/torrential-rain-in-delhi-waterlogging-in-connaught-place-flights-diverted-airlines-issue-advisories/",
+     "quote": "Connaught Place, Baba Kharak Singh Marg, and ITO ... severe waterlogging",
+     "verified_by": "fetch"
+    },
+    {
+     "hotspot_id": "DL-035",
+     "first_report_ist": "2026-08-25T05:52",
+     "time_kind": "published",
+     "source_url": "https://www.thehansindia.com/news/cities/new-delhi/heavy-rain-triggers-waterlogging-in-city-traffic-crippled-1113715",
+     "quote": "Mehrauli-Badarpur Road near Okhla Mor: water nearly three feet, 5 km gridlock Khanpur to Okhla Mor",
+     "verified_by": "fetch"
+    },
+    {
+     "hotspot_id": "DL-058",
+     "first_report_ist": "2026-08-25T05:52",
+     "time_kind": "published",
+     "source_url": "https://www.thehansindia.com/news/cities/new-delhi/heavy-rain-triggers-waterlogging-in-city-traffic-crippled-1113715",
+     "quote": "Sangam Vihar, Durga Vihar ... waterlogged",
+     "verified_by": "fetch"
+    },
+    {
+     "hotspot_id": "DL-069",
+     "first_report_ist": "2026-08-25T05:52",
+     "time_kind": "published",
+     "source_url": "https://www.thehansindia.com/news/cities/new-delhi/heavy-rain-triggers-waterlogging-in-city-traffic-crippled-1113715",
+     "quote": "Zakira underpass waterlogged",
+     "verified_by": "fetch"
+    },
+    {
+     "hotspot_id": "DL-037",
+     "first_report_ist": "2026-08-25T11:58",
+     "time_kind": "published",
+     "source_url": "https://www.indiatvnews.com/delhi/heavy-rain-floods-delhi-roads-visuals-show-waterlogging-from-connaught-place-to-aiims-watch-videos-2026-08-25-1052335",
+     "quote": "Moti Bagh waterlogged (India TV, published 11:58)",
+     "verified_by": "fetch"
+    },
+    {
+     "hotspot_id": "DL-002",
+     "first_report_ist": "2026-08-25T08:31",
+     "time_kind": "published",
+     "source_url": "https://www.oneindia.com/new-delhi/delhi-rains-heavy-showers-trigger-waterlogging-and-traffic-snarls-across-capital-8186159.html",
+     "quote": "waterlogging ... AIIMS flyover loop",
+     "verified_by": "fetch"
+    }
+   ]
+  }
+ ]
+}
