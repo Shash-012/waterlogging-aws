@@ -17,23 +17,86 @@ Globals:
     Architectures: [arm64]
     MemorySize: 256
     Timeout: 15
+    Layers: [!Ref ModelLayer]
+    Environment:
+      Variables:
+        HOTSPOTS_TABLE: !Ref HotspotsTable
+        SNAPSHOTS_TABLE: !Ref SnapshotsTable
+        REPLAY_BUCKET: !Ref ReplayBucket
     Tags:
       Project: wlew
 
 Resources:
-  HttpApi:
-    Type: AWS::Serverless::HttpApi
+  # Pure-Python risk model (model/wlew_model + params.json), staged by `make -C core stage`.
+  ModelLayer:
+    Type: AWS::Serverless::LayerVersion
     Properties:
+      LayerName: wlew-model
+      ContentUri: build/layer/
+      CompatibleRuntimes: [python3.12]
+      CompatibleArchitectures: [arm64]
+
+  HotspotsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - {AttributeName: hotspot_id, AttributeType: S}
+      KeySchema:
+        - {AttributeName: hotspot_id, KeyType: HASH}
       Tags:
-        Project: wlew
-      CorsConfiguration:
-        AllowOrigins: !If
-          - HasExtraOrigin
-          - [http://localhost:5173, !Ref AllowedOrigin]
-          - [http://localhost:5173]
-        AllowMethods: [GET, OPTIONS]
-        AllowHeaders: ["*"]
-        MaxAge: 600
+        - {Key: Project, Value: wlew}
+
+  # One item per hourly run (run_id = as_of), plus a pointer item run_id = "LATEST".
+  SnapshotsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - {AttributeName: run_id, AttributeType: S}
+      KeySchema:
+        - {AttributeName: run_id, KeyType: HASH}
+      TimeToLiveSpecification:
+        AttributeName: expires_at
+        Enabled: true
+      Tags:
+        - {Key: Project, Value: wlew}
+
+  # Replay JSON is up to a few hundred KB per event, over DynamoDB's 400 KB item cap.
+  ReplayBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault: {SSEAlgorithm: AES256}
+      Tags:
+        - {Key: Project, Value: wlew}
+
+  ScoreFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: functions/score/
+      Handler: app.handler
+      Timeout: 60
+      LoggingConfig:
+        LogGroup: !Ref ScoreLogGroup
+      Policies:
+        - DynamoDBReadPolicy: {TableName: !Ref HotspotsTable}
+        - DynamoDBCrudPolicy: {TableName: !Ref SnapshotsTable}
+      Events:
+        Hourly:
+          Type: ScheduleV2
+          Properties:
+            Name: wlew-core-hourly-score
+            Description: Score every Delhi hotspot once an hour
+            ScheduleExpression: rate(1 hour)
+            RetryPolicy:
+              MaximumRetryAttempts: 2
 
   ApiFunction:
     Type: AWS::Serverless::Function
@@ -42,13 +105,31 @@ Resources:
       Handler: app.handler
       LoggingConfig:
         LogGroup: !Ref ApiLogGroup
+      Policies:
+        - DynamoDBReadPolicy: {TableName: !Ref HotspotsTable}
+        - DynamoDBReadPolicy: {TableName: !Ref SnapshotsTable}
+        - S3ReadPolicy: {BucketName: !Ref ReplayBucket}
       Events:
-        Health:
-          Type: HttpApi
-          Properties:
-            ApiId: !Ref HttpApi
-            Method: GET
-            Path: /health
+        Health: {Type: HttpApi, Properties: {ApiId: !Ref HttpApi, Method: GET, Path: /health}}
+        Hotspots: {Type: HttpApi, Properties: {ApiId: !Ref HttpApi, Method: GET, Path: /hotspots}}
+        Hotspot: {Type: HttpApi, Properties: {ApiId: !Ref HttpApi, Method: GET, Path: "/hotspots/{id}"}}
+        Latest: {Type: HttpApi, Properties: {ApiId: !Ref HttpApi, Method: GET, Path: /scores/latest}}
+        Pumps: {Type: HttpApi, Properties: {ApiId: !Ref HttpApi, Method: GET, Path: /pumps}}
+        Replays: {Type: HttpApi, Properties: {ApiId: !Ref HttpApi, Method: GET, Path: /replays}}
+        Replay: {Type: HttpApi, Properties: {ApiId: !Ref HttpApi, Method: GET, Path: "/replays/{event_id}"}}
+
+  HttpApi:
+    Type: AWS::Serverless::HttpApi
+    Properties:
+      Tags:
+        Project: wlew
+      CorsConfiguration:
+        AllowOrigins:
+          - http://localhost:5173
+          - !If [HasExtraOrigin, !Ref AllowedOrigin, !Ref AWS::NoValue]
+        AllowMethods: [GET, OPTIONS]
+        AllowHeaders: ["*"]
+        MaxAge: 600
 
   ApiLogGroup:
     Type: AWS::Logs::LogGroup
@@ -56,10 +137,25 @@ Resources:
       LogGroupName: /wlew/core/api
       RetentionInDays: 30
       Tags:
-        - Key: Project
-          Value: wlew
+        - {Key: Project, Value: wlew}
+
+  ScoreLogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: /wlew/core/score
+      RetentionInDays: 30
+      Tags:
+        - {Key: Project, Value: wlew}
 
 Outputs:
   CoreApiUrl:
     Description: Base URL of the public core API
     Value: !Sub "https://${HttpApi}.execute-api.${AWS::Region}.amazonaws.com"
+  HotspotsTableName:
+    Value: !Ref HotspotsTable
+  SnapshotsTableName:
+    Value: !Ref SnapshotsTable
+  ReplayBucketName:
+    Value: !Ref ReplayBucket
+  ScoreFunctionName:
+    Value: !Ref ScoreFunction
