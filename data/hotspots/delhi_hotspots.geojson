@@ -1,0 +1,1178 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.22231,
+     28.63656
+    ]
+   },
+   "properties": {
+    "id": "DL-001",
+    "name": "Minto Bridge underpass",
+    "site_type": "underpass",
+    "osm_road": "Vivekanand Marg",
+    "seasons": 5
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.20926,
+     28.56917
+    ]
+   },
+   "properties": {
+    "id": "DL-002",
+    "name": "AIIMS flyover, Aurobindo Marg",
+    "site_type": "road",
+    "osm_road": "AIIMS Flyover",
+    "seasons": 4
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.25892,
+     28.57161
+    ]
+   },
+   "properties": {
+    "id": "DL-003",
+    "name": "Ashram Chowk underpass",
+    "site_type": "junction",
+    "osm_road": "Ashram Underpass",
+    "seasons": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.20765,
+     28.66313
+    ]
+   },
+   "properties": {
+    "id": "DL-004",
+    "name": "Azad Market Underpass",
+    "site_type": "underpass",
+    "osm_road": "Rani Jhansi Flyover",
+    "seasons": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.17712,
+     28.70897
+    ]
+   },
+   "properties": {
+    "id": "DL-005",
+    "name": "Azadpur Underpass",
+    "site_type": "underpass",
+    "osm_road": "Azadpur Underpass",
+    "seasons": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.304,
+     28.493
+    ]
+   },
+   "properties": {
+    "id": "DL-006",
+    "name": "Badarpur",
+    "site_type": "junction",
+    "osm_road": "",
+    "seasons": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.01912,
+     28.64506
+    ]
+   },
+   "properties": {
+    "id": "DL-007",
+    "name": "Baprola - Najafgarh Road",
+    "site_type": "road",
+    "osm_road": "Najafgarh Nangloi Road",
+    "seasons": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2443,
+     28.61153
+    ]
+   },
+   "properties": {
+    "id": "DL-008",
+    "name": "Bhairon Marg railway underbridge",
+    "site_type": "underpass",
+    "osm_road": "Bhairon Marg",
+    "seasons": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.05129,
+     28.53696
+    ]
+   },
+   "properties": {
+    "id": "DL-009",
+    "name": "Bijwasan",
+    "site_type": "road",
+    "osm_road": "",
+    "seasons": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.20165,
+     28.75364
+    ]
+   },
+   "properties": {
+    "id": "DL-010",
+    "name": "Burari",
+    "site_type": "road",
+    "osm_road": "Gali Number 116",
+    "seasons": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.21996,
+     28.69463
+    ]
+   },
+   "properties": {
+    "id": "DL-011",
+    "name": "Chaudhary Fateh Singh Marg",
+    "site_type": "road",
+    "osm_road": "Timarpur Road",
+    "seasons": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.21938,
+     28.63177
+    ]
+   },
+   "properties": {
+    "id": "DL-012",
+    "name": "Connaught Place",
+    "site_type": "junction",
+    "osm_road": "Inner Circle",
+    "seasons": 3
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.233,
+     28.575
+    ]
+   },
+   "properties": {
+    "id": "DL-013",
+    "name": "Defence Colony",
+    "site_type": "colony",
+    "osm_road": "",
+    "seasons": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.16172,
+     28.59187
+    ]
+   },
+   "properties": {
+    "id": "DL-014",
+    "name": "Dhaula Kuan",
+    "site_type": "junction",
+    "osm_road": "NH48",
+    "seasons": 5
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.05888,
+     28.57136
+    ]
+   },
+   "properties": {
+    "id": "DL-015",
+    "name": "Dwarka Sector 20 (Road 210/224)",
+    "site_type": "colony",
+    "osm_road": "",
+    "seasons": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.275,
+     28.65109
+    ]
+   },
+   "properties": {
+    "id": "DL-016",
+    "name": "Geeta Colony / Sanjay Lake",
+    "site_type": "colony",
+    "osm_road": "",
+    "seasons": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.238,
+     28.548
+    ]
+   },
+   "properties": {
+    "id": "DL-017",
+    "name": "Greater Kailash",
+    "site_type": "colony",
+    "osm_road": "",
+    "seasons": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.1648,
+     28.7266
+    ]
+   },
+   "properties": {
+    "id": "DL-018",
+    "name": "GTK Depot, Old GT Road",
+    "site_type": "road",
+    "osm_road": "Baba Amarnath Marg",
+    "seasons": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.20134,
+     28.5476
+    ]
+   },
+   "properties": {
+    "id": "DL-019",
+    "name": "Hauz Khas",
+    "site_type": "colony",
+    "osm_road": "",
+    "seasons": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.1,
+     28.556
+    ]
+   },
+   "properties": {
+    "id": "DL-020",
+    "name": "IGI Airport T3 approach and Palam tunnel",
+    "site_type": "underpass",
+    "osm_road": "",
+    "seasons": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.24559,
+     28.63269
+    ]
+   },
+   "properties": {
+    "id": "DL-021",
+    "name": "IP Marg near old Police Headquarters",
+    "site_type": "road",
+    "osm_road": "",
+    "seasons": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.24104,
+     28.62819
+    ]
+   },
+   "properties": {
+    "id": "DL-022",
+    "name": "ITO crossing",
+    "site_type": "junction",
+    "osm_road": "Bahadur Shah Zafar Marg",
+    "seasons": 3
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.16313,
+     28.72565
+    ]
+   },
+   "properties": {
+    "id": "DL-023",
+    "name": "Jahangirpuri Metro Station Road underpass",
+    "site_type": "underpass",
+    "osm_road": "Ramgarh road",
+    "seasons": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.23932,
+     28.58304
+    ]
+   },
+   "properties": {
+    "id": "DL-024",
+    "name": "Jangpura",
+    "site_type": "colony",
+    "osm_road": "Shri Kuldeep Singh Gujral Marg",
+    "seasons": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.24798,
+     28.54352
+    ]
+   },
+   "properties": {
+    "id": "DL-025",
+    "name": "Kalkaji",
+    "site_type": "colony",
+    "osm_road": "Shri Raghuram Mandir Gurudwara Marg",
+    "seasons": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.08193,
+     28.52143
+    ]
+   },
+   "properties": {
+    "id": "DL-026",
+    "name": "Kapashera Underpass",
+    "site_type": "underpass",
+    "osm_road": "Old Delhi Gurgaon Road",
+    "seasons": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.04741,
+     28.72801
+    ]
+   },
+   "properties": {
+    "id": "DL-027",
+    "name": "Karala-Kanjhawala Road",
+    "site_type": "road",
+    "osm_road": "Kanjhawala road",
+    "seasons": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.1907,
+     28.6519
+    ]
+   },
+   "properties": {
+    "id": "DL-028",
+    "name": "Karol Bagh market",
+    "site_type": "colony",
+    "osm_road": "",
+    "seasons": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.23042,
+     28.6687
+    ]
+   },
+   "properties": {
+    "id": "DL-029",
+    "name": "Kashmere Gate ISBT, Ring Road",
+    "site_type": "road",
+    "osm_road": "Gali Number 2",
+    "seasons": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.05555,
+     28.7
+    ]
+   },
+   "properties": {
+    "id": "DL-030",
+    "name": "Kirari Suleman Nagar",
+    "site_type": "colony",
+    "osm_road": "",
+    "seasons": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.19791,
+     28.66274
+    ]
+   },
+   "properties": {
+    "id": "DL-031",
+    "name": "Kishanganj underpass (Kodia Bridge)",
+    "site_type": "underpass",
+    "osm_road": "Gaushala Road",
+    "seasons": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.23648,
+     28.57058
+    ]
+   },
+   "properties": {
+    "id": "DL-032",
+    "name": "Ring Road at Lajpat Nagar",
+    "site_type": "road",
+    "osm_road": "Feroze Gandhi Road",
+    "seasons": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.21633,
+     28.58974
+    ]
+   },
+   "properties": {
+    "id": "DL-033",
+    "name": "Lodhi Road",
+    "site_type": "road",
+    "osm_road": "Lodhi Road",
+    "seasons": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.126,
+     28.5446
+    ]
+   },
+   "properties": {
+    "id": "DL-034",
+    "name": "Mahipalpur Chowk - NH-48",
+    "site_type": "junction",
+    "osm_road": "",
+    "seasons": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.24,
+     28.505
+    ]
+   },
+   "properties": {
+    "id": "DL-035",
+    "name": "MB Road, Khanpur to Okhla Mor",
+    "site_type": "road",
+    "osm_road": "",
+    "seasons": 3
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.23415,
+     28.56553
+    ]
+   },
+   "properties": {
+    "id": "DL-036",
+    "name": "Moolchand underpass",
+    "site_type": "underpass",
+    "osm_road": "Moolchand Flyover",
+    "seasons": 4
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.17618,
+     28.57821
+    ]
+   },
+   "properties": {
+    "id": "DL-037",
+    "name": "Ring Road at Moti Bagh",
+    "site_type": "road",
+    "osm_road": "Moti Bagh Flyover",
+    "seasons": 3
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.17108,
+     28.55489
+    ]
+   },
+   "properties": {
+    "id": "DL-038",
+    "name": "Munirka",
+    "site_type": "colony",
+    "osm_road": "",
+    "seasons": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.97,
+     28.609
+    ]
+   },
+   "properties": {
+    "id": "DL-039",
+    "name": "Najafgarh Road near Tooda Mandi",
+    "site_type": "road",
+    "osm_road": "",
+    "seasons": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.98651,
+     28.61245
+    ]
+   },
+   "properties": {
+    "id": "DL-040",
+    "name": "Najafgarh town / main market",
+    "site_type": "road",
+    "osm_road": "Shivaji Marg",
+    "seasons": 3
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2522,
+     28.5492
+    ]
+   },
+   "properties": {
+    "id": "DL-041",
+    "name": "Nehru Place",
+    "site_type": "junction",
+    "osm_road": "",
+    "seasons": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.19167,
+     28.65902
+    ]
+   },
+   "properties": {
+    "id": "DL-042",
+    "name": "New Rohtak Road at Anand Parbat",
+    "site_type": "road",
+    "osm_road": "New Rohtak Road",
+    "seasons": 3
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.09463,
+     28.67954
+    ]
+   },
+   "properties": {
+    "id": "DL-043",
+    "name": "Outer Ring Road, Bhera Enclave to Peeragarhi",
+    "site_type": "road",
+    "osm_road": "Outer Ring Road",
+    "seasons": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.28684,
+     28.6222
+    ]
+   },
+   "properties": {
+    "id": "DL-044",
+    "name": "Patparganj Road underpass (Mother Dairy)",
+    "site_type": "underpass",
+    "osm_road": "",
+    "seasons": 3
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.23909,
+     28.61636
+    ]
+   },
+   "properties": {
+    "id": "DL-045",
+    "name": "Pragati Maidan tunnel",
+    "site_type": "underpass",
+    "osm_road": "Pragati Maidan Tunnel",
+    "seasons": 3
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.29071,
+     28.50191
+    ]
+   },
+   "properties": {
+    "id": "DL-046",
+    "name": "Pul Prahladpur underpass",
+    "site_type": "underpass",
+    "osm_road": "Mehrauli Badarpur Road",
+    "seasons": 4
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.08566,
+     28.84648
+    ]
+   },
+   "properties": {
+    "id": "DL-047",
+    "name": "Ramdev Chowk, Narela",
+    "site_type": "junction",
+    "osm_road": "",
+    "seasons": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.11784,
+     28.54115
+    ]
+   },
+   "properties": {
+    "id": "DL-048",
+    "name": "Rangpuri Chowk",
+    "site_type": "junction",
+    "osm_road": "Rangpuri",
+    "seasons": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.25766,
+     28.64089
+    ]
+   },
+   "properties": {
+    "id": "DL-049",
+    "name": "Ring Road at Rajghat / Shantivan",
+    "site_type": "road",
+    "osm_road": "Ring Road",
+    "seasons": 3
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2437,
+     28.6288
+    ]
+   },
+   "properties": {
+    "id": "DL-050",
+    "name": "Ring Road opposite WHO building",
+    "site_type": "road",
+    "osm_road": "Indraprastha Marg",
+    "seasons": 3
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.10718,
+     28.72081
+    ]
+   },
+   "properties": {
+    "id": "DL-051",
+    "name": "Outer Ring Road at Rithala and Pitampura",
+    "site_type": "road",
+    "osm_road": "Bhagwan mahavir marg",
+    "seasons": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.17552,
+     28.56145
+    ]
+   },
+   "properties": {
+    "id": "DL-052",
+    "name": "RK Puram",
+    "site_type": "colony",
+    "osm_road": "",
+    "seasons": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.12705,
+     28.74367
+    ]
+   },
+   "properties": {
+    "id": "DL-053",
+    "name": "Rohini Sector 22, Shahbad Dairy",
+    "site_type": "colony",
+    "osm_road": "",
+    "seasons": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.0305,
+     28.6824
+    ]
+   },
+   "properties": {
+    "id": "DL-054",
+    "name": "Rohtak Road at Mundka",
+    "site_type": "road",
+    "osm_road": "Rohtak Road",
+    "seasons": 3
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.06473,
+     28.6824
+    ]
+   },
+   "properties": {
+    "id": "DL-055",
+    "name": "Rohtak Road, Nangloi to Tikri Border",
+    "site_type": "road",
+    "osm_road": "",
+    "seasons": 3
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.14612,
+     28.673
+    ]
+   },
+   "properties": {
+    "id": "DL-056",
+    "name": "Rohtak Road, Punjabi Bagh to Shadipur",
+    "site_type": "road",
+    "osm_road": "Rohtak Road",
+    "seasons": 0
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.20963,
+     28.52349
+    ]
+   },
+   "properties": {
+    "id": "DL-057",
+    "name": "Saket",
+    "site_type": "colony",
+    "osm_road": "",
+    "seasons": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.24,
+     28.5
+    ]
+   },
+   "properties": {
+    "id": "DL-058",
+    "name": "Sangam Vihar",
+    "site_type": "colony",
+    "osm_road": "",
+    "seasons": 3
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.2565,
+     28.5883
+    ]
+   },
+   "properties": {
+    "id": "DL-059",
+    "name": "Ring Road at Sarai Kale Khan",
+    "site_type": "road",
+    "osm_road": "",
+    "seasons": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.28856,
+     28.53816
+    ]
+   },
+   "properties": {
+    "id": "DL-060",
+    "name": "Sarita Vihar, Mathura Road",
+    "site_type": "junction",
+    "osm_road": "",
+    "seasons": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.19523,
+     28.68102
+    ]
+   },
+   "properties": {
+    "id": "DL-061",
+    "name": "Shakti Nagar Underpass",
+    "site_type": "underpass",
+    "osm_road": "Vyas Marg",
+    "seasons": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.25053,
+     28.66843
+    ]
+   },
+   "properties": {
+    "id": "DL-062",
+    "name": "Shastri Park",
+    "site_type": "colony",
+    "osm_road": "Depot Approach Road",
+    "seasons": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.19906,
+     28.60798
+    ]
+   },
+   "properties": {
+    "id": "DL-063",
+    "name": "South Avenue Road",
+    "site_type": "road",
+    "osm_road": "South Avenue",
+    "seasons": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     76.96408,
+     28.68803
+    ]
+   },
+   "properties": {
+    "id": "DL-064",
+    "name": "Tikri Border (Rohtak Road)",
+    "site_type": "road",
+    "osm_road": "Rohtak Road",
+    "seasons": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.23715,
+     28.62847
+    ]
+   },
+   "properties": {
+    "id": "DL-065",
+    "name": "Tilak Bridge (W-Point) underpass",
+    "site_type": "underpass",
+    "osm_road": "Mahawat Khan Road",
+    "seasons": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.22445,
+     28.707
+    ]
+   },
+   "properties": {
+    "id": "DL-066",
+    "name": "Timarpur",
+    "site_type": "road",
+    "osm_road": "Timarpur Road",
+    "seasons": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.25629,
+     28.62792
+    ]
+   },
+   "properties": {
+    "id": "DL-067",
+    "name": "Vikas Marg (near Laxmi Nagar Metro)",
+    "site_type": "road",
+    "osm_road": "Vikas Marg",
+    "seasons": 3
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.23938,
+     28.662
+    ]
+   },
+   "properties": {
+    "id": "DL-068",
+    "name": "Yamuna Bazar",
+    "site_type": "road",
+    "osm_road": "",
+    "seasons": 2
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     77.144,
+     28.659
+    ]
+   },
+   "properties": {
+    "id": "DL-069",
+    "name": "Zakhira Underpass",
+    "site_type": "underpass",
+    "osm_road": "Shivaji Marg",
+    "seasons": 4
+   }
+  }
+ ]
+}
