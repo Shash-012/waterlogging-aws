@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Node
+node_modules/
+dist/
+npm-debug.log*
+yarn-error.log*
+.vite/
+
+# AWS SAM
+.aws-sam/
+
+# Secrets and local env
+.env*
+
+# Rasters (DEM tiles are never committed)
+*.tif
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

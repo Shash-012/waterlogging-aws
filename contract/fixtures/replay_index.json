@@ -1,0 +1,10 @@
+[
+  {
+    "event_id": "2026-08-25",
+    "title_en": "Delhi cloudburst, 25 Aug 2026 (synthetic fixture)",
+    "kind": "storm",
+    "start": "2026-08-25T00:00:00Z",
+    "end": "2026-08-25T17:00:00Z",
+    "frame_count": 18
+  }
+]

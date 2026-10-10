@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Snapshot",
+  "description": "GET /scores/latest, and the shape of every replay frame.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "run_id",
+    "as_of",
+    "mode",
+    "params_version",
+    "city",
+    "hotspots"
+  ],
+  "properties": {
+    "run_id": {
+      "$ref": "common.schema.json#/$defs/utc_time"
+    },
+    "as_of": {
+      "$ref": "common.schema.json#/$defs/utc_time"
+    },
+    "mode": {
+      "$ref": "common.schema.json#/$defs/mode"
+    },
+    "params_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "city": {
+      "type": "object",
+      "additionalProperties": false,
+      "title": "CityState",
+      "required": [
+        "status",
+        "rain_trigger_max",
+        "spots_raining"
+      ],
+      "properties": {
+        "status": {
+          "$ref": "common.schema.json#/$defs/city_status"
+        },
+        "rain_trigger_max": {
+          "$ref": "common.schema.json#/$defs/score"
+        },
+        "spots_raining": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "hotspots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "title": "SnapshotHotspot",
+        "required": [
+          "hotspot_id",
+          "rank",
+          "level",
+          "risk",
+          "rain_trigger",
+          "susceptibility",
+          "intensity_mm_h",
+          "rain_24h_mm",
+          "effective_intensity_mm_h",
+          "peak_at"
+        ],
+        "properties": {
+          "hotspot_id": {
+            "$ref": "common.schema.json#/$defs/hotspot_id"
+          },
+          "rank": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "1 = highest risk."
+          },
+          "level": {
+            "$ref": "common.schema.json#/$defs/level"
+          },
+          "risk": {
+            "$ref": "common.schema.json#/$defs/score"
+          },
+          "rain_trigger": {
+            "$ref": "common.schema.json#/$defs/score"
+          },
+          "susceptibility": {
+            "$ref": "common.schema.json#/$defs/score"
+          },
+          "intensity_mm_h": {
+            "type": "number",
+            "minimum": 0,
+            "description": "I: highest hourly precipitation over the current hour and the next window_hours."
+          },
+          "rain_24h_mm": {
+            "type": "number",
+            "minimum": 0,
+            "description": "A: precipitation over the 24 h ending at the current hour."
+          },
+          "effective_intensity_mm_h": {
+            "$ref": "common.schema.json#/$defs/non_negative"
+          },
+          "peak_at": {
+            "anyOf": [
+              {
+                "$ref": "common.schema.json#/$defs/utc_time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Hour of the highest forecast intensity in the window; null when no rain is forecast."
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ReplayIndex",
+  "description": "GET /replays: a JSON array of ReplaySummary.",
+  "type": "array",
+  "items": {
+    "$ref": "replay_summary.schema.json"
+  }
+}

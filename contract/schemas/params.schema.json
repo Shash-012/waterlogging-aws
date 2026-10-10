@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Params",
+  "description": "Shape of model/params.json. Agent A may retune the numbers; the shape is fixed.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "rain",
+    "susceptibility",
+    "levels",
+    "city"
+  ],
+  "properties": {
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "rain": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "i0_mm_h",
+        "i1_mm_h",
+        "a_sat_mm",
+        "k",
+        "window_hours"
+      ],
+      "properties": {
+        "i0_mm_h": {
+          "type": "number",
+          "minimum": 0
+        },
+        "i1_mm_h": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "a_sat_mm": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "k": {
+          "type": "number",
+          "minimum": 0
+        },
+        "window_hours": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "susceptibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "w_history",
+        "w_low_lying",
+        "w_catchment"
+      ],
+      "properties": {
+        "w_history": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "w_low_lying": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "w_catchment": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    },
+    "levels": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "watch",
+        "high",
+        "critical"
+      ],
+      "properties": {
+        "watch": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "high": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "critical": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    },
+    "city": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "alert",
+        "severe"
+      ],
+      "properties": {
+        "alert": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "severe": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    }
+  }
+}

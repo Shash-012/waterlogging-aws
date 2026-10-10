@@ -1,0 +1,29 @@
+{
+  "alerts": [
+    {
+      "hotspot_id": "DL-001",
+      "run_id": "2026-08-25T07:00:00Z",
+      "mode": "replay",
+      "event_id": "2026-08-25",
+      "level": "HIGH",
+      "risk": 0.368,
+      "peak_at": "2026-08-25T11:00:00Z",
+      "alert_id": "alrt-20260825-dl001-0001",
+      "sent_at": "2026-10-09T14:05:12Z",
+      "duplicate": false,
+      "text_en": "[Replay · 25 Aug 2026] HIGH waterlogging risk at Minto Bridge underpass (risk 0.368), peak expected 15:30 IST. Avoid the Minto Road underpass below the railway bridge. Use Bhavbhuti Marg via Ajmeri Gate.",
+      "text_hi": "[रीप्ले · 25 अगस्त 2026] मिंटो ब्रिज अंडरपास पर जलभराव का उच्च खतरा (जोखिम 0.368), चरम लगभग 15:30 IST. रेलवे पुल के नीचे मिंटो रोड अंडरपास से बचें। अजमेरी गेट होते हुए भवभूति मार्ग लें।",
+      "deliveries": [
+        {
+          "group": "traffic-police-demo",
+          "ok": true
+        },
+        {
+          "group": "rwa-demo",
+          "ok": true
+        }
+      ],
+      "sent_by": "test-official"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PumpPlan",
+  "description": "GET /pumps?count=N (N from 0 to 50).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "run_id",
+    "pumps_available",
+    "assignments",
+    "unassigned"
+  ],
+  "properties": {
+    "run_id": {
+      "$ref": "common.schema.json#/$defs/utc_time"
+    },
+    "pumps_available": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 50
+    },
+    "assignments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "title": "PumpAssignment",
+        "required": [
+          "hotspot_id",
+          "pumps",
+          "level",
+          "risk"
+        ],
+        "properties": {
+          "hotspot_id": {
+            "$ref": "common.schema.json#/$defs/hotspot_id"
+          },
+          "pumps": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 2
+          },
+          "level": {
+            "$ref": "common.schema.json#/$defs/level"
+          },
+          "risk": {
+            "$ref": "common.schema.json#/$defs/score"
+          }
+        }
+      }
+    },
+    "unassigned": {
+      "type": "array",
+      "description": "HIGH-or-above spots left without a pump.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "title": "PumpUnassigned",
+        "required": [
+          "hotspot_id",
+          "level",
+          "risk"
+        ],
+        "properties": {
+          "hotspot_id": {
+            "$ref": "common.schema.json#/$defs/hotspot_id"
+          },
+          "level": {
+            "type": "string",
+            "enum": [
+              "HIGH",
+              "CRITICAL"
+            ]
+          },
+          "risk": {
+            "$ref": "common.schema.json#/$defs/score"
+          }
+        }
+      }
+    }
+  }
+}

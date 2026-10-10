@@ -1,0 +1,157 @@
+{
+  "run_id": "2026-10-09T14:00:00Z",
+  "as_of": "2026-10-09T14:00:00Z",
+  "mode": "live",
+  "params_version": "v1",
+  "city": {
+    "status": "ALERT",
+    "rain_trigger_max": 0.64,
+    "spots_raining": 11
+  },
+  "hotspots": [
+    {
+      "hotspot_id": "DL-004",
+      "rank": 1,
+      "level": "CRITICAL",
+      "risk": 0.606,
+      "rain_trigger": 0.606,
+      "susceptibility": 1.0,
+      "intensity_mm_h": 13.0,
+      "rain_24h_mm": 33.0,
+      "effective_intensity_mm_h": 20.2,
+      "peak_at": "2026-10-09T17:00:00Z"
+    },
+    {
+      "hotspot_id": "DL-001",
+      "rank": 2,
+      "level": "HIGH",
+      "risk": 0.522,
+      "rain_trigger": 0.64,
+      "susceptibility": 0.815,
+      "intensity_mm_h": 14.0,
+      "rain_24h_mm": 30.0,
+      "effective_intensity_mm_h": 21.0,
+      "peak_at": "2026-10-09T17:00:00Z"
+    },
+    {
+      "hotspot_id": "DL-005",
+      "rank": 3,
+      "level": "HIGH",
+      "risk": 0.519,
+      "rain_trigger": 0.548,
+      "susceptibility": 0.947,
+      "intensity_mm_h": 11.0,
+      "rain_24h_mm": 42.0,
+      "effective_intensity_mm_h": 18.7,
+      "peak_at": "2026-10-09T18:00:00Z"
+    },
+    {
+      "hotspot_id": "DL-002",
+      "rank": 4,
+      "level": "HIGH",
+      "risk": 0.44,
+      "rain_trigger": 0.568,
+      "susceptibility": 0.775,
+      "intensity_mm_h": 12.0,
+      "rain_24h_mm": 36.0,
+      "effective_intensity_mm_h": 19.2,
+      "peak_at": "2026-10-09T17:00:00Z"
+    },
+    {
+      "hotspot_id": "DL-003",
+      "rank": 5,
+      "level": "HIGH",
+      "risk": 0.354,
+      "rain_trigger": 0.563,
+      "susceptibility": 0.629,
+      "intensity_mm_h": 13.0,
+      "rain_24h_mm": 28.0,
+      "effective_intensity_mm_h": 19.1,
+      "peak_at": "2026-10-09T16:00:00Z"
+    },
+    {
+      "hotspot_id": "DL-006",
+      "rank": 6,
+      "level": "WATCH",
+      "risk": 0.251,
+      "rain_trigger": 0.36,
+      "susceptibility": 0.698,
+      "intensity_mm_h": 10.0,
+      "rain_24h_mm": 24.0,
+      "effective_intensity_mm_h": 14.0,
+      "peak_at": "2026-10-09T16:00:00Z"
+    },
+    {
+      "hotspot_id": "DL-007",
+      "rank": 7,
+      "level": "WATCH",
+      "risk": 0.187,
+      "rain_trigger": 0.292,
+      "susceptibility": 0.64,
+      "intensity_mm_h": 9.0,
+      "rain_24h_mm": 22.0,
+      "effective_intensity_mm_h": 12.3,
+      "peak_at": "2026-10-09T17:00:00Z"
+    },
+    {
+      "hotspot_id": "DL-010",
+      "rank": 8,
+      "level": "LOW",
+      "risk": 0.117,
+      "rain_trigger": 0.173,
+      "susceptibility": 0.676,
+      "intensity_mm_h": 7.0,
+      "rain_24h_mm": 20.0,
+      "effective_intensity_mm_h": 9.3,
+      "peak_at": "2026-10-09T15:00:00Z"
+    },
+    {
+      "hotspot_id": "DL-008",
+      "rank": 9,
+      "level": "LOW",
+      "risk": 0.078,
+      "rain_trigger": 0.216,
+      "susceptibility": 0.36,
+      "intensity_mm_h": 8.0,
+      "rain_24h_mm": 18.0,
+      "effective_intensity_mm_h": 10.4,
+      "peak_at": "2026-10-09T16:00:00Z"
+    },
+    {
+      "hotspot_id": "DL-009",
+      "rank": 10,
+      "level": "LOW",
+      "risk": 0.046,
+      "rain_trigger": 0.088,
+      "susceptibility": 0.522,
+      "intensity_mm_h": 6.0,
+      "rain_24h_mm": 12.0,
+      "effective_intensity_mm_h": 7.2,
+      "peak_at": "2026-10-09T15:00:00Z"
+    },
+    {
+      "hotspot_id": "DL-012",
+      "rank": 11,
+      "level": "LOW",
+      "risk": 0.0,
+      "rain_trigger": 0.0,
+      "susceptibility": 0.355,
+      "intensity_mm_h": 4.0,
+      "rain_24h_mm": 6.0,
+      "effective_intensity_mm_h": 4.4,
+      "peak_at": "2026-10-09T15:00:00Z"
+    },
+    {
+      "hotspot_id": "DL-011",
+      "rank": 12,
+      "level": "LOW",
+      "risk": 0.0,
+      "rain_trigger": 0.0,
+      "susceptibility": 0.191,
+      "intensity_mm_h": 0.0,
+      "rain_24h_mm": 0.0,
+      "effective_intensity_mm_h": 0.0,
+      "peak_at": null
+    }
+  ]
+}

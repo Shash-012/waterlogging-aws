@@ -1,0 +1,326 @@
+[
+  {
+    "hotspot_id": "DL-001",
+    "name_en": "Minto Bridge underpass",
+    "name_hi": "मिंटो ब्रिज अंडरपास",
+    "lat": 28.631,
+    "lon": 77.225,
+    "site_type": "underpass",
+    "ward": null,
+    "importance": 1.0,
+    "elevation_m": 214.0,
+    "relative_depth_m": 1.4,
+    "catchment_km2": 0.88,
+    "flood_seasons": 4,
+    "factors": {
+      "history": 0.8,
+      "low_lying": 0.9,
+      "catchment": 0.72
+    },
+    "susceptibility": 0.815,
+    "avoid_en": "Avoid the Minto Road underpass below the railway bridge.",
+    "avoid_hi": "रेलवे पुल के नीचे मिंटो रोड अंडरपास से बचें।",
+    "diversion_en": "Use Bhavbhuti Marg via Ajmeri Gate.",
+    "diversion_hi": "अजमेरी गेट होते हुए भवभूति मार्ग लें।",
+    "sources": [
+      "https://example.org/wlew-fixture/DL-001"
+    ]
+  },
+  {
+    "hotspot_id": "DL-002",
+    "name_en": "Pragati Maidan tunnel",
+    "name_hi": "प्रगति मैदान सुरंग",
+    "lat": 28.6175,
+    "lon": 77.245,
+    "site_type": "underpass",
+    "ward": null,
+    "importance": 1.0,
+    "elevation_m": 206.0,
+    "relative_depth_m": 2.1,
+    "catchment_km2": 2.4,
+    "flood_seasons": 3,
+    "factors": {
+      "history": 0.6,
+      "low_lying": 0.9,
+      "catchment": 0.882
+    },
+    "susceptibility": 0.775,
+    "avoid_en": "Avoid the Pragati Maidan tunnel.",
+    "avoid_hi": "प्रगति मैदान सुरंग से बचें।",
+    "diversion_en": "Use Mathura Road and Bhairon Marg.",
+    "diversion_hi": "मथुरा रोड और भैरों मार्ग लें।",
+    "sources": [
+      "https://example.org/wlew-fixture/DL-002"
+    ]
+  },
+  {
+    "hotspot_id": "DL-003",
+    "name_en": "ITO crossing, Vikas Marg",
+    "name_hi": "आईटीओ चौराहा, विकास मार्ग",
+    "lat": 28.6286,
+    "lon": 77.241,
+    "site_type": "junction",
+    "ward": null,
+    "importance": 1.0,
+    "elevation_m": 208.0,
+    "relative_depth_m": 0.9,
+    "catchment_km2": 1.6,
+    "flood_seasons": 4,
+    "factors": {
+      "history": 0.8,
+      "low_lying": 0.3,
+      "catchment": 0.817
+    },
+    "susceptibility": 0.629,
+    "avoid_en": "Avoid the ITO crossing.",
+    "avoid_hi": "आईटीओ चौराहे से बचें।",
+    "diversion_en": "Use Ring Road via Rajghat.",
+    "diversion_hi": "राजघाट होते हुए रिंग रोड लें।",
+    "sources": [
+      "https://example.org/wlew-fixture/DL-003"
+    ]
+  },
+  {
+    "hotspot_id": "DL-004",
+    "name_en": "Zakhira underpass",
+    "name_hi": "ज़खीरा अंडरपास",
+    "lat": 28.6612,
+    "lon": 77.1508,
+    "site_type": "underpass",
+    "ward": null,
+    "importance": 1.0,
+    "elevation_m": 216.0,
+    "relative_depth_m": 3.4,
+    "catchment_km2": 6.1,
+    "flood_seasons": 5,
+    "factors": {
+      "history": 1.0,
+      "low_lying": 1.0,
+      "catchment": 1.0
+    },
+    "susceptibility": 1.0,
+    "avoid_en": "Avoid the Zakhira underpass on Najafgarh Road.",
+    "avoid_hi": "नजफगढ़ रोड पर ज़खीरा अंडरपास से बचें।",
+    "diversion_en": "Use the Zakhira flyover.",
+    "diversion_hi": "ज़खीरा फ्लाईओवर का उपयोग करें।",
+    "sources": [
+      "https://example.org/wlew-fixture/DL-004"
+    ]
+  },
+  {
+    "hotspot_id": "DL-005",
+    "name_en": "Pul Prahladpur underpass",
+    "name_hi": "पुल प्रह्लादपुर अंडरपास",
+    "lat": 28.5047,
+    "lon": 77.2895,
+    "site_type": "underpass",
+    "ward": null,
+    "importance": 1.0,
+    "elevation_m": 205.0,
+    "relative_depth_m": 2.6,
+    "catchment_km2": 3.2,
+    "flood_seasons": 5,
+    "factors": {
+      "history": 1.0,
+      "low_lying": 0.9,
+      "catchment": 0.928
+    },
+    "susceptibility": 0.947,
+    "avoid_en": "Avoid the Pul Prahladpur underpass on MB Road.",
+    "avoid_hi": "एमबी रोड पर पुल प्रह्लादपुर अंडरपास से बचें।",
+    "diversion_en": "Use Mathura Road via Badarpur.",
+    "diversion_hi": "बदरपुर होते हुए मथुरा रोड लें।",
+    "sources": [
+      "https://example.org/wlew-fixture/DL-005"
+    ]
+  },
+  {
+    "hotspot_id": "DL-006",
+    "name_en": "Azad Market underpass",
+    "name_hi": "आज़ाद मार्केट अंडरपास",
+    "lat": 28.6662,
+    "lon": 77.2045,
+    "site_type": "underpass",
+    "ward": null,
+    "importance": 0.6,
+    "elevation_m": 218.0,
+    "relative_depth_m": 1.1,
+    "catchment_km2": 0.35,
+    "flood_seasons": 3,
+    "factors": {
+      "history": 0.6,
+      "low_lying": 0.9,
+      "catchment": 0.572
+    },
+    "susceptibility": 0.698,
+    "avoid_en": "Avoid the Azad Market underpass.",
+    "avoid_hi": "आज़ाद मार्केट अंडरपास से बचें।",
+    "diversion_en": "Use Rani Jhansi Road.",
+    "diversion_hi": "रानी झांसी रोड लें।",
+    "sources": [
+      "https://example.org/wlew-fixture/DL-006"
+    ]
+  },
+  {
+    "hotspot_id": "DL-007",
+    "name_en": "Moolchand underpass",
+    "name_hi": "मूलचंद अंडरपास",
+    "lat": 28.5652,
+    "lon": 77.2343,
+    "site_type": "underpass",
+    "ward": null,
+    "importance": 1.0,
+    "elevation_m": 211.0,
+    "relative_depth_m": 1.2,
+    "catchment_km2": 0.6,
+    "flood_seasons": 2,
+    "factors": {
+      "history": 0.4,
+      "low_lying": 0.9,
+      "catchment": 0.659
+    },
+    "susceptibility": 0.64,
+    "avoid_en": "Avoid the Moolchand underpass on Ring Road.",
+    "avoid_hi": "रिंग रोड पर मूलचंद अंडरपास से बचें।",
+    "diversion_en": "Use Lala Lajpat Rai Marg.",
+    "diversion_hi": "लाला लाजपत राय मार्ग लें।",
+    "sources": [
+      "https://example.org/wlew-fixture/DL-007"
+    ]
+  },
+  {
+    "hotspot_id": "DL-008",
+    "name_en": "Dhaula Kuan junction",
+    "name_hi": "धौला कुआँ चौराहा",
+    "lat": 28.5918,
+    "lon": 77.1617,
+    "site_type": "junction",
+    "ward": null,
+    "importance": 1.0,
+    "elevation_m": 222.0,
+    "relative_depth_m": 0.6,
+    "catchment_km2": 0.25,
+    "flood_seasons": 2,
+    "factors": {
+      "history": 0.4,
+      "low_lying": 0.2,
+      "catchment": 0.518
+    },
+    "susceptibility": 0.36,
+    "avoid_en": "Avoid the Dhaula Kuan loop roads.",
+    "avoid_hi": "धौला कुआँ के लूप रोड से बचें।",
+    "diversion_en": "Use Sardar Patel Marg.",
+    "diversion_hi": "सरदार पटेल मार्ग लें।",
+    "sources": [
+      "https://example.org/wlew-fixture/DL-008"
+    ]
+  },
+  {
+    "hotspot_id": "DL-009",
+    "name_en": "Rohtak Road, Nangloi",
+    "name_hi": "रोहतक रोड, नांगलोई",
+    "lat": 28.6812,
+    "lon": 77.0656,
+    "site_type": "road",
+    "ward": null,
+    "importance": 0.6,
+    "elevation_m": 213.0,
+    "relative_depth_m": 0.8,
+    "catchment_km2": 1.1,
+    "flood_seasons": 3,
+    "factors": {
+      "history": 0.6,
+      "low_lying": 0.267,
+      "catchment": 0.756
+    },
+    "susceptibility": 0.522,
+    "avoid_en": "Avoid Rohtak Road near Nangloi metro.",
+    "avoid_hi": "नांगलोई मेट्रो के पास रोहतक रोड से बचें।",
+    "diversion_en": "Use Outer Ring Road via Peeragarhi.",
+    "diversion_hi": "पीरागढ़ी होते हुए आउटर रिंग रोड लें।",
+    "sources": [
+      "https://example.org/wlew-fixture/DL-009"
+    ]
+  },
+  {
+    "hotspot_id": "DL-010",
+    "name_en": "Kirari Suleman Nagar",
+    "name_hi": "किराड़ी सुलेमान नगर",
+    "lat": 28.7003,
+    "lon": 77.0546,
+    "site_type": "colony",
+    "ward": null,
+    "importance": 0.3,
+    "elevation_m": 211.0,
+    "relative_depth_m": 1.5,
+    "catchment_km2": 0.9,
+    "flood_seasons": 4,
+    "factors": {
+      "history": 0.8,
+      "low_lying": 0.5,
+      "catchment": 0.724
+    },
+    "susceptibility": 0.676,
+    "avoid_en": "Avoid the low lanes of Kirari.",
+    "avoid_hi": "किराड़ी की निचली गलियों से बचें।",
+    "diversion_en": "Use Kirari-Nithari Road.",
+    "diversion_hi": "किराड़ी-निठारी रोड लें।",
+    "sources": [
+      "https://example.org/wlew-fixture/DL-010"
+    ]
+  },
+  {
+    "hotspot_id": "DL-011",
+    "name_en": "Sangam Vihar",
+    "name_hi": "संगम विहार",
+    "lat": 28.4978,
+    "lon": 77.2407,
+    "site_type": "colony",
+    "ward": null,
+    "importance": 0.3,
+    "elevation_m": 236.0,
+    "relative_depth_m": 0.4,
+    "catchment_km2": 0.05,
+    "flood_seasons": 1,
+    "factors": {
+      "history": 0.2,
+      "low_lying": 0.133,
+      "catchment": 0.259
+    },
+    "susceptibility": 0.191,
+    "avoid_en": "Avoid the main drain road in Sangam Vihar.",
+    "avoid_hi": "संगम विहार में मुख्य नाला रोड से बचें।",
+    "diversion_en": "Use Ratiya Marg.",
+    "diversion_hi": "रतिया मार्ग लें।",
+    "sources": [
+      "https://example.org/wlew-fixture/DL-011"
+    ]
+  },
+  {
+    "hotspot_id": "DL-012",
+    "name_en": "Ashram Chowk",
+    "name_hi": "आश्रम चौक",
+    "lat": 28.5715,
+    "lon": 77.2589,
+    "site_type": "junction",
+    "ward": null,
+    "importance": 1.0,
+    "elevation_m": 207.0,
+    "relative_depth_m": 0.5,
+    "catchment_km2": 0.3,
+    "flood_seasons": 2,
+    "factors": {
+      "history": 0.4,
+      "low_lying": 0.167,
+      "catchment": 0.547
+    },
+    "susceptibility": 0.355,
+    "avoid_en": "Avoid the Ashram Chowk underpass approach.",
+    "avoid_hi": "आश्रम चौक अंडरपास के रास्ते से बचें।",
+    "diversion_en": "Use the DND Flyway or Barapullah elevated road.",
+    "diversion_hi": "डीएनडी फ्लाईवे या बारापुला एलिवेटेड रोड लें।",
+    "sources": [
+      "https://example.org/wlew-fixture/DL-012"
+    ]
+  }
+]

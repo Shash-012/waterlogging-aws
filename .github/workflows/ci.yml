@@ -1,0 +1,57 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r contract/tools/requirements.txt
+      - run: make contract-check
+
+  core:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - id: has
+        run: |
+          if [ -f core/Makefile ] && make -C core -n test >/dev/null 2>&1; then echo "test=true" >> "$GITHUB_OUTPUT"; else echo "No core test target yet; skipping."; fi
+      - if: steps.has.outputs.test == 'true'
+        run: make -C core test
+
+  ops:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - id: has
+        run: |
+          if [ -f ops/Makefile ] && make -C ops -n test >/dev/null 2>&1; then echo "test=true" >> "$GITHUB_OUTPUT"; else echo "No ops test target yet; skipping."; fi
+      - if: steps.has.outputs.test == 'true'
+        run: make -C ops test
+
+  frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - id: has
+        run: |
+          if [ -f frontend/package.json ] && node -e "process.exit(require('./frontend/package.json').scripts?.test ? 0 : 1)"; then echo "test=true" >> "$GITHUB_OUTPUT"; else echo "No frontend test script yet; skipping."; fi
+      - if: steps.has.outputs.test == 'true'
+        run: |
+          if [ -f frontend/package-lock.json ]; then npm ci --prefix frontend; else npm install --prefix frontend; fi
+          npm --prefix frontend test

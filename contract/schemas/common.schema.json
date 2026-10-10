@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Common definitions",
+  "description": "Shared building blocks for the WLEW contract schemas (contract/CONTRACT.md).",
+  "$defs": {
+    "utc_time": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?Z$",
+      "description": "UTC ISO 8601 timestamp ending in Z."
+    },
+    "score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Float from 0 to 1, rounded to 3 decimals."
+    },
+    "hotspot_id": {
+      "type": "string",
+      "pattern": "^[A-Z]{2}-\\d{3,}$",
+      "description": "e.g. DL-001"
+    },
+    "level": {
+      "type": "string",
+      "enum": [
+        "LOW",
+        "WATCH",
+        "HIGH",
+        "CRITICAL"
+      ]
+    },
+    "city_status": {
+      "type": "string",
+      "enum": [
+        "STANDBY",
+        "RAIN_WATCH",
+        "ALERT",
+        "SEVERE"
+      ]
+    },
+    "mode": {
+      "type": "string",
+      "enum": [
+        "live",
+        "replay"
+      ]
+    },
+    "site_type": {
+      "type": "string",
+      "enum": [
+        "underpass",
+        "road",
+        "junction",
+        "colony"
+      ]
+    },
+    "url": {
+      "type": "string",
+      "pattern": "^https?://"
+    },
+    "non_negative": {
+      "type": "number",
+      "minimum": 0
+    }
+  }
+}

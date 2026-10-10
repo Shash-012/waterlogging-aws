@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Health",
+  "description": "GET /health on the core API.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "ok",
+    "latest_run_id"
+  ],
+  "properties": {
+    "ok": {
+      "type": "boolean"
+    },
+    "latest_run_id": {
+      "anyOf": [
+        {
+          "$ref": "common.schema.json#/$defs/utc_time"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "description": "null before the first scoring run."
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "hotspot_id": "DL-001",
+  "name_en": "Minto Bridge underpass",
+  "name_hi": "मिंटो ब्रिज अंडरपास",
+  "lat": 28.631,
+  "lon": 77.225,
+  "site_type": "underpass",
+  "ward": null,
+  "importance": 1.0,
+  "elevation_m": 214.0,
+  "relative_depth_m": 1.4,
+  "catchment_km2": 0.88,
+  "flood_seasons": 4,
+  "factors": {
+    "history": 0.8,
+    "low_lying": 0.9,
+    "catchment": 0.72
+  },
+  "susceptibility": 0.815,
+  "avoid_en": "Avoid the Minto Road underpass below the railway bridge.",
+  "avoid_hi": "रेलवे पुल के नीचे मिंटो रोड अंडरपास से बचें।",
+  "diversion_en": "Use Bhavbhuti Marg via Ajmeri Gate.",
+  "diversion_hi": "अजमेरी गेट होते हुए भवभूति मार्ग लें।",
+  "sources": [
+    "https://example.org/wlew-fixture/DL-001"
+  ]
+}

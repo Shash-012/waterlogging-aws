@@ -1,0 +1,24 @@
+{
+  "version": "v1",
+  "rain": {
+    "i0_mm_h": 5.0,
+    "i1_mm_h": 30.0,
+    "a_sat_mm": 60.0,
+    "k": 1.0,
+    "window_hours": 6
+  },
+  "susceptibility": {
+    "w_history": 0.4,
+    "w_low_lying": 0.35,
+    "w_catchment": 0.25
+  },
+  "levels": {
+    "watch": 0.15,
+    "high": 0.35,
+    "critical": 0.6
+  },
+  "city": {
+    "alert": 0.4,
+    "severe": 0.75
+  }
+}

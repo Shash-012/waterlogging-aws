@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlertLog",
+  "description": "GET /alerts?limit=N.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "alerts"
+  ],
+  "properties": {
+    "alerts": {
+      "type": "array",
+      "items": {
+        "$ref": "alert_record.schema.json"
+      }
+    }
+  }
+}

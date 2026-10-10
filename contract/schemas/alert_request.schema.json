@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlertRequest",
+  "description": "POST /alerts body on the ops API (Cognito JWT required).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "hotspot_id",
+    "run_id",
+    "mode",
+    "level",
+    "risk",
+    "peak_at"
+  ],
+  "properties": {
+    "hotspot_id": {
+      "$ref": "common.schema.json#/$defs/hotspot_id"
+    },
+    "run_id": {
+      "$ref": "common.schema.json#/$defs/utc_time"
+    },
+    "mode": {
+      "$ref": "common.schema.json#/$defs/mode"
+    },
+    "event_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Replay event_id; required when mode is replay, null for live."
+    },
+    "level": {
+      "$ref": "common.schema.json#/$defs/level"
+    },
+    "risk": {
+      "$ref": "common.schema.json#/$defs/score"
+    },
+    "peak_at": {
+      "anyOf": [
+        {
+          "$ref": "common.schema.json#/$defs/utc_time"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "if": {
+    "properties": {
+      "mode": {
+        "const": "replay"
+      }
+    },
+    "required": [
+      "mode"
+    ]
+  },
+  "then": {
+    "required": [
+      "event_id"
+    ],
+    "properties": {
+      "event_id": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  }
+}

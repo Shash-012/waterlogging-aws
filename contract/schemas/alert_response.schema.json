@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AlertResponse",
+  "description": "POST /alerts response.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "alert_id",
+    "sent_at",
+    "duplicate",
+    "text_en",
+    "text_hi",
+    "deliveries"
+  ],
+  "properties": {
+    "alert_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sent_at": {
+      "$ref": "common.schema.json#/$defs/utc_time"
+    },
+    "duplicate": {
+      "type": "boolean"
+    },
+    "text_en": {
+      "type": "string"
+    },
+    "text_hi": {
+      "type": "string"
+    },
+    "deliveries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "title": "AlertDelivery",
+        "required": [
+          "group",
+          "ok"
+        ],
+        "properties": {
+          "group": {
+            "type": "string"
+          },
+          "ok": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  }
+}
