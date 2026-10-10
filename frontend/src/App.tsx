@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import {
+  ApiError,
   dataSource,
   getHotspots,
   getLatestSnapshot,
@@ -8,6 +9,7 @@ import {
   getReplays,
   postAlert,
 } from './api/client'
+import { useAuth } from './auth/context'
 import { CityBanner } from './components/CityBanner'
 import { DetailPanel, type AlertState } from './components/DetailPanel'
 import { HotspotList, type Lang, type Row } from './components/HotspotList'
@@ -29,6 +31,7 @@ const message = (e: unknown) => (e instanceof Error ? e.message : String(e))
 
 export default function App() {
   const [{ present, eventId: requestedEvent }] = useState(() => readPresentMode(window.location.search))
+  const { session, signOut } = useAuth()
   const [hotspots, setHotspots] = useState<Hotspot[] | null>(null)
   const [latest, setLatest] = useState<Snapshot | null>(null)
   const [error, setError] = useState<string | null>(null)
@@ -178,12 +181,14 @@ export default function App() {
         level: selected.score.level,
         risk: selected.score.risk,
         peak_at: selected.score.peak_at,
-      })
+      }, session?.idToken)
       setAlert({ kind: 'sent', duplicate: res.duplicate, text: lang === 'hi' ? res.text_hi : res.text_en })
     } catch (e: unknown) {
-      setAlert({ kind: 'error', message: message(e) })
+      // The ops API rejected the token (expired or revoked): sign in again.
+      if (e instanceof ApiError && e.status === 401) signOut()
+      else setAlert({ kind: 'error', message: message(e) })
     }
-  }, [selected, snapshot, eventId, lang])
+  }, [selected, snapshot, eventId, lang, session, signOut])
 
   return (
     <div className={present ? 'wl-app wl-present' : 'wl-app'}>
@@ -215,6 +220,14 @@ export default function App() {
           >
             {lang === 'en' ? 'हिंदी' : 'English'}
           </button>
+          {session && (
+            <span className="wl-user">
+              Signed in as <strong>{session.username}</strong>{' '}
+              <button type="button" className="wl-link" onClick={signOut}>
+                Sign out
+              </button>
+            </span>
+          )}
         </div>
       </header>
 

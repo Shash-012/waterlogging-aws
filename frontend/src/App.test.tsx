@@ -1,6 +1,8 @@
 import { fireEvent, render, screen, waitFor, within } from '@testing-library/react'
 import { describe, expect, it } from 'vitest'
 import App from './App'
+import { AuthProvider } from './auth/AuthProvider'
+import { demoAuth } from './auth/demo'
 import { getHotspots, getLatestSnapshot, postAlert } from './api/client'
 
 describe('data layer (fixtures)', () => {
@@ -27,9 +29,20 @@ describe('data layer (fixtures)', () => {
   })
 })
 
+const SIGNED_IN = { username: 'officer', idToken: 'demo-token', expiresAt: Date.now() + 3_600_000 }
+
+// The dashboard always renders behind a sign-in.
+function renderApp() {
+  return render(
+    <AuthProvider client={demoAuth} initialSession={SIGNED_IN}>
+      <App />
+    </AuthProvider>,
+  )
+}
+
 describe('App', () => {
   it('shows all 12 hotspots on the map under the rainy sample', async () => {
-    render(<App />)
+    renderApp()
     expect(await screen.findByText(/12 hotspots/)).toBeInTheDocument()
     expect(document.querySelectorAll('.wl-marker')).toHaveLength(12)
     expect(screen.getByTitle('Minto Bridge underpass: HIGH')).toBeInTheDocument()
@@ -37,7 +50,7 @@ describe('App', () => {
   })
 
   it('shows an all-grey map under STANDBY for the dry sample', async () => {
-    render(<App />)
+    renderApp()
     await screen.findByText(/12 hotspots/)
     fireEvent.change(screen.getByLabelText(/Sample/), { target: { value: 'dry' } })
     expect(await screen.findByText('Standby')).toBeInTheDocument()
@@ -45,7 +58,7 @@ describe('App', () => {
   })
 
   it('opens the detail panel from the list and only allows alerts at HIGH or above', async () => {
-    render(<App />)
+    renderApp()
     const list = await screen.findByRole('list', { name: /ranked by risk/ })
     const rows = within(list).getAllByRole('button')
     expect(rows).toHaveLength(12)
@@ -71,7 +84,7 @@ describe('App', () => {
   })
 
   it('updates the pump plan and calls out HIGH spots left without a pump', async () => {
-    render(<App />)
+    renderApp()
     await screen.findByText(/12 hotspots/)
     expect(await screen.findByText(/6 of 6 pumps assigned to 5 spots/)).toBeInTheDocument()
     await waitFor(() => expect(document.querySelectorAll('.wl-marker-pumped')).toHaveLength(5))
@@ -83,7 +96,7 @@ describe('App', () => {
   })
 
   it('plays the replay end to end with the replay label and report callouts', async () => {
-    render(<App />)
+    renderApp()
     await screen.findByText(/12 hotspots/)
     fireEvent.click(screen.getByRole('button', { name: 'Replay' }))
     expect(await screen.findByText('Replay of 25 Aug 2026')).toBeInTheDocument()
@@ -117,7 +130,7 @@ describe('App', () => {
   it('?present=1 preloads the headline replay with large type and no dev controls', async () => {
     window.history.pushState({}, '', '/?present=1')
     try {
-      const { container } = render(<App />)
+      const { container } = renderApp()
       expect(await screen.findByText('Replay of 25 Aug 2026')).toBeInTheDocument()
       expect(await screen.findByText(/Hour 1 of 18/)).toBeInTheDocument()
       expect(container.firstChild).toHaveClass('wl-present')
@@ -135,7 +148,7 @@ describe('App', () => {
   it('falls back to the first storm when ?event names an unknown replay', async () => {
     window.history.pushState({}, '', '/?event=1999-01-01')
     try {
-      render(<App />)
+      renderApp()
       expect(await screen.findByText('Replay of 25 Aug 2026')).toBeInTheDocument()
       expect(screen.queryByRole('alert')).not.toBeInTheDocument()
     } finally {
@@ -144,7 +157,7 @@ describe('App', () => {
   })
 
   it('switches names to Hindi', async () => {
-    render(<App />)
+    renderApp()
     await screen.findByText(/12 hotspots/)
     fireEvent.click(screen.getByRole('button', { name: 'Show Hindi names' }))
     expect(screen.getByText('मिंटो ब्रिज अंडरपास')).toBeInTheDocument()
