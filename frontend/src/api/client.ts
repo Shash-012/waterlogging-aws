@@ -1,6 +1,9 @@
 // Data layer. VITE_DATA_SOURCE=fixtures (default) reads contract/fixtures/;
 // VITE_DATA_SOURCE=live calls the core API at VITE_CORE_API_URL.
+import { formatIstDate, formatIstTime } from '../lib/format'
 import type {
+  AlertRequest,
+  AlertResponse,
   Health,
   Hotspot,
   HotspotList,
@@ -79,4 +82,55 @@ export function getReplay(eventId: string): Promise<Replay> {
   return dataSource === 'live'
     ? getLive(`/replays/${encodeURIComponent(eventId)}`)
     : getFixture(`replay_${eventId}`)
+}
+
+// --- Ops API: alerts. With fixtures, POST /alerts is faked locally. ---
+
+const opsApiUrl = (import.meta.env.VITE_OPS_API_URL ?? '').replace(/\/+$/, '')
+
+export async function postAlert(req: AlertRequest, idToken?: string): Promise<AlertResponse> {
+  if (dataSource === 'fixtures') return fakePostAlert(req)
+  if (!opsApiUrl) throw new ApiError(0, 'config', 'VITE_OPS_API_URL is not set')
+  const res = await fetch(`${opsApiUrl}/alerts`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      ...(idToken ? { Authorization: `Bearer ${idToken}` } : {}),
+    },
+    body: JSON.stringify(req),
+  })
+  const body = await res.json().catch(() => null)
+  if (!res.ok) {
+    const err = body?.error
+    throw new ApiError(res.status, err?.code ?? 'http', err?.message ?? res.statusText)
+  }
+  return body as AlertResponse
+}
+
+const DEDUPE_MS = 30 * 60_000
+const fakeSent = new Map<string, { at: number; response: AlertResponse }>()
+
+async function fakePostAlert(req: AlertRequest): Promise<AlertResponse> {
+  const key = `${req.hotspot_id}|${req.run_id}|${req.mode}`
+  const prev = fakeSent.get(key)
+  if (prev && Date.now() - prev.at < DEDUPE_MS) return { ...prev.response, duplicate: true }
+
+  const h = await getHotspot(req.hotspot_id)
+  const peak = req.peak_at ? `, peak expected ${formatIstTime(req.peak_at)}` : ''
+  const peakHi = req.peak_at ? `, चरम लगभग ${formatIstTime(req.peak_at)}` : ''
+  const tagEn = req.mode === 'replay' && req.event_id ? `[Replay · ${formatIstDate(req.event_id)}] ` : ''
+  const tagHi = req.mode === 'replay' && req.event_id ? `[रीप्ले · ${formatIstDate(req.event_id)}] ` : ''
+  const response: AlertResponse = {
+    alert_id: `local-${Date.now()}`,
+    sent_at: new Date().toISOString().replace(/\.\d+Z$/, 'Z'),
+    duplicate: false,
+    text_en: `${tagEn}${req.level} waterlogging risk at ${h.name_en} (risk ${req.risk.toFixed(3)})${peak}. ${h.avoid_en} ${h.diversion_en}`,
+    text_hi: `${tagHi}${h.name_hi} पर जलभराव का खतरा: ${req.level} (जोखिम ${req.risk.toFixed(3)})${peakHi}. ${h.avoid_hi} ${h.diversion_hi}`,
+    deliveries: [
+      { group: 'traffic-police-demo', ok: true },
+      { group: 'rwa-demo', ok: true },
+    ],
+  }
+  fakeSent.set(key, { at: Date.now(), response })
+  return response
 }
