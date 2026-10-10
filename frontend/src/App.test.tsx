@@ -131,6 +131,7 @@ describe('App', () => {
     window.history.pushState({}, '', '/?present=1')
     try {
       const { container } = renderApp()
+      // The 28 Jun 2024 headline has no fixture, so fixtures mode falls back to the 25 Aug storm.
       expect(await screen.findByText('Replay of 25 Aug 2026')).toBeInTheDocument()
       expect(await screen.findByText(/Hour 1 of 18/)).toBeInTheDocument()
       expect(container.firstChild).toHaveClass('wl-present')

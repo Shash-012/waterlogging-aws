@@ -27,12 +27,12 @@ Blur or crop before saving. Never commit an unmasked capture.
 
 | ID | Status | Used at | What and where | Must be visible | File |
 |---|---|---|---|---|---|
-| S8 | ⏳ to capture later (needs B3 + B4) | 1:18 | **Telegram alert arriving.** The demo phone, Telegram open on "Traffic police (demo)", screen-recorded while **Send alert** is clicked on the laptop. Optionally a second clip of "RWA (demo)". | The message arriving live, starting with **[Replay · 25 Aug 2026]**, in Hindi and English, with the spot name, risk, peak time, avoid and diversion text. | `S8-telegram-alert.mp4` |
+| S8 | ⏳ to capture later (needs B3 + B4) | 1:18 | **Telegram alert arriving.** The demo phone, Telegram open on "Traffic police (demo)", screen-recorded while **Send alert** is clicked on the laptop. Optionally a second clip of "RWA (demo)". | The message arriving live, starting with **[Replay · 28 Jun 2024]**, in Hindi and English, with the spot name, risk, peak time, avoid and diversion text. | `S8-telegram-alert.mp4` |
 
 ## Other visuals the video needs
 
 | ID | Status | Used at | Owner | Notes |
 |---|---|---|---|---|
-| V1 | ⏳ to source | 0:00 | Humans | A real photo or news clip of a flooded Delhi underpass on the headline date. Record the source URL and licence, and credit it on screen. |
+| V1 | ⏳ to source | 0:00 | Humans | A real photo or news clip of a flooded Delhi road or underpass on the headline date, **28 Jun 2024** (Minto Bridge, ITO or the Pragati Maidan tunnel if available). Record the source URL and licence, and credit it on screen. |
 | V2 | ⏳ waiting on Agent C | 1:50 | Agent C (`docs/architecture.svg`) | Architecture diagram naming EventBridge Scheduler, Lambda, DynamoDB, S3, API Gateway, Amplify, Cognito, SAM CLI, Copernicus DEM on AWS Open Data, Open-Meteo and Telegram. |
-| V3 | ✅ ready to rehearse | 0:40 – 2:50 | Agent B | The dashboard itself: `?present=1`. It works today with fixtures (`npm run dev`, then open `http://localhost:5173/?present=1`) for rehearsing the clicks. **Record the final take on the deployed Amplify URL with live data**, because the fixture replay is synthetic. |
+| V3 | ✅ ready to rehearse | 0:40 – 2:50 | Agent B | The dashboard itself: `?present=1`, which opens the headline replay **28 Jun 2024** on live data. The fixtures have no 28 Jun 2024 replay, so `npm run dev` in fixtures mode falls back to the synthetic 25 Aug 2026 storm, which is fine for practising clicks. **Record the final take on the deployed Amplify URL with live data.** |

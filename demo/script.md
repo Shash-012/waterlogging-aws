@@ -15,20 +15,24 @@ The video is the only thing judges see, so it has to prove the system works. Thi
 ### Fill in the blanks
 Every number in the video must match `model/README.md` (Agent A's A5 results) and the headline replay as the deployed API serves it. **Don't use the numbers in `contract/fixtures/`: that replay is synthetic.**
 
-| Blank | Where it comes from |
-|---|---|
-| `⟨SPOTS⟩` | Number of hotspots: `GET /hotspots` length, also in `handoff/a.md` |
-| `⟨REPORTED⟩` | Headline replay `metrics.spots_reported` |
-| `⟨FLAGGED⟩` | Headline replay `metrics.flagged_before_report` |
-| `⟨MEDIAN⟩` | Headline replay `metrics.median_lead_hours` |
-| `⟨UNCONFIRMED⟩` | Headline replay `metrics.unconfirmed_flags` |
-| `⟨MISS⟩` | One honest miss from `model/README.md` (a spot or storm the model didn't catch), or cut that sentence if there's none |
-| `⟨RAINFALL⟩` | 99.1 mm at Safdarjung on 25 Aug 2026 (roadmap A5); re-check against the source A cites |
-| `⟨SPOT⟩` | The first spot to reach HIGH in the headline replay. Minto Bridge underpass if it is; otherwise use whichever is, and change the clicks below to match |
+The headline replay is **`2024-06-28`** (Delhi record downpour, 28 Jun 2024). The "Value on 11 Oct 2026" column is what the live API served that day. Re-check each one just before recording, from `GET /replays/2024-06-28` and `model/README.md`.
+
+| Blank | Where it comes from | Value on 11 Oct 2026 |
+|---|---|---|
+| `⟨SPOTS⟩` | Number of hotspots: `GET /hotspots` length, also in `handoff/a.md` | 69 |
+| `⟨REPORTED⟩` | Headline replay `metrics.spots_reported` | 14 |
+| `⟨FLAGGED⟩` | Headline replay `metrics.flagged_before_report` | 3 (Pragati Maidan tunnel, ITO crossing, Tilak Bridge (W-Point) underpass) |
+| `⟨MEDIAN⟩` | Headline replay `metrics.median_lead_hours` | 10.6 |
+| `⟨UNCONFIRMED⟩` | Headline replay `metrics.unconfirmed_flags` | 7 |
+| `⟨MISS⟩` | One honest miss from `model/README.md`, or cut that sentence if there's none | The 25 Aug 2026 storm: the forecasts never showed the burst, so no spot went above WATCH. Suggested line: "On 25 August 2026 the forecasts missed a short cloudburst entirely, and so did we." |
+| `⟨RAINFALL⟩` | The replay's `title_en`; re-check against the source A cites | 228 mm at Safdarjung |
+
+**The spot to click is Pragati Maidan tunnel.** It's rank 1 when the first spots turn HIGH (hour 11, 27 Jun 23:30 IST), and it was reported closed the next morning (10.6 h later). If a re-check shows a different rank-1 spot at hour 11, use that one and change the clicks below.
 
 ### Set up
 - [ ] B3 and B4 are deployed: the Amplify URL loads, a test official can sign in, and alerts reach both Telegram test groups.
-- [ ] Headline replay is `2026-08-25` (the roadmap's pick). If A5 chose a different headline storm, open `?present=1&event=<event_id>` instead and update every date below.
+- [ ] Headline replay is `2024-06-28`, and `?present=1` opens it. To record another storm, open `?present=1&event=<event_id>` and update every date and click below.
+- [ ] Record on the Amplify URL (live data). The fixtures have no 28 Jun 2024 replay, so `npm run dev` in fixtures mode falls back to the synthetic 25 Aug storm, which is fine for practising clicks but not for the real take.
 - [ ] Laptop: Chrome, window maximised at 1920 × 1080, browser zoom 100%, bookmarks bar hidden, notifications off (Windows: Focus assist on).
 - [ ] Open `<AMPLIFY_URL>/?present=1` and **sign in before recording**. Present mode starts on the headline replay at hour 1 with large type and no dev controls.
 - [ ] Set **Pumps available** to `6`.
@@ -46,10 +50,10 @@ Every number in the video must match `model/README.md` (Agent A's A5 results) an
 
 ## Part 1 · Problem (0:00 – 0:20)
 
-**On screen:** the real photo or news clip of a flooded Delhi underpass on 25 Aug 2026 (Minto Bridge if available). Caption: *"Delhi, 25 Aug 2026 · ⟨RAINFALL⟩ in a day"* plus the source credit.
+**On screen:** the real photo or news clip of a flooded Delhi road or underpass on 28 Jun 2024 (Minto Bridge, ITO or the Pragati Maidan tunnel if available). Caption: *"Delhi, 28 Jun 2024 · ⟨RAINFALL⟩ in a day"* plus the source credit.
 
 **Voice-over (~45 words):**
-> On the 25th of August 2026, Delhi got ⟨RAINFALL⟩ of rain. Underpasses like Minto Bridge went under water, again. The city already knows these spots flood every monsoon. What it doesn't get is a warning in time to act.
+> On the 28th of June 2024, Delhi got ⟨RAINFALL⟩ of rain. Minto Bridge and ITO went under water, and the Pragati Maidan tunnel was shut. The city already knows these spots flood every monsoon. What it doesn't get is a warning in time to act.
 
 ## Part 2 · Who it's for (0:20 – 0:40)
 
@@ -60,27 +64,39 @@ Every number in the video must match `model/README.md` (Agent A's A5 results) an
 
 ## Part 3 · Proof: the replay (0:40 – 1:50)
 
-**On screen:** the dashboard at `<AMPLIFY_URL>/?present=1`. The dark strip at the top reads **"Replay of 25 Aug 2026"** and stays there the whole time.
+**On screen:** the dashboard at `<AMPLIFY_URL>/?present=1`. The dark strip at the top reads **"Replay of 28 Jun 2024"** and stays there the whole time.
+
+**What the replay does** (25 hourly frames, 27 Jun 13:30 IST to 28 Jun 13:30 IST; at **1×** each hour lasts 1 second):
+
+| Hour | Time (IST) | What happens |
+|---|---|---|
+| 1–8 | 27 Jun 13:30 – 20:30 | **Standby**, every marker grey |
+| 9–10 | 21:30 – 22:30 | **Rain watch**, amber WATCH triangles appear |
+| 11–13 | 23:30 – 01:30 | **Alert**: **10 spots HIGH** at once (the peak), led by Pragati Maidan tunnel. No spot reaches CRITICAL in this storm |
+| 14 | 28 Jun 02:30 | Alert, 8 spots HIGH |
+| 15 onwards | 03:30 → | The forecast peak passes, and spots drop back to WATCH/LOW |
+| 20 | 08:30 | First dashed report rings appear (published 07:49 IST), including Tilak Bridge |
+| 22 | 10:30 | All 14 report rings shown (the rest published 10:05 IST), including Pragati Maidan tunnel and ITO |
 
 | Time | Click / action | What viewers should see |
 |---|---|---|
-| 0:40 | Hover over the replay strip for one second, then over the banner. | Banner says **Standby**. Every marker is a grey circle. Slider at **Hour 1**. |
-| 0:45 | Click **Play**. Then click **1×** so it changes to **4×**. | The hour counter starts moving. |
-| 0:50 | Let it play. As soon as the banner changes from **Standby** to **Rain watch**, click **Pause**. | Banner: **Rain watch**. Rain is forecast; a few amber triangles may appear. |
-| 0:55 | Point the mouse at the time under the slider ("Hour N of 18 · … IST"). | Viewers see the clock time. |
-| 1:00 | Click **Play** again. When the first orange **square** (HIGH) appears, click **Pause**. | Banner: **Alert** (or higher). The first spot reaches HIGH while no flood has been reported yet (no dashed blue rings). |
-| 1:05 | In the ranked list on the right, click **⟨SPOT⟩** (rank 1). | The detail panel opens: level chip **HIGH**, risk, peak time. |
+| 0:40 | Hover over the replay strip for one second, then over the banner. | Banner says **Standby**. Every marker is a grey circle. Slider at **Hour 1 of 25 · 27 Jun, 13:30 IST**. |
+| 0:45 | Click **Play** (leave the speed at **1×**). | The hour counter moves one hour per second. |
+| 0:53 | As soon as the banner changes to **Rain watch** (hour 9, 21:30 IST), click **Pause**. | Banner: **Rain watch**. Amber triangles appear. |
+| 0:56 | Point the mouse at the time under the slider ("Hour 9 of 25 · 27 Jun, 21:30 IST"). | Viewers see the clock time: evening, before the storm. |
+| 1:00 | Click **Play**. When the orange **squares** appear (hour 11, 23:30 IST), click **Pause**. | Banner: **Alert**. Ten spots turn HIGH at once, and no flood has been reported yet (no dashed blue rings). |
+| 1:05 | In the ranked list on the right, click **Pragati Maidan tunnel** (rank 1). | The detail panel opens: level chip **HIGH**, risk, peak time. |
 | 1:08 | Move the mouse slowly down the four bars: **Rain trigger**, **Flood history**, **Low-lying**, **Catchment**. | "Why this level?": rain forecast × how flood-prone the spot is. |
-| 1:15 | In the detail panel, click **Send alert**. | Status line: "Sent: [Replay · 25 Aug 2026] HIGH waterlogging risk at ⟨SPOT⟩ …" |
-| 1:18 | **Cut to the phone** (shot `S8`). | The Telegram message arrives in "Traffic police (demo)" in Hindi and English, starting with **[Replay · 25 Aug 2026]**. Hold 4 seconds. |
-| 1:23 | **Cut back to the dashboard.** Click **Close** on the detail panel. Click **Play**. When the banner says **Severe** (or the most red diamonds and orange squares), click **Pause**. | Peak of the storm: several CRITICAL red **diamonds** and HIGH orange squares. |
-| 1:28 | Point at the **Pumps** card ("For the replay hour shown"): "**… of 6 pumps assigned to … spots**". | Blue glow on the map around the spots that get pumps; the list shows "1 pump" / "2 pumps". |
-| 1:32 | Click in the **Pumps available** box and change `6` to `2`. | A red box appears: "**… HIGH-or-above spots without a pump**". (It only appears if more than 2 spots are HIGH or above at that hour; rehearse and pick the hour where it does.) Change it back to `6`. |
-| 1:38 | Click **Play**. When the first dashed blue ring appears, click **Pause**. Hover the ring. | Ring tooltip: "Reported flooded at … IST". The callout says "**⟨SPOT⟩: Flagged HIGH … h before the first report**". |
-| 1:45 | Drag the slider to the far right (last hour). | All report rings and callouts visible; the banner settles as the rain ends. |
+| 1:15 | In the detail panel, click **Send alert**. | Status line: "Sent: [Replay · 28 Jun 2024] HIGH waterlogging risk at Pragati Maidan tunnel …" |
+| 1:18 | **Cut to the phone** (shot `S8`). | The Telegram message arrives in "Traffic police (demo)" in Hindi and English, starting with **[Replay · 28 Jun 2024]**. Hold 4 seconds. |
+| 1:23 | **Cut back to the dashboard.** Click **Close** on the detail panel. Stay on hour 11: this is the peak. | Ten HIGH orange squares across the city. |
+| 1:27 | Point at the **Pumps** card ("For the replay hour shown"): "**6 of 6 pumps assigned to 6 spots**". | Blue glow on the map around the six spots that get pumps. |
+| 1:31 | Point at the red box under it: "**4 HIGH-or-above spots without a pump**". | Jangpura, Tilak Bridge (W-Point) underpass, Ring Road opposite WHO building and Bhairon Marg railway underbridge. The tool says what's left uncovered. |
+| 1:36 | Click **Play**. When the first dashed blue rings appear (hour 20, 08:30 IST), click **Pause**. Hover the Tilak Bridge ring. | Ring tooltip: "Reported flooded at 28 Jun, 07:49 IST". Callout: "**Tilak Bridge (W-Point) underpass: Flagged HIGH 8.3 h before the first report**". |
+| 1:46 | Drag the slider to the far right (hour 25). | All 14 rings. Callouts for **Pragati Maidan tunnel** and **ITO crossing: Flagged HIGH 10.6 h before the first report**. The banner is back to Standby. |
 
 **Voice-over (~150 words), starting at 0:40:**
-> Here's that same day, replayed hour by hour using only the forecasts that existed at the time, not rain that fell later. At first, Delhi is on standby. As the forecast rain arrives, the city moves to rain watch. Then, hours before any flood was reported, the first hotspots turn high. Click one and it explains itself: the rain forecast, multiplied by how flood-prone this spot is, from its flood history, how low it sits, and how much water drains into it. One click, after an official confirms, sends the alert, in Hindi and English, to the traffic police and residents' groups they already use. At the peak, with six pumps, the tool says where each one goes first, and if there aren't enough, which high-risk spots are left uncovered. Then the reports come in, and each dashed ring shows how early we flagged that spot.
+> Here's that same day, replayed hour by hour using only the forecasts that existed at the time, not rain that fell later. In the afternoon, Delhi is on standby. In the evening, as forecast rain arrives, the city moves to rain watch. Then at half past eleven at night, before the heavy rain began and hours before any flood was reported, ten hotspots turn high. Click one and it explains itself: the rain forecast, multiplied by how flood-prone this spot is, from its flood history, how low it sits, and how much water drains into it. One click, after an official confirms, sends the alert, in Hindi and English, to the traffic police and residents' groups they already use. With six pumps, the tool says where each one goes first, and which four high-risk spots are left uncovered. By morning the reports come in, and each dashed ring shows how early we flagged that spot.
 
 ## Part 4 · Where AWS fits (1:50 – 2:25)
 

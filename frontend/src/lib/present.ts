@@ -1,6 +1,8 @@
 // ?present=1 is the video-recording mode: larger type, no dev controls, and the
 // headline replay preloaded. ?event=<event_id> picks a different replay.
-export const HEADLINE_EVENT = '2026-08-25'
+// 28 Jun 2024: warnings came hours before the rain (see handoff/a.md). The
+// fixtures have no replay for it, so fixtures mode falls back to the first storm.
+export const HEADLINE_EVENT = '2024-06-28'
 
 export interface PresentMode {
   present: boolean
