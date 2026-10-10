@@ -12,3 +12,4 @@ s3_prefix = "wlew-core"
 confirm_changeset = false
 fail_on_empty_changeset = false
 tags = "Project=\"wlew\""
+parameter_overrides = "AllowedOrigin=\"https://main.d3so27hxydwx7o.amplifyapp.com\""
