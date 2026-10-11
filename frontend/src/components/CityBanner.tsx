@@ -30,7 +30,7 @@ export function CityBanner({ snapshot, refreshes }: Props) {
           <dd>{formatScore(rain_trigger_max)}</dd>
         </div>
         <div>
-          <dt>Spots with rain</dt>
+          <dt>Spots with any rain forecast</dt>
           <dd>{spots_raining}</dd>
         </div>
         <div>
