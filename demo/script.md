@@ -111,7 +111,7 @@ The headline replay is **`2024-06-28`** (Delhi record downpour, 28 Jun 2024). Th
 | 2:10 | `S4` API Gateway routes | "API Gateway serves the dashboard,…" |
 | 2:13 | `S5` Amplify app | "…hosted on Amplify,…" |
 | 2:16 | `S6` Cognito user pool | "…with Cognito so only officials can sign in and send alerts." |
-| 2:19 | `S7` SAM deploy output | "Elevation comes from the Copernicus DEM on AWS Open Data." |
+| 2:19 | `S7` CloudFormation stack outputs | "Elevation comes from the Copernicus DEM on AWS Open Data." |
 
 **Voice-over (~75 words):**
 > Everything runs serverless on AWS, deployed with the open-source SAM CLI. Every hour, EventBridge Scheduler runs a Lambda that pulls the Open-Meteo forecast and scores every hotspot, and stores the results in DynamoDB. API Gateway serves the dashboard, hosted on Amplify, with Cognito so only officials can sign in and send alerts. Elevation comes from the Copernicus DEM on AWS Open Data. Idle, it costs almost nothing.
